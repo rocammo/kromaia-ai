@@ -7,5 +7,14 @@
 profile_default/
 ipython_config.py
 
+
 ### VirtualEnv ###
 env/
+
+
+### Python ###
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
