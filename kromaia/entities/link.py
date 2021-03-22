@@ -1,7 +1,7 @@
 class Link(object):
-    def __init__(self, hullIndexFirst, hullIndexSecond):
-        self.hullIndexFirst = hullIndexFirst
-        self.hullIndexSecond = hullIndexSecond
+    def __init__(self, hull_index_first, hull_index_second):
+        self.hull_index_first = hull_index_first
+        self.hull_index_second = hull_index_second
 
     def __repr__(self):
-        return f"Link(hullIndexFirst: {self.hullIndexFirst}, hullIndexSecond: {self.hullIndexSecond})"
+        return f"Link(hull_index_first: {self.hull_index_first}, hull_index_second: {self.hull_index_second})"
