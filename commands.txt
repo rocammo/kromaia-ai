@@ -1,0 +1,8 @@
+virtualenv env
+source env/bin/activate
+pip -V
+pip install jupyter
+pip install cython
+pip install --no-binary :all: --no-use-pep517 numpy
+pip install matplotlib
+pip install --no-binary :all: --no-use-pep517 pandas
