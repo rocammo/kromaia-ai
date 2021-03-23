@@ -2,6 +2,12 @@ import json
 
 from enum import Enum
 
+from kromaia.util.log import Log
+
+
+global log
+log = Log()
+
 
 class Environment(Enum):
     DEVELOPMENT = 1

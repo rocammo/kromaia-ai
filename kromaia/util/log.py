@@ -9,7 +9,7 @@ class Singleton(type):
 
 
 class Log(metaclass=Singleton):
-    def __init__(self, verbose: bool):
+    def __init__(self, verbose: bool = None):
         self.verbose = verbose
 
     def vprint(self, args):
