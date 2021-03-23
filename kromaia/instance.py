@@ -9,18 +9,18 @@ from .model import model
 from .lib import mutation
 
 
+def init(args):
+    global environment
+    environment = config.get_config("kromaia.env.json", args.environment)
+    log.verbose = environment["verbose"]
+
+
 def do(action):
     if action in dispatch:
         dispatch[action]()
     else:
         log.vprint(
             f"{bcolors.FAIL}'{action}' is not valid action. Try with: {[key for key in dispatch.keys()]}.{bcolors.ENDC}\n")
-
-
-def init(args):
-    global environment
-    environment = config.get_config("kromaia.env.json", args.environment)
-    log.verbose = environment["verbose"]
 
 
 def run(args):
@@ -47,14 +47,14 @@ def mutate():
         hulls, links = analyse(o)
 
         dataset = model.to_dataset(f"{o}-baseline", hulls, links)
-        # io.export_dataset_to_csv(dataset, filename=f"{o}_dataset")
+        io.export_dataset_to_csv(dataset, filename=f"{o}_dataset")
 
-        # mutation.mutate_model(dataset, props=environment["props"],
-        #                       percentage=[10, 15], times=49,
-        #                       filename=f"{o}_dataset_mut")
+        mutation.mutate_model(dataset, props=environment["props"],
+                              percentage=[10, 15], times=49,
+                              filename=f"{o}_dataset_mut")
 
-    log.vprint(
-        f"{bcolors.OKGREEN}Done! Check generated dataset: {bcolors.ENDC}'{o}_dataset_mut.csv'.\n")
+        log.vprint(
+            f"{bcolors.OKGREEN}Done! Check generated dataset: {bcolors.ENDC}'{o}_dataset_mut.csv'.\n")
 
 
 def train():

@@ -10,6 +10,6 @@ if __name__ == '__main__':
                         help="run with environment (values: 'dev' or 'prod')")
     rparser = parser.add_argument_group('required named arguments')
     rparser.add_argument("--action", type=str,
-                         help="do action (values: 'data' or 'train')")
+                         help="do action (values: 'data' or 'model')")
 
     instance.run(args=parser.parse_args())
