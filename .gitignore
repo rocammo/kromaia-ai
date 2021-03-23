@@ -18,3 +18,7 @@ env/
 __pycache__/
 *.py[cod]
 *$py.class
+
+
+### Live files ###
+/*.csv

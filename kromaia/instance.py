@@ -6,6 +6,8 @@ from .util.colors import bcolors
 
 from .model import model
 
+from .lib import mutation
+
 
 def init(args):
     global environment
@@ -18,7 +20,14 @@ def run(args):
 
     objects = environment["objects"]
     for o in objects:
-        analyse(o)
+        hulls, links = analyse(o)
+
+        dataset = model.to_dataset(f"{o}-baseline", hulls, links)
+        io.export_dataset_to_csv(dataset, filename=f"{o}_dataset")
+
+        mutation.mutate_model(dataset, props=environment["props"],
+                              percentage=[10, 15], times=49,
+                              filename=f"{o}_dataset_mut")
 
 
 def analyse(object):
@@ -30,5 +39,4 @@ def analyse(object):
     links_ = model.get_links(links)
     hulls_indexed = model.get_hulls_indexed_by_links(links_)
 
-    dataset = model.to_dataset("vermis-baseline", hulls_, links_)
-    io.export_dataset_to_csv(dataset, filename="vermis_dataset")
+    return hulls_, links_

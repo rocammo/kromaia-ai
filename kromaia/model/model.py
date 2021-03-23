@@ -62,9 +62,9 @@ def get_hulls(hulls):
     scales, positions, orientations = get_hulls_components(hulls)
     hulls_ = [Hull(scales[i], positions[i], orientations[i])
               for i in range(len(hulls))]
-    for i in range(len(hulls)):
-        log.vprint(f"{hulls_[i]}")
-    log.vprint("")  # newline
+    # for i in range(len(hulls)):
+    #     log.vprint(f"{hulls_[i]}")
+    # log.vprint("")  # newline
 
     return hulls_
 
@@ -73,9 +73,9 @@ def get_links(links):
     hull_index_first, hull_index_second = get_links_components(links)
     links_ = [Link(hull_index_first[i], hull_index_second[i])
               for i in range(len(links))]
-    for i in range(len(links)):
-        log.vprint(f"{links_[i]}")
-    log.vprint("")  # newline
+    # for i in range(len(links)):
+    #     log.vprint(f"{links_[i]}")
+    # log.vprint("")  # newline
 
     return links_
 
@@ -85,8 +85,8 @@ def get_hulls_indexed_by_links(links):
     for i in range(len(links)):
         hulls_indexed.add(int(links[i].hull_index_first))
         hulls_indexed.add(int(links[i].hull_index_second))
-    log.vprint(
-        f"{bcolors.OKCYAN}HullIndexParent{bcolors.ENDC} (TOT-{len(hulls_indexed)}): {hulls_indexed}\n")
+    # log.vprint(
+    #     f"{bcolors.OKCYAN}HullIndexParent{bcolors.ENDC} (TOT-{len(hulls_indexed)}): {hulls_indexed}\n")
 
     return hulls_indexed
 

@@ -34,5 +34,5 @@ def export_dataset_to_csv(dataset, filename):
         writer.writeheader()
 
         for row in dataset:
-            log.vprint(f"{row}\n")
+            # log.vprint(f"{row}\n")
             writer.writerow(row)

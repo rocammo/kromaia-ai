@@ -12,6 +12,6 @@ class Log(metaclass=Singleton):
     def __init__(self, verbose: bool = None):
         self.verbose = verbose
 
-    def vprint(self, args, end="\n"):
+    def vprint(self, args, end='\n'):
         if self.verbose:
             print(args, end=end)
