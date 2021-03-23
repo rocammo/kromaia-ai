@@ -1,0 +1,1341 @@
+<?xml version="1.0" ?>
+<COMPOUND>
+  <!--***************************************************************************************************************-->
+  <GENERAL LinearVelocityLossPerSecond="0" AngularVelocityLossPerSecond="0" InitialScaleX="50" InitialScaleY="50" InitialScaleZ="50"
+           DestructionDelay="-1" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+           EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+  <!--***************************************************************************************************************-->
+  <HULL Number="32">
+
+
+    <!-- 0 - Head ********************************************************************************************************-->
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="teuthus0.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="teuthus0.bcs" ObjectMass="1.0" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+    <!-- 1 - Face ********************************************************************************************************-->
+
+    <Hull HullType="1">
+      <ObjectData ModelFileName="teuthus1.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="0.477716"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="teuthus1.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="300" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="0.01" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010100" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="1" />
+    </Hull>
+
+    <!-- 2 - Left Mask ********************************************************************************************************-->
+
+    <Hull HullType="1">
+      <ObjectData ModelFileName="teuthus2.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0.349" PositionY="0" PositionZ="0.608711"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus2.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="2" />
+    </Hull>
+
+    <!-- 3 - Right Mask ********************************************************************************************************-->
+
+    <Hull HullType="1">
+      <ObjectData ModelFileName="teuthus2.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="-0.349" PositionY="0" PositionZ="0.608711"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="teuthus2.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="2" />
+    </Hull>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 4-8 - Left Arm ********************************************************************************************************-->
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="teuthus3.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0.95" PositionY="0" PositionZ="0.72"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus3.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="teuthus3.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0.95" PositionY="0" PositionZ="1.28"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus3.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="teuthus3.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0.95" PositionY="0" PositionZ="1.84"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus3.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="teuthus3.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0.95" PositionY="0" PositionZ="2.4"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus3.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="teuthus3.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0.95" PositionY="0" PositionZ="2.96"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus3.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+    <!-- 9 - Turret #1 ********************************************************************************************************-->
+
+    <Hull HullType="1">
+      <ObjectData ModelFileName="dummy0.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0.95" PositionY="0" PositionZ="3.332952"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus4.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000001" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="2" />
+    </Hull>
+
+    <!-- 10 - Turret #2 ********************************************************************************************************-->
+
+    <Hull HullType="1">
+      <ObjectData ModelFileName="teuthus5.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0.95" PositionY="0" PositionZ="4.244"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus5.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000001" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="3" />
+    </Hull>
+
+    <!-- 11 - Turret #3 ********************************************************************************************************-->
+
+    <Hull HullType="1">
+      <ObjectData ModelFileName="teuthus7.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0.95" PositionY="0" PositionZ="4.779798"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus7.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000001" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="4" />
+    </Hull>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 12-16 - Right Arm ********************************************************************************************************-->
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="teuthus3.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="-0.95" PositionY="0" PositionZ="0.72"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus3.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="teuthus3.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="-0.95" PositionY="0" PositionZ="1.28"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus3.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="teuthus3.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="-0.95" PositionY="0" PositionZ="1.84"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus3.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="teuthus3.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="-0.95" PositionY="0" PositionZ="2.4"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus3.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="teuthus3.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="-0.95" PositionY="0" PositionZ="2.96"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus3.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+    <!-- 17 - Turret #1 ********************************************************************************************************-->
+
+    <Hull HullType="1">
+      <ObjectData ModelFileName="dummy0.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="-0.95" PositionY="0" PositionZ="3.332952"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus4.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000001" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="2" />
+    </Hull>
+
+    <!-- 18 - Turret #2 ********************************************************************************************************-->
+
+    <Hull HullType="1">
+      <ObjectData ModelFileName="teuthus5.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="-0.95" PositionY="0" PositionZ="4.244"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus5.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000001" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="3" />
+    </Hull>
+
+    <!-- 19 - Turret #3 ********************************************************************************************************-->
+
+    <Hull HullType="1">
+      <ObjectData ModelFileName="teuthus7.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="-0.95" PositionY="0" PositionZ="4.779798"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus7.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000001" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="4" />
+    </Hull>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 20-24 - Top Arm ********************************************************************************************************-->
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="teuthus3.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0.95" PositionZ="0.72"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus3.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="teuthus3.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0.95" PositionZ="1.28"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus3.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="teuthus3.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0.95" PositionZ="1.84"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus3.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="teuthus3.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0.95" PositionZ="2.4"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus3.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="teuthus3.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0.95" PositionZ="2.96"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus3.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+    <!-- 25 - Turret #1 ********************************************************************************************************-->
+
+    <Hull HullType="1">
+      <ObjectData ModelFileName="dummy0.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0.95" PositionZ="3.332952"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus4.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000001" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="2" />
+    </Hull>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 26-30 - Bottom Arm ********************************************************************************************************-->
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="teuthus3.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="-0.95" PositionZ="0.72"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus3.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="teuthus3.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="-0.95" PositionZ="1.28"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus3.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="teuthus3.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="-0.95" PositionZ="1.84"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus3.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="teuthus3.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="-0.95" PositionZ="2.4"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus3.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="teuthus3.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="-0.95" PositionZ="2.96"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus3.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+    <!-- 31 - Turret #1 ********************************************************************************************************-->
+
+    <Hull HullType="1">
+      <ObjectData ModelFileName="dummy0.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="-0.95" PositionZ="3.332952"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="teuthus4.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000001" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="2" />
+    </Hull>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--***************************************************************************************************************-->
+    <LINKS Number="31">
+
+
+      <!--Head - Eye disc (Roll) ********************************************************************************************************-->
+
+      <Link LinkType="3">
+        <LinkData HullIndexFirst="0" HullIndexSecond="1" 
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkMovableData LinkMovementType="0" LinkMovementFunctionType="0" LinkMovementControlState="0"
+                         MovementDistancePositive="-1" MovementDistanceNegative="-1" MovementSpeed="45" InitialOffsetPercentage="0"
+                         MovementAxisX="0" MovementAxisY="0" MovementAxisZ="1" />
+      </Link>
+
+
+
+
+
+
+
+
+
+
+      <!--Head - Mask ********************************************************************************************************-->
+
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="0" HullIndexSecond="2" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="0" HullIndexSecond="3" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+
+
+
+
+
+
+
+
+
+
+      <!--Head - Left Arm ********************************************************************************************************-->
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="0" HullIndexSecond="4" 
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0.95" PositionFirstY="0" PositionFirstZ="0.39"
+                      PositionSecondX="0.95" PositionSecondY="0" PositionSecondZ="0.47"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+      <!--Left Arm Normal Links ********************************************************************************************************-->
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="4" HullIndexSecond="5"
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0.95" PositionFirstY="0" PositionFirstZ="0.97"
+                      PositionSecondX="0.95" PositionSecondY="0" PositionSecondZ="1.03"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="5" HullIndexSecond="6"
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0.95" PositionFirstY="0" PositionFirstZ="1.53"
+                      PositionSecondX="0.95" PositionSecondY="0" PositionSecondZ="1.59"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="6" HullIndexSecond="7"
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0.95" PositionFirstY="0" PositionFirstZ="2.09"
+                      PositionSecondX="0.95" PositionSecondY="0" PositionSecondZ="2.15"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="7" HullIndexSecond="8"
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0.95" PositionFirstY="0" PositionFirstZ="2.65"
+                      PositionSecondX="0.95" PositionSecondY="0" PositionSecondZ="2.71"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+      <!--Left Arm Turrets ********************************************************************************************************-->
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="8" HullIndexSecond="9"
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0.95" PositionFirstY="0" PositionFirstZ="3.21"
+                      PositionSecondX="0.95" PositionSecondY="0" PositionSecondZ="3.2728"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="9" HullIndexSecond="10"
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0.95" PositionFirstY="0" PositionFirstZ="3.88"
+                      PositionSecondX="0.95" PositionSecondY="0" PositionSecondZ="3.94"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="10" HullIndexSecond="11"
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0.95" PositionFirstY="0" PositionFirstZ="4.54"
+                      PositionSecondX="0.95" PositionSecondY="0" PositionSecondZ="4.6"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+
+
+
+
+
+
+
+
+
+
+      <!--Head - Right Arm ********************************************************************************************************-->
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="0" HullIndexSecond="12" 
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="-0.95" PositionFirstY="0" PositionFirstZ="0.39"
+                      PositionSecondX="-0.95" PositionSecondY="0" PositionSecondZ="0.47"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+      <!--Left Arm Normal Links ********************************************************************************************************-->
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="12" HullIndexSecond="13"
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="-0.95" PositionFirstY="0" PositionFirstZ="0.97"
+                      PositionSecondX="-0.95" PositionSecondY="0" PositionSecondZ="1.03"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="13" HullIndexSecond="14"
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="-0.95" PositionFirstY="0" PositionFirstZ="1.53"
+                      PositionSecondX="-0.95" PositionSecondY="0" PositionSecondZ="1.59"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="14" HullIndexSecond="15"
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="-0.95" PositionFirstY="0" PositionFirstZ="2.09"
+                      PositionSecondX="-0.95" PositionSecondY="0" PositionSecondZ="2.15"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="15" HullIndexSecond="16"
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="-0.95" PositionFirstY="0" PositionFirstZ="2.65"
+                      PositionSecondX="-0.95" PositionSecondY="0" PositionSecondZ="2.71"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+      <!--Left Arm Turrets ********************************************************************************************************-->
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="16" HullIndexSecond="17"
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="-0.95" PositionFirstY="0" PositionFirstZ="3.21"
+                      PositionSecondX="-0.95" PositionSecondY="0" PositionSecondZ="3.2728"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="17" HullIndexSecond="18"
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="-0.95" PositionFirstY="0" PositionFirstZ="3.88"
+                      PositionSecondX="-0.95" PositionSecondY="0" PositionSecondZ="3.94"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="18" HullIndexSecond="19"
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="-0.95" PositionFirstY="0" PositionFirstZ="4.54"
+                      PositionSecondX="-0.95" PositionSecondY="0" PositionSecondZ="4.6"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+
+
+
+
+
+
+
+
+
+
+      <!--Head - Top Arm ********************************************************************************************************-->
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="0" HullIndexSecond="20"
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0" PositionFirstY="0.95" PositionFirstZ="0.39"
+                      PositionSecondX="0" PositionSecondY="0.95" PositionSecondZ="0.47"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+      <!--Top Arm Normal Links ********************************************************************************************************-->
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="20" HullIndexSecond="21" 
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0" PositionFirstY="0.95" PositionFirstZ="0.97"
+                      PositionSecondX="0" PositionSecondY="0.95" PositionSecondZ="1.03"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="21" HullIndexSecond="22" 
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0" PositionFirstY="0.95" PositionFirstZ="1.53"
+                      PositionSecondX="0" PositionSecondY="0.95" PositionSecondZ="1.59"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="22" HullIndexSecond="23"
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0" PositionFirstY="0.95" PositionFirstZ="2.09"
+                      PositionSecondX="0" PositionSecondY="0.95" PositionSecondZ="2.15"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="23" HullIndexSecond="24"
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0" PositionFirstY="0.95" PositionFirstZ="2.65"
+                      PositionSecondX="0" PositionSecondY="0.95" PositionSecondZ="2.71"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+      <!--Top Arm Turrets ********************************************************************************************************-->
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="24" HullIndexSecond="25"
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0" PositionFirstY="0.95" PositionFirstZ="3.21"
+                      PositionSecondX="0" PositionSecondY="0.95" PositionSecondZ="3.2728"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+
+
+
+
+
+
+
+
+
+
+      <!--Head - Bottom Arm ********************************************************************************************************-->
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="0" HullIndexSecond="26" 
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0" PositionFirstY="-0.95" PositionFirstZ="0.39"
+                      PositionSecondX="0" PositionSecondY="-0.95" PositionSecondZ="0.47"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+      <!--Bottom Arm Normal Links ********************************************************************************************************-->
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="26" HullIndexSecond="27"
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0" PositionFirstY="-0.95" PositionFirstZ="0.97"
+                      PositionSecondX="0" PositionSecondY="-0.95" PositionSecondZ="1.03"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="27" HullIndexSecond="28"
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0" PositionFirstY="-0.95" PositionFirstZ="1.53"
+                      PositionSecondX="0" PositionSecondY="-0.95" PositionSecondZ="1.59"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="28" HullIndexSecond="29"
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0" PositionFirstY="-0.95" PositionFirstZ="2.09"
+                      PositionSecondX="0" PositionSecondY="-0.95" PositionSecondZ="2.15"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="29" HullIndexSecond="30"
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0" PositionFirstY="-0.95" PositionFirstZ="2.65"
+                      PositionSecondX="0" PositionSecondY="-0.95" PositionSecondZ="2.71"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+      <!--Bottom Arm Turrets ********************************************************************************************************-->
+
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="30" HullIndexSecond="31"
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="0.00001" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0" PositionFirstY="-0.95" PositionFirstZ="3.21"
+                      PositionSecondX="0" PositionSecondY="-0.95" PositionSecondZ="3.2728"
+                      RopeType="1" RopeElements="0" RopeMass="0" />
+      </Link>
+
+
+
+
+
+    </LINKS>
+    <!--***************************************************************************************************************-->
+
+
+
+
+
+  </HULL>
+
+
+
+
+
+
+
+
+
+
+  <!--***************************************************************************************************************-->
+  <WEAPONRYWEAPONSAI Number="10">
+
+    <!-- Face Laser ***************************************************************************************************************--> 
+
+    <Weapon WeaponType="6">
+      <ObjectData ModelFileName="" ScaleX="1.0" ScaleY="1.0" ScaleZ="1.0"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <WeaponData WeaponPriority="1" WeaponBehaviour="2" ReloadTime="1" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="0" AccelerationAngular="0" MaximumSpeedAngular="0"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponLaserData FireDistance="1000" FireDamage="1000" WarmUpTime="5" CoolDownTime="5" MinimumFireTime="0" MaximumFireTime="10" Width="1" />
+      <Cannons Number="5" FiringTurnMaximum="0" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="0.1"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="-0.11" FiringPositionY="0.11" FiringPositionZ="0.1"
+                            FiringDirectionX="-0.01" FiringDirectionY="0.01" FiringDirectionZ="1" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0.11" FiringPositionY="0.11" FiringPositionZ="0.1"
+                            FiringDirectionX="0.01" FiringDirectionY="0.01" FiringDirectionZ="1" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="-0.11" FiringPositionY="-0.11" FiringPositionZ="0.1"
+                            FiringDirectionX="-0.01" FiringDirectionY="-0.01" FiringDirectionZ="1" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0.11" FiringPositionY="-0.11" FiringPositionZ="0.1"
+                            FiringDirectionX="0.01" FiringDirectionY="-0.01" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+
+    
+
+    <!-- Trident Launcher ***************************************************************************************************************--> 
+
+    <Weapon WeaponType="3">
+      <ObjectData ModelFileName="" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000000101000000000000000010110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <WeaponData WeaponPriority="3" WeaponBehaviour="2" ReloadTime="10" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="0" AccelerationAngular="0" MaximumSpeedAngular="0"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.25"
+                                ProjectileInitialScaleX="1" ProjectileInitialScaleY="1" ProjectileInitialScaleZ="1"
+                                ProjectileFinalScaleX="1" ProjectileFinalScaleY="1" ProjectileFinalScaleZ="1"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="200"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="26" ProjectilePower="300" />
+      <WeaponProjectileLoadedData ProjectileLoadedType="26" ProjectileLoadTime="1.0" ProjectileUnloadTime="0.25" ProjectileMaximumTimeLoaded="1.0"
+                                  MaximumRollingRadiansPerSecond="10"
+                                  ProjectileLoadInitialScaleX="0.01" ProjectileLoadInitialScaleY="0.01" ProjectileLoadInitialScaleZ="0.01"
+                                  ProjectileLoadFinalScaleX="1" ProjectileLoadFinalScaleY="1" ProjectileLoadFinalScaleZ="1" />
+      <Cannons Number="4" FiringTurnMaximum="0" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="-0.55" FiringPositionY="0.55" FiringPositionZ="0"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0.55" FiringPositionY="0.55" FiringPositionZ="0"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="-0.55" FiringPositionY="-0.55" FiringPositionZ="0"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0.55" FiringPositionY="-0.55" FiringPositionZ="0"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+
+
+
+
+    <!-- Arm End Laser (Every Arm) (Hull 9) ***************************************************************************************************************-->
+
+    <Weapon WeaponType="6">
+      <ObjectData ModelFileName="" ScaleX="1.0" ScaleY="1.0" ScaleZ="1.0"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="9"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="1" MobilityType="3">
+        <MobileObject ModelFileName="teuthus4.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="2" WeaponBehaviour="2" ReloadTime="1" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="180" AccelerationAngular="3" MaximumSpeedAngular="0.35"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="1" />
+      <WeaponLaserData FireDistance="1000" FireDamage="1000" WarmUpTime="3" CoolDownTime="3" MinimumFireTime="0" MaximumFireTime="6" Width="1" />
+      <Cannons Number="1" FiringTurnMaximum="0" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="0.6"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+
+    <!-- Arm End Laser (Every Arm) (Hull 17) ***************************************************************************************************************--> 
+
+    <Weapon WeaponType="6">
+      <ObjectData ModelFileName="" ScaleX="1.0" ScaleY="1.0" ScaleZ="1.0"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="17"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="1" MobilityType="3">
+        <MobileObject ModelFileName="teuthus4.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="2" WeaponBehaviour="2" ReloadTime="1" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="180" AccelerationAngular="3" MaximumSpeedAngular="0.35"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="1" />
+      <WeaponLaserData FireDistance="1000" FireDamage="1000" WarmUpTime="3" CoolDownTime="3" MinimumFireTime="0" MaximumFireTime="6" Width="1" />
+      <Cannons Number="1" FiringTurnMaximum="0" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="0.6"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+
+    <!-- Arm End Laser (Every Arm) (Hull 25) ***************************************************************************************************************-->
+
+    <Weapon WeaponType="6">
+      <ObjectData ModelFileName="" ScaleX="1.0" ScaleY="1.0" ScaleZ="1.0"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="25"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="1" MobilityType="3">
+        <MobileObject ModelFileName="teuthus4.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="2" WeaponBehaviour="2" ReloadTime="1" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="180" AccelerationAngular="3" MaximumSpeedAngular="0.35"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="1" />
+      <WeaponLaserData FireDistance="1000" FireDamage="1000" WarmUpTime="3" CoolDownTime="3" MinimumFireTime="0" MaximumFireTime="6" Width="1" />
+      <Cannons Number="1" FiringTurnMaximum="0" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="0.6"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+
+    <!-- Arm End Laser (Every Arm) (Hull 31) ***************************************************************************************************************-->
+
+    <Weapon WeaponType="6">
+      <ObjectData ModelFileName="" ScaleX="1.0" ScaleY="1.0" ScaleZ="1.0"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="31"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="1" MobilityType="3">
+        <MobileObject ModelFileName="teuthus4.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="2" WeaponBehaviour="2" ReloadTime="1" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="180" AccelerationAngular="3" MaximumSpeedAngular="0.35"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="1" />
+      <WeaponLaserData FireDistance="1000" FireDamage="1000" WarmUpTime="3" CoolDownTime="3" MinimumFireTime="0" MaximumFireTime="6" Width="1" />
+      <Cannons Number="1" FiringTurnMaximum="0" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="0.6"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Arm Second End Missiles (Only 2 Arms) (Hull 10) ***************************************************************************************************************-->
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="10"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="1" MobilityType="11">
+        <MobileObject ModelFileName="teuthus6.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0.1575" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="3" WeaponBehaviour="2" ReloadTime="5" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="180" AccelerationAngular="50" MaximumSpeedAngular="50"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="1" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="1"
+                                ProjectileInitialScaleX="0.01" ProjectileInitialScaleY="0.01" ProjectileInitialScaleZ="0.01"
+                                ProjectileFinalScaleX="2" ProjectileFinalScaleY="2" ProjectileFinalScaleZ="2"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="120"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="2" />
+      <WeaponProjectileData ProjectileType="102" ProjectilePower="200" />
+      <Cannons Number="4" FiringTurnMaximum="1" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="1" FiringTurnEnd="1" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0.05" FiringPositionZ="1"
+                            FiringDirectionX="0" FiringDirectionY="0.25" FiringDirectionZ="1" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="1" FiringTurnEnd="1" Roll="0"
+                            FiringPositionX="0" FiringPositionY="-0.05" FiringPositionZ="1"
+                            FiringDirectionX="0" FiringDirectionY="-0.25" FiringDirectionZ="1" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="1" FiringTurnEnd="1" Roll="0"
+                            FiringPositionX="0.05" FiringPositionY="0" FiringPositionZ="1"
+                            FiringDirectionX="0.25" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="1" FiringTurnEnd="1" Roll="0"
+                            FiringPositionX="-0.05" FiringPositionY="0" FiringPositionZ="1"
+                            FiringDirectionX="-0.25" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+
+    <!-- Arm Second End Missiles (Only 2 Arms) (Hull 18) ***************************************************************************************************************-->
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="18"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="1" MobilityType="11">
+        <MobileObject ModelFileName="teuthus6.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0.1575" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="3" WeaponBehaviour="2" ReloadTime="5" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="180" AccelerationAngular="50" MaximumSpeedAngular="50"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="1" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="1"
+                                ProjectileInitialScaleX="0.01" ProjectileInitialScaleY="0.01" ProjectileInitialScaleZ="0.01"
+                                ProjectileFinalScaleX="2" ProjectileFinalScaleY="2" ProjectileFinalScaleZ="2"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="120"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="2" />
+      <WeaponProjectileData ProjectileType="102" ProjectilePower="200" />
+      <Cannons Number="4" FiringTurnMaximum="1" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0.05" FiringPositionZ="1"
+                            FiringDirectionX="0" FiringDirectionY="0.25" FiringDirectionZ="1" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="-0.05" FiringPositionZ="1"
+                            FiringDirectionX="0" FiringDirectionY="-0.25" FiringDirectionZ="1" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0.05" FiringPositionY="0" FiringPositionZ="1"
+                            FiringDirectionX="0.25" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="-0.05" FiringPositionY="0" FiringPositionZ="1"
+                            FiringDirectionX="-0.25" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+
+    <!-- Arm Third End Turret (Only 2 Arms) (Hull 11) ***************************************************************************************************************-->
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="11"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="2" MobilityType="12">
+        <MobileObject ModelFileName="teuthus8.mesh" LocalPositionX="0.15" LocalPositionY="0" LocalPositionZ="-0.18" />
+        <MobileObject ModelFileName="teuthus8.mesh" LocalPositionX="-0.15" LocalPositionY="0" LocalPositionZ="-0.18" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="4" WeaponBehaviour="2" ReloadTime="0.2" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="180" AccelerationAngular="100" MaximumSpeedAngular="100"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="1" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.1"
+                                ProjectileInitialScaleX="0.1" ProjectileInitialScaleY="0.1" ProjectileInitialScaleZ="0.1"
+                                ProjectileFinalScaleX="0.3" ProjectileFinalScaleY="0.3" ProjectileFinalScaleZ="0.3"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="150"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="15" ProjectilePower="100" />
+      <Cannons Number="1" FiringTurnMaximum="19" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="9" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="1"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+
+    <!-- Arm Third End Turret (Only 2 Arms) (Hull 19) ***************************************************************************************************************-->
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="19"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="2" MobilityType="12">
+        <MobileObject ModelFileName="teuthus8.mesh" LocalPositionX="0.15" LocalPositionY="0" LocalPositionZ="-0.18" />
+        <MobileObject ModelFileName="teuthus8.mesh" LocalPositionX="-0.15" LocalPositionY="0" LocalPositionZ="-0.18" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="4" WeaponBehaviour="2" ReloadTime="0.2" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="180" AccelerationAngular="100" MaximumSpeedAngular="100"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="1" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.1"
+                                ProjectileInitialScaleX="0.1" ProjectileInitialScaleY="0.1" ProjectileInitialScaleZ="0.1"
+                                ProjectileFinalScaleX="0.3" ProjectileFinalScaleY="0.3" ProjectileFinalScaleZ="0.3"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="150"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="15" ProjectilePower="100" />
+      <Cannons Number="1" FiringTurnMaximum="19" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="10" FiringTurnEnd="19" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="1"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon> 
+
+
+
+  </WEAPONRYWEAPONSAI>
+
+
+
+
+
+
+
+
+  <!--***************************************************************************************************************-->
+  <MOVEMENTAI AIModuleMovementType="6">
+    <AIModuleMovementDirectData Acceleration="300" MinimumSpeed="30" MaximumSpeed="1000" ReachDestinationAtFullLinearSpeed="0" />
+    <AIModuleMovementDirectWithOrientationData AccelerationAngular="1" MaximumSpeedAngular="10" ReachDestinationAtFullAngularSpeed="0" />
+  </MOVEMENTAI>
+  <!--***************************************************************************************************************-->
+  <AIUNIT Number="1" UnitValue="-1">
+    <BehaviourUnitAIData AIFormationType="2" AIFormationSeparationMultiplier="5"
+                         AIGroupBehaviourType="-1" AIGroupBehaviourDistance="0" AIGroupAttackBehaviourType ="-1" AIGroupAttackSpeed ="0"
+                         AIBehaviourType="4" AIBehaviourDistance="175" AIAttackBehaviourType ="0" AIAttackSpeed ="100"/>
+  </AIUNIT>
+  <!--***************************************************************************************************************-->
+</COMPOUND>
