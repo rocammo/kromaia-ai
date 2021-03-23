@@ -9,6 +9,14 @@ from .model import model
 from .lib import mutation
 
 
+def do(action):
+    if action in dispatch:
+        dispatch[action]()
+    else:
+        log.vprint(
+            f"{bcolors.FAIL}'{action}' is not valid action. Try with: {[key for key in dispatch.keys()]}.{bcolors.ENDC}\n")
+
+
 def init(args):
     global environment
     environment = config.get_config("kromaia.env.json", args.environment)
@@ -17,17 +25,7 @@ def init(args):
 
 def run(args):
     init(args)
-
-    objects = environment["objects"]
-    for o in objects:
-        hulls, links = analyse(o)
-
-        dataset = model.to_dataset(f"{o}-baseline", hulls, links)
-        io.export_dataset_to_csv(dataset, filename=f"{o}_dataset")
-
-        mutation.mutate_model(dataset, props=environment["props"],
-                              percentage=[10, 15], times=49,
-                              filename=f"{o}_dataset_mut")
+    do(args.action)
 
 
 def analyse(object):
@@ -40,3 +38,30 @@ def analyse(object):
     hulls_indexed = model.get_hulls_indexed_by_links(links_)
 
     return hulls_, links_
+
+
+def mutate():
+    objects = environment["objects"]
+
+    for o in objects:
+        hulls, links = analyse(o)
+
+        dataset = model.to_dataset(f"{o}-baseline", hulls, links)
+        # io.export_dataset_to_csv(dataset, filename=f"{o}_dataset")
+
+        # mutation.mutate_model(dataset, props=environment["props"],
+        #                       percentage=[10, 15], times=49,
+        #                       filename=f"{o}_dataset_mut")
+
+    log.vprint(
+        f"{bcolors.OKGREEN}Done! Check generated dataset: {bcolors.ENDC}'{o}_dataset_mut.csv'.\n")
+
+
+def train():
+    pass
+
+
+dispatch = {
+    'data': mutate,
+    'model': train
+}
