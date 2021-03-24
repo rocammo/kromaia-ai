@@ -8,6 +8,7 @@ if __name__ == '__main__':
                                      "through machine learning techniques in Kromaia scenario.")
     parser.add_argument("environment", metavar="environment", type=str,
                         help="run with environment (values: 'dev' or 'prod')")
+
     rparser = parser.add_argument_group('required named arguments')
     rparser.add_argument("--action", type=str,
                          help="do action (values: 'data' or 'model')")

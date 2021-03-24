@@ -58,7 +58,86 @@ def mutate():
 
 
 def train():
-    pass
+    # TODO: Merge all generated datasets in one?
+
+    import pandas as pd
+    import matplotlib.pyplot as plt
+    import seaborn as sb
+
+    objects = environment["objects"]
+    for o in objects:
+        log.vprint(
+            f"{bcolors.HEADER}{bcolors.UNDERLINE}objects/{o}.xml{bcolors.ENDC}\n")
+        model_data = pd.read_csv(f"{o}_dataset_mut.csv")
+
+        # Summary statistics.
+        summary_statistics = model_data.describe()
+        log.vprint(summary_statistics, end='\n\n')
+
+        # Classes.
+        classes = "', '".join(model_data["Name"].unique())
+        log.vprint(f"Classes: ['{classes}']", end='\n\n')
+
+        # Plot.
+        fig = plt.figure(figsize=(15, 9))
+        fig.canvas.set_window_title(f"{o} model (HullIndexFirst)")
+
+        discarded_columns_hif = ["Name", "HullIndexFirst",
+                                 "HIF-OrientationW", "HIF-OrientationX", "HIF-OrientationY", "HIF-OrientationZ",
+                                 "HullIndexSecond", "HIS-ScaleX", "HIS-ScaleY", "HIS-ScaleZ",
+                                 "HIS-PositionX", "HIS-PositionY", "HIS-PositionZ", "HIS-OrientationW",
+                                 "HIS-OrientationX", "HIS-OrientationY", "HIS-OrientationZ", "Fitness"]
+
+        position = 0
+        for column_index, column in enumerate(model_data.columns):
+            if column in discarded_columns_hif:
+                continue
+            elif column == "HIF-PositionY":
+                position += 1
+                continue
+            else:
+                position += 1
+
+            plt.subplot(2, 3, position)
+            sb.violinplot(x="Name", y=column, data=model_data)
+
+        # plt.show(block=False)
+        plt.savefig(f"{o}_model_HIF.pdf")
+        log.vprint(
+            f"{bcolors.OKGREEN}Check generated plot: {bcolors.ENDC}'{o}_model_HIF.pdf'.\n")
+
+        fig = plt.figure(figsize=(15, 9))
+        fig.canvas.set_window_title(f"{o} model (HullIndexSecond)")
+
+        discarded_columns_his = ["Name", "HullIndexFirst",
+                                 "HIF-ScaleX", "HIF-ScaleY", "HIF-ScaleZ",
+                                 "HIF-PositionX", "HIF-PositionY", "HIF-PositionZ", "HIF-OrientationW",
+                                 "HIF-OrientationX", "HIF-OrientationY", "HIF-OrientationZ",
+                                 "HullIndexSecond", "HIS-OrientationX", "HIS-OrientationY",
+                                 "Fitness"]
+
+        position = 0
+        positions = [1, 2, 3, 4, 5, 6, 7, 9]
+        for column_index, column in enumerate(model_data.columns):
+            if column in discarded_columns_his:
+                continue
+
+            plt.subplot(3, 3, positions[position])
+            sb.violinplot(x="Name", y=column, data=model_data)
+
+            position += 1
+
+        # plt.show()
+        plt.savefig(f"{o}_model_HIS.pdf")
+        log.vprint(
+            f"{bcolors.OKGREEN}Check generated plot: {bcolors.ENDC}'{o}_model_HIS.pdf'.\n")
+
+    # log.vprint(
+    #     f"{bcolors.HEADER}{bcolors.UNDERLINE}objects/{o}.xml{bcolors.ENDC}\n")
+    # model_data = pd.read_csv("Vermis_dataset_mut.csv")
+
+    # sb.pairplot(model_data)
+    # plt.show()
 
 
 dispatch = {
