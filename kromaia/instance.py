@@ -1,3 +1,7 @@
+import seaborn as sb
+import matplotlib.pyplot as plt
+import pandas as pd
+
 from .util import config
 from .util import io
 
@@ -42,33 +46,31 @@ def analyse(object):
 
 def mutate():
     objects = environment["objects"]
+    workspace = environment["workspace"]
 
     for o in objects:
         hulls, links = analyse(o)
 
         dataset = model.to_dataset(f"{o}-baseline", hulls, links)
-        io.export_dataset_to_csv(dataset, filename=f"{o}_dataset")
+        io.export_dataset_to_csv(
+            dataset, filename=f"{workspace}/datasets/{o}_dataset")
 
         mutation.mutate_model(dataset, props=environment["props"],
                               percentage=[10, 15], times=49,
-                              filename=f"{o}_dataset_mut")
+                              filename=f"{workspace}/datasets/{o}_dataset_mut")
 
         log.vprint(
-            f"{bcolors.OKGREEN}Done! Check generated dataset: {bcolors.ENDC}'{o}_dataset_mut.csv'.\n")
+            f"{bcolors.OKGREEN}Done! Check generated dataset: {bcolors.ENDC}'./{workspace}/datasets/{o}_dataset_mut.csv'.\n")
 
 
-def train():
-    # TODO: Merge all generated datasets in one?
-
-    import pandas as pd
-    import matplotlib.pyplot as plt
-    import seaborn as sb
-
+def plot():
     objects = environment["objects"]
+    workspace = environment["workspace"]
+
     for o in objects:
         log.vprint(
             f"{bcolors.HEADER}{bcolors.UNDERLINE}objects/{o}.xml{bcolors.ENDC}\n")
-        model_data = pd.read_csv(f"{o}_dataset_mut.csv")
+        model_data = pd.read_csv(f"{workspace}/datasets/{o}_dataset_mut.csv")
 
         # Summary statistics.
         summary_statistics = model_data.describe()
@@ -102,9 +104,9 @@ def train():
             sb.violinplot(x="Name", y=column, data=model_data)
 
         # plt.show(block=False)
-        plt.savefig(f"{o}_model_HIF.pdf")
+        plt.savefig(f"{workspace}/plots/{o}_model_HIF.pdf")
         log.vprint(
-            f"{bcolors.OKGREEN}Check generated plot: {bcolors.ENDC}'{o}_model_HIF.pdf'.\n")
+            f"{bcolors.OKGREEN}Check generated plot: {bcolors.ENDC}'./{workspace}/plots/{o}_model_HIF.pdf'.\n")
 
         fig = plt.figure(figsize=(15, 9))
         fig.canvas.set_window_title(f"{o} model (HullIndexSecond)")
@@ -128,9 +130,9 @@ def train():
             position += 1
 
         # plt.show()
-        plt.savefig(f"{o}_model_HIS.pdf")
+        plt.savefig(f"{workspace}/plots/{o}_model_HIS.pdf")
         log.vprint(
-            f"{bcolors.OKGREEN}Check generated plot: {bcolors.ENDC}'{o}_model_HIS.pdf'.\n")
+            f"{bcolors.OKGREEN}Check generated plot: {bcolors.ENDC}'./{workspace}/plots/{o}_model_HIS.pdf'.\n")
 
     # log.vprint(
     #     f"{bcolors.HEADER}{bcolors.UNDERLINE}objects/{o}.xml{bcolors.ENDC}\n")
@@ -140,7 +142,30 @@ def train():
     # plt.show()
 
 
+def train():
+    objects = environment["objects"]
+    workspace = environment["workspace"]
+
+    # for o in objects:
+    #     log.vprint(
+    #         f"{bcolors.HEADER}{bcolors.UNDERLINE}objects/{o}.xml{bcolors.ENDC}\n")
+    #     model_data = pd.read_csv(f"{o}_dataset_mut.csv")
+    o = objects[3]
+    log.vprint(
+        f"{bcolors.HEADER}{bcolors.UNDERLINE}objects/{o}.xml{bcolors.ENDC}\n")
+    model_data = pd.read_csv(f"{workspace}/datasets/{o}_dataset_mut.csv")
+
+    all_inputs = model_data[["HIF-ScaleX", "HIF-ScaleY", "HIF-ScaleZ",
+                             "HIF-PositionX", "HIF-PositionZ",
+                             "HIS-ScaleX", "HIS-ScaleY", "HIS-ScaleZ",
+                             "HIS-PositionX", "HIS-PositionY", "HIS-PositionZ",
+                             "HIS-OrientationW", "HIS-OrientationZ"]].values
+    all_classes = model_data["Name"].values
+    log.vprint(all_inputs[:5])
+
+
 dispatch = {
     'data': mutate,
+    'plot': plot,
     'model': train
 }

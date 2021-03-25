@@ -9,6 +9,10 @@ Default environments are: `dev` with greater verbosity for development purposes 
 ```
 python -m kromaia <environment> --action data
 ```
+### Plotting
+```
+python -m kromaia <environment> --action plot
+```
 ### Model training
 ```
 python -m kromaia <environment> --action model
