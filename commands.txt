@@ -1,3 +1,5 @@
+# macos/arm64 [DEPRECATED]
+
 virtualenv env
 source env/bin/activate
 pip -V

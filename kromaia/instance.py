@@ -2,6 +2,10 @@ import seaborn as sb
 import matplotlib.pyplot as plt
 import pandas as pd
 
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.neighbors import RadiusNeighborsClassifier
+
 from .util import config
 from .util import io
 
@@ -161,7 +165,64 @@ def train():
                              "HIS-PositionX", "HIS-PositionY", "HIS-PositionZ",
                              "HIS-OrientationW", "HIS-OrientationZ"]].values
     all_classes = model_data["Name"].values
-    log.vprint(all_inputs[:5])
+    log.vprint(all_inputs[:5], end='\n\n')
+    log.vprint(all_classes, end='\n\n')
+
+    (training_inputs,
+     testing_inputs,
+     training_classes,
+     testing_classes) = train_test_split(all_inputs, all_classes, train_size=0.80, random_state=456)
+
+    log.vprint(testing_inputs.shape, end='\n\n')
+
+    ### DecisionTreeClassifier ###
+    # Create the classifier.
+    decision_tree_classifier = DecisionTreeClassifier()
+    # Train the classifier on the training set.
+    decision_tree_classifier.fit(training_inputs, training_classes)
+    # Validate the classifier on the testing set using classification accuracy.
+    log.vprint(decision_tree_classifier.score(
+        testing_inputs, testing_classes))
+    log.vprint(decision_tree_classifier.predict(
+        testing_inputs[:1, :]), end='\n\n')
+    # Check model accuracies.
+    model_accuracies = []
+    for repetition in range(1000):
+        (training_inputs,
+         testing_inputs,
+         training_classes,
+         testing_classes) = train_test_split(all_inputs, all_classes, train_size=0.75)
+
+        decision_tree_classifier = DecisionTreeClassifier()
+        decision_tree_classifier.fit(training_inputs, training_classes)
+        classifier_accuracy = decision_tree_classifier.score(
+            testing_inputs, testing_classes)
+        model_accuracies.append(classifier_accuracy)
+    sb.distplot(model_accuracies)
+    plt.show(block=False)
+
+    ### RadiusNeighborsClassifier ###
+    # Create the classifier.
+    neigh = RadiusNeighborsClassifier(radius=2.0)
+    # Train the classifier on the training set.
+    neigh.fit(training_inputs, training_classes)
+    # Validate the classifier on the testing set using classification accuracy.
+    log.vprint(neigh.score(testing_inputs, testing_classes))
+    log.vprint(neigh.predict(testing_inputs[:1, :]), end='\n\n')
+    # Check model accuracies.
+    model_accuracies = []
+    for repetition in range(1000):
+        (training_inputs,
+         testing_inputs,
+         training_classes,
+         testing_classes) = train_test_split(all_inputs, all_classes, train_size=0.75)
+
+        neigh = RadiusNeighborsClassifier(radius=2.0)
+        neigh.fit(training_inputs, training_classes)
+        classifier_accuracy = neigh.score(testing_inputs, testing_classes)
+        model_accuracies.append(classifier_accuracy)
+    sb.distplot(model_accuracies)
+    plt.show()
 
 
 dispatch = {
