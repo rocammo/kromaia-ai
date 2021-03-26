@@ -1,10 +1,15 @@
 import seaborn as sb
 import matplotlib.pyplot as plt
 import pandas as pd
+import numpy as np
+
+import warnings
 
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import RadiusNeighborsClassifier
+from sklearn.model_selection import StratifiedKFold
+from sklearn.model_selection import cross_val_score
 
 from .util import config
 from .util import io
@@ -20,7 +25,10 @@ from .lib import mutation
 def init(args):
     global environment
     environment = config.get_config("kromaia.env.json", args.environment)
+
     log.verbose = environment["verbose"]
+
+    warnings.simplefilter(action='ignore', category=FutureWarning)
 
 
 def do(action):
@@ -109,6 +117,7 @@ def plot():
 
         # plt.show(block=False)
         plt.savefig(f"{workspace}/plots/{o}_model_HIF.pdf")
+        plt.close("all")
         log.vprint(
             f"{bcolors.OKGREEN}Check generated plot: {bcolors.ENDC}'./{workspace}/plots/{o}_model_HIF.pdf'.\n")
 
@@ -135,6 +144,7 @@ def plot():
 
         # plt.show()
         plt.savefig(f"{workspace}/plots/{o}_model_HIS.pdf")
+        plt.close("all")
         log.vprint(
             f"{bcolors.OKGREEN}Check generated plot: {bcolors.ENDC}'./{workspace}/plots/{o}_model_HIS.pdf'.\n")
 
@@ -185,7 +195,19 @@ def train():
         testing_inputs, testing_classes))
     log.vprint(decision_tree_classifier.predict(
         testing_inputs[:1, :]), end='\n\n')
-    # Check model accuracies.
+
+    ### RadiusNeighborsClassifier ###
+    # Create the classifier.
+    neigh = RadiusNeighborsClassifier(radius=2.0)
+    # Train the classifier on the training set.
+    neigh.fit(training_inputs, training_classes)
+    # Validate the classifier on the testing set using classification accuracy.
+    log.vprint(neigh.score(testing_inputs, testing_classes))
+    log.vprint(neigh.predict(testing_inputs[:1, :]), end='\n\n')
+
+    ### Model accuracies ###
+    plt.title("Model accuracies")
+    # DecisionTreeClassifier
     model_accuracies = []
     for repetition in range(1000):
         (training_inputs,
@@ -198,18 +220,8 @@ def train():
         classifier_accuracy = decision_tree_classifier.score(
             testing_inputs, testing_classes)
         model_accuracies.append(classifier_accuracy)
-    sb.distplot(model_accuracies)
-    plt.show(block=False)
-
-    ### RadiusNeighborsClassifier ###
-    # Create the classifier.
-    neigh = RadiusNeighborsClassifier(radius=2.0)
-    # Train the classifier on the training set.
-    neigh.fit(training_inputs, training_classes)
-    # Validate the classifier on the testing set using classification accuracy.
-    log.vprint(neigh.score(testing_inputs, testing_classes))
-    log.vprint(neigh.predict(testing_inputs[:1, :]), end='\n\n')
-    # Check model accuracies.
+    sb.distplot(model_accuracies, label="DecisionTreeClassifier")
+    # RadiusNeighborsClassifier
     model_accuracies = []
     for repetition in range(1000):
         (training_inputs,
@@ -221,8 +233,39 @@ def train():
         neigh.fit(training_inputs, training_classes)
         classifier_accuracy = neigh.score(testing_inputs, testing_classes)
         model_accuracies.append(classifier_accuracy)
-    sb.distplot(model_accuracies)
-    plt.show()
+    sb.distplot(model_accuracies, label="RadiusNeighborsClassifier")
+    plt.legend()
+    # plt.show()
+    plt.savefig(f"{workspace}/plots/{o}_model_accuracies.pdf")
+    plt.close("all")
+
+    '''
+    The model achieves 97% classification accuracy without much effort.
+
+    It's obviously a problem that our model performs quite differently depending on
+    the subset of the data it's trained on. This phenomenon is known as overfitting:
+    The model is learning to classify the training set so well that it doesn't gene-
+    ralize and perform well on data it hasn't seen before.
+
+    This problem is the main reason that most data scientists perform k-fold cross-validation
+    on their models: Split the original data set into k subsets, use one of the subsets as the
+    testing set, and the rest of the subsets are used as the training set. This process is then
+    repeated k times such that each subset is used as the testing set exactly once.
+
+    10-fold cross-validation is the most common choice.
+    '''
+
+    decision_tree_classifier = DecisionTreeClassifier()
+
+    # cross_val_score returns a list of the scores, which we can visualize
+    # to get a reasonable estimate of our classifier's performance
+    cv_scores = cross_val_score(
+        decision_tree_classifier, all_inputs, all_classes, cv=10)
+    sb.distplot(cv_scores)
+    plt.title('Average score: {}'.format(np.mean(cv_scores)))
+    # plt.show()
+    plt.savefig(f"{workspace}/plots/{o}_model_cv_scores.pdf")
+    plt.close("all")
 
 
 dispatch = {
