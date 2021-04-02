@@ -8,6 +8,7 @@ import warnings
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import RadiusNeighborsClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import StratifiedKFold
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import GridSearchCV
@@ -166,191 +167,235 @@ def train():
     objects = environment["objects"]
     workspace = environment["workspace"]
 
-    # for o in objects:
-    #     log.vprint(
-    #         f"{bcolors.HEADER}{bcolors.UNDERLINE}objects/{o}.xml{bcolors.ENDC}\n")
-    #     model_data = pd.read_csv(f"{o}_dataset_mut.csv")
-    o = objects[3]
-    log.vprint(
-        f"{bcolors.HEADER}{bcolors.UNDERLINE}objects/{o}.xml{bcolors.ENDC}\n")
-    model_data = pd.read_csv(f"{workspace}/datasets/{o}_dataset_mut.csv")
+    for o in objects:
+        log.vprint(
+            f"{bcolors.HEADER}{bcolors.UNDERLINE}objects/{o}.xml{bcolors.ENDC}\n")
+        model_data = pd.read_csv(f"{workspace}/datasets/{o}_dataset_mut.csv")
 
-    all_inputs = model_data[["HIF-ScaleX", "HIF-ScaleY", "HIF-ScaleZ",
-                             "HIF-PositionX", "HIF-PositionZ",
-                             "HIS-ScaleX", "HIS-ScaleY", "HIS-ScaleZ",
-                             "HIS-PositionX", "HIS-PositionY", "HIS-PositionZ",
-                             "HIS-OrientationW", "HIS-OrientationZ"]].values
-    all_classes = model_data["Name"].values
-    log.vprint(all_inputs[:5], end='\n\n')
-    log.vprint(all_classes, end='\n\n')
+        all_inputs = model_data[["HIF-ScaleX", "HIF-ScaleY", "HIF-ScaleZ",
+                                "HIF-PositionX", "HIF-PositionZ",
+                                 "HIS-ScaleX", "HIS-ScaleY", "HIS-ScaleZ",
+                                 "HIS-PositionX", "HIS-PositionY", "HIS-PositionZ",
+                                 "HIS-OrientationW", "HIS-OrientationZ"]].values
+        all_classes = model_data["Name"].values
+        log.vprint(f"{bcolors.OKBLUE}Exploratory analysis{bcolors.ENDC}")
+        log.vprint(all_inputs[:5], end='\n\n')
+        log.vprint(f"Classes: {all_classes}", end='\n\n')
 
-    (training_inputs,
-     testing_inputs,
-     training_classes,
-     testing_classes) = train_test_split(all_inputs, all_classes, train_size=0.80, random_state=456)
-
-    log.vprint(testing_inputs.shape, end='\n\n')
-
-    ### DecisionTreeClassifier ###
-    # Create the classifier.
-    decision_tree_classifier = DecisionTreeClassifier()
-    # Train the classifier on the training set.
-    decision_tree_classifier.fit(training_inputs, training_classes)
-    # Validate the classifier on the testing set using classification accuracy.
-    log.vprint(decision_tree_classifier.score(
-        testing_inputs, testing_classes))
-    log.vprint(decision_tree_classifier.predict(
-        testing_inputs[:1, :]), end='\n\n')
-
-    ### RadiusNeighborsClassifier ###
-    # Create the classifier.
-    neigh = RadiusNeighborsClassifier(radius=2.0)
-    # Train the classifier on the training set.
-    neigh.fit(training_inputs, training_classes)
-    # Validate the classifier on the testing set using classification accuracy.
-    log.vprint(neigh.score(testing_inputs, testing_classes))
-    log.vprint(neigh.predict(testing_inputs[:1, :]), end='\n\n')
-
-    ### Model accuracies ###
-    plt.title("Model accuracies")
-    # DecisionTreeClassifier
-    model_accuracies = []
-    for repetition in range(1000):
         (training_inputs,
          testing_inputs,
          training_classes,
-         testing_classes) = train_test_split(all_inputs, all_classes, train_size=0.75)
+         testing_classes) = train_test_split(all_inputs, all_classes, train_size=0.80, random_state=456)
 
+        log.vprint(f"Training set: {training_inputs.shape}")
+        log.vprint(f"Testing set: {testing_inputs.shape}", end='\n\n')
+
+        ### DecisionTreeClassifier ###
+        # Create the classifier.
         decision_tree_classifier = DecisionTreeClassifier()
+        # Train the classifier on the training set.
         decision_tree_classifier.fit(training_inputs, training_classes)
-        classifier_accuracy = decision_tree_classifier.score(
-            testing_inputs, testing_classes)
-        model_accuracies.append(classifier_accuracy)
-    sb.distplot(model_accuracies, label="DecisionTreeClassifier")
-    # RadiusNeighborsClassifier
-    model_accuracies = []
-    for repetition in range(1000):
-        (training_inputs,
-         testing_inputs,
-         training_classes,
-         testing_classes) = train_test_split(all_inputs, all_classes, train_size=0.75)
+        # Validate the classifier on the testing set using classification accuracy.
+        log.vprint(f"{bcolors.OKBLUE}DecisionTreeClassifier{bcolors.ENDC}")
+        log.vprint(decision_tree_classifier.score(
+            testing_inputs, testing_classes))
+        log.vprint(decision_tree_classifier.predict(
+            testing_inputs[:1, :]), end='\n\n')
 
+        ### RadiusNeighborsClassifier ###
+        # Create the classifier.
         neigh = RadiusNeighborsClassifier(radius=2.0)
+        # Train the classifier on the training set.
         neigh.fit(training_inputs, training_classes)
-        classifier_accuracy = neigh.score(testing_inputs, testing_classes)
-        model_accuracies.append(classifier_accuracy)
-    sb.distplot(model_accuracies, label="RadiusNeighborsClassifier")
-    plt.legend()
-    # plt.show()
-    plt.savefig(f"{workspace}/plots/{o}_model_accuracies.pdf")
-    plt.close("all")
+        # Validate the classifier on the testing set using classification accuracy.
+        log.vprint(neigh.score(testing_inputs, testing_classes))
+        log.vprint(neigh.predict(testing_inputs[:1, :]), end='\n\n')
 
-    '''
-    The model achieves 97% classification accuracy without much effort.
+        ### Model accuracies ###
+        plt.title("Model accuracies")
+        # DecisionTreeClassifier
+        model_accuracies = []
+        for repetition in range(1000):
+            (training_inputs,
+             testing_inputs,
+             training_classes,
+             testing_classes) = train_test_split(all_inputs, all_classes, train_size=0.75)
 
-    It's obviously a problem that our model performs quite differently depending on
-    the subset of the data it's trained on. This phenomenon is known as overfitting:
-    The model is learning to classify the training set so well that it doesn't gene-
-    ralize and perform well on data it hasn't seen before.
+            decision_tree_classifier = DecisionTreeClassifier()
+            decision_tree_classifier.fit(training_inputs, training_classes)
+            classifier_accuracy = decision_tree_classifier.score(
+                testing_inputs, testing_classes)
+            model_accuracies.append(classifier_accuracy)
+        sb.distplot(model_accuracies, label="DecisionTreeClassifier")
+        # RadiusNeighborsClassifier
+        model_accuracies = []
+        for repetition in range(1000):
+            (training_inputs,
+             testing_inputs,
+             training_classes,
+             testing_classes) = train_test_split(all_inputs, all_classes, train_size=0.75)
 
-    This problem is the main reason that most data scientists perform k-fold cross-validation
-    on their models: Split the original data set into k subsets, use one of the subsets as the
-    testing set, and the rest of the subsets are used as the training set. This process is then
-    repeated k times such that each subset is used as the testing set exactly once.
+            neigh = RadiusNeighborsClassifier(radius=2.0)
+            neigh.fit(training_inputs, training_classes)
+            classifier_accuracy = neigh.score(testing_inputs, testing_classes)
+            model_accuracies.append(classifier_accuracy)
+        sb.distplot(model_accuracies, label="RadiusNeighborsClassifier")
+        plt.legend()
+        # plt.show()
+        plt.savefig(f"{workspace}/plots/{o}_model_accuracies.pdf")
+        plt.close("all")
 
-    10-fold cross-validation is the most common choice.
-    '''
+        '''
+        The model achieves 97% classification accuracy without much effort.
 
-    # DecisionTreeClassifier(max_depth=4)
-    decision_tree_classifier = DecisionTreeClassifier()
+        It's obviously a problem that our model performs quite differently depending on
+        the subset of the data it's trained on. This phenomenon is known as overfitting:
+        The model is learning to classify the training set so well that it doesn't gene-
+        ralize and perform well on data it hasn't seen before.
 
-    # cross_val_score returns a list of the scores, which we can visualize
-    # to get a reasonable estimate of our classifier's performance
-    cv_scores = cross_val_score(
-        decision_tree_classifier, all_inputs, all_classes, cv=10)
-    sb.distplot(cv_scores)
-    plt.title('Average score: {}'.format(np.mean(cv_scores)))
-    # plt.show()
-    plt.savefig(f"{workspace}/plots/{o}_model_cv_scores.pdf")
-    plt.close("all")
+        This problem is the main reason that most data scientists perform k-fold cross-validation
+        on their models: Split the original data set into k subsets, use one of the subsets as the
+        testing set, and the rest of the subsets are used as the training set. This process is then
+        repeated k times such that each subset is used as the testing set exactly once.
 
-    ### Grid Search ###
-    '''
-    explore a range of parameters and find the best-performing parameter com-
-    bination. Focus your search on the best range of parameters, then repeat
-    this process several times until the best parameters are discovered.
-    '''
-    decision_tree_classifier = DecisionTreeClassifier()
+        10-fold cross-validation is the most common choice.
+        '''
 
-    parameter_grid = {'max_depth': [1, 2, 3, 4, 5],
-                      'max_features': [1, 2, 3, 4]}
+        # DecisionTreeClassifier(max_depth=4)
+        decision_tree_classifier = DecisionTreeClassifier()
 
-    # It may not work correctly if the least populated class in y has less mem-
-    # bers than n_splits.
-    cross_validation = StratifiedKFold(n_splits=50)
+        # cross_val_score returns a list of the scores, which we can visualize
+        # to get a reasonable estimate of our classifier's performance
+        cv_scores = cross_val_score(
+            decision_tree_classifier, all_inputs, all_classes, cv=10)
+        sb.distplot(cv_scores)
+        plt.title(f"Average score: {np.mean(cv_scores)}")
+        # plt.show()
+        plt.savefig(f"{workspace}/plots/{o}_model_cv_scores.pdf")
+        plt.close("all")
 
-    grid_search = GridSearchCV(decision_tree_classifier,
-                               param_grid=parameter_grid,
-                               cv=cross_validation)
+        ### Grid Search ###
+        '''
+        Explore a range of parameters and find the best-performing parameter com-
+        bination. Focus your search on the best range of parameters, then repeat
+        this process several times until the best parameters are discovered.
+        '''
+        decision_tree_classifier = DecisionTreeClassifier()
 
-    grid_search.fit(all_inputs, all_classes)
-    log.vprint(f"{bcolors.OKBLUE}GridSearch{bcolors.ENDC}")
-    log.vprint(f"  Best score: {grid_search.best_score_}")
-    log.vprint(f"  Best parameters: {grid_search.best_params_}", end='\n\n')
+        parameter_grid = {'max_depth': [1, 2, 3, 4, 5],
+                          'max_features': [1, 2, 3, 4]}
 
-    # Visualize the grid search to see how the parameters interact.
-    grid_visualization = []
-    grid_visualization.append(grid_search.cv_results_['mean_test_score'])
-    grid_visualization = np.array(grid_visualization)
-    grid_visualization.shape = (5, 4)
-    sb.heatmap(grid_visualization, cmap='Blues')
-    plt.xticks(np.arange(4) + 0.5, grid_search.param_grid['max_features'])
-    plt.yticks(np.arange(5) + 0.5, grid_search.param_grid['max_depth'][::-1])
-    plt.xlabel('max_features')
-    plt.ylabel('max_depth')
-    # plt.show()
-    plt.savefig(f"{workspace}/plots/{o}_model_grid_search.pdf")
-    plt.close("all")
+        # It may not work correctly if the least populated class in y has less mem-
+        # bers than n_splits.
+        cross_validation = StratifiedKFold(n_splits=50)
 
-    ### Parameter tuning ###
-    decision_tree_classifier = DecisionTreeClassifier()
+        grid_search = GridSearchCV(decision_tree_classifier,
+                                   param_grid=parameter_grid,
+                                   cv=cross_validation)
 
-    '''
-    Criterion <https://quantdare.com/decision-trees-gini-vs-entropy/>
-    It is used to evaluate the feature importance.
-        The default one is `gini` but you can also use `entropy`. Based on this,
-        the model will define the importance of each feature for the classification.
+        grid_search.fit(all_inputs, all_classes)
+        log.vprint(f"{bcolors.OKBLUE}GridSearch{bcolors.ENDC}")
+        log.vprint(f"  Best score: {grid_search.best_score_}")
+        log.vprint(
+            f"  Best parameters: {grid_search.best_params_}", end='\n\n')
 
-    Splitter
-    It is used to decide which feature and which threshold is used.
-        Using `best`, the model if taking the feature with the highest importance.
-        Using `random`, the model if taking the feature randomly but with the same distribution.
-    '''
-    parameter_grid = {'criterion': ['gini', 'entropy'],
-                      'splitter': ['best', 'random'],
-                      'max_depth': [1, 2, 3, 4, 5],
-                      'max_features': [1, 2, 3, 4]}
+        decision_tree_classifier = grid_search.best_estimator_
+        log.vprint(
+            f"{decision_tree_classifier} (before parameter tuning)", end='\n\n')
 
-    cross_validation = StratifiedKFold(n_splits=10)
+        # Visualize the grid search to see how the parameters interact.
+        grid_visualization = []
+        grid_visualization.append(grid_search.cv_results_['mean_test_score'])
+        grid_visualization = np.array(grid_visualization)
+        grid_visualization.shape = (5, 4)
+        sb.heatmap(grid_visualization, cmap='Blues')
+        plt.xticks(np.arange(4) + 0.5, grid_search.param_grid['max_features'])
+        plt.yticks(np.arange(5) + 0.5,
+                   grid_search.param_grid['max_depth'][::-1])
+        plt.xlabel('max_features')
+        plt.ylabel('max_depth')
+        # plt.show()
+        plt.savefig(f"{workspace}/plots/{o}_model_grid_search.pdf")
+        plt.close("all")
 
-    grid_search = GridSearchCV(decision_tree_classifier,
-                               param_grid=parameter_grid,
-                               cv=cross_validation)
+        ### Parameter tuning ###
+        decision_tree_classifier = DecisionTreeClassifier()
 
-    grid_search.fit(all_inputs, all_classes)
-    log.vprint(f"{bcolors.OKBLUE}Parameter Tuning{bcolors.ENDC}")
-    log.vprint(f"  Best score: {grid_search.best_score_}")
-    log.vprint(f"  Best parameters: {grid_search.best_params_}", end='\n\n')
+        '''
+        Criterion <https://quantdare.com/decision-trees-gini-vs-entropy/>
+        It is used to evaluate the feature importance.
+            The default one is `gini` but you can also use `entropy`. Based on this,
+            the model will define the importance of each feature for the classification.
 
-    # Then, the best classifer is taken
-    decision_tree_classifier = grid_search.best_estimator_
-    log.vprint(decision_tree_classifier, end='\n\n')
+        Splitter
+        It is used to decide which feature and which threshold is used.
+            Using `best`, the model if taking the feature with the highest importance.
+            Using `random`, the model if taking the feature randomly but with the same distribution.
+        '''
+        parameter_grid = {'criterion': ['gini', 'entropy'],
+                          'splitter': ['best', 'random'],
+                          'max_depth': [1, 2, 3, 4, 5],
+                          'max_features': [1, 2, 3, 4]}
 
-    with open(f"{workspace}/{o}_model_dtc.dot", 'w') as out_file:
-        out_file = tree.export_graphviz(
-            decision_tree_classifier, out_file=out_file)
-    log.vprint(
-        f"{bcolors.OKGREEN}Done! Check generated graph: {bcolors.ENDC}'./{workspace}/{o}_model_dtc.dot'.\n")
+        cross_validation = StratifiedKFold(n_splits=10)
+
+        grid_search = GridSearchCV(decision_tree_classifier,
+                                   param_grid=parameter_grid,
+                                   cv=cross_validation)
+
+        grid_search.fit(all_inputs, all_classes)
+        log.vprint(f"{bcolors.OKBLUE}Parameter Tuning{bcolors.ENDC}")
+        log.vprint(f"  Best score: {grid_search.best_score_}")
+        log.vprint(
+            f"  Best parameters: {grid_search.best_params_}", end='\n\n')
+
+        # Then, the best classifer is taken
+        decision_tree_classifier = grid_search.best_estimator_
+        log.vprint(
+            f"{decision_tree_classifier} (after parameter tuning)", end='\n\n')
+
+        with open(f"{workspace}/{o}_model_dtc.dot", 'w') as out_file:
+            out_file = tree.export_graphviz(
+                decision_tree_classifier, out_file=out_file)
+        log.vprint(
+            f"{bcolors.OKGREEN}Done! Check generated graph: {bcolors.ENDC}'./{workspace}/{o}_model_dtc.dot'.\n")
+
+        ### RandomForestClassifier ###
+        random_forest_classifier = RandomForestClassifier()
+
+        parameter_grid = {'n_estimators': [5, 10, 25, 50],
+                          'criterion': ['gini', 'entropy'],
+                          'max_features': [1, 2, 3, 4],
+                          'warm_start': [True, False]}
+
+        cross_validation = StratifiedKFold(n_splits=10)
+
+        grid_search = GridSearchCV(random_forest_classifier,
+                                   param_grid=parameter_grid,
+                                   cv=cross_validation)
+
+        grid_search.fit(all_inputs, all_classes)
+        log.vprint(f"{bcolors.OKBLUE}RandomForestClassifier{bcolors.ENDC}")
+        log.vprint(f"  Best score: {grid_search.best_score_}")
+        log.vprint(
+            f"  Best parameters: {grid_search.best_params_}", end='\n\n')
+
+        random_forest_classifier = grid_search.best_estimator_
+        log.vprint(random_forest_classifier, end='\n\n')
+
+        ### Performance visuals ###
+        rf_df = pd.DataFrame({'accuracy': cross_val_score(random_forest_classifier, all_inputs, all_classes, cv=10),
+                              'classifier': ['Random Forest'] * 10})
+        dt_df = pd.DataFrame({'accuracy': cross_val_score(decision_tree_classifier, all_inputs, all_classes, cv=10),
+                              'classifier': ['Decision Tree'] * 10})
+        both_df = rf_df.append(dt_df)
+
+        sb.boxplot(x='classifier', y='accuracy', data=both_df)
+        sb.stripplot(x='classifier', y='accuracy',
+                     data=both_df, jitter=True, color='white')
+        # plt.show()
+        plt.savefig(f"{workspace}/plots/{o}_model_classifiers_performance.pdf")
+        plt.close("all")
 
 
 dispatch = {
