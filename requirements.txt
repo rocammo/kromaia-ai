@@ -1,0 +1,10 @@
+conda create -n .venv python
+conda install jupyter
+conda install numpy
+conda install matplotlib
+conda install pandas
+conda install scipy
+conda install seaborn
+conda install scikit-learn
+conda install autopep8
+conda install six

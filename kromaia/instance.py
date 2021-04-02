@@ -10,6 +10,10 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import RadiusNeighborsClassifier
 from sklearn.model_selection import StratifiedKFold
 from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import GridSearchCV
+
+import sklearn.tree as tree
+from six import StringIO
 
 from .util import config
 from .util import io
@@ -29,6 +33,8 @@ def init(args):
     log.verbose = environment["verbose"]
 
     warnings.simplefilter(action='ignore', category=FutureWarning)
+    # Watch out! Some important warnings may go unnoticed.
+    warnings.simplefilter(action='ignore', category=UserWarning)
 
 
 def do(action):
@@ -255,6 +261,7 @@ def train():
     10-fold cross-validation is the most common choice.
     '''
 
+    # DecisionTreeClassifier(max_depth=4)
     decision_tree_classifier = DecisionTreeClassifier()
 
     # cross_val_score returns a list of the scores, which we can visualize
@@ -266,6 +273,84 @@ def train():
     # plt.show()
     plt.savefig(f"{workspace}/plots/{o}_model_cv_scores.pdf")
     plt.close("all")
+
+    ### Grid Search ###
+    '''
+    explore a range of parameters and find the best-performing parameter com-
+    bination. Focus your search on the best range of parameters, then repeat
+    this process several times until the best parameters are discovered.
+    '''
+    decision_tree_classifier = DecisionTreeClassifier()
+
+    parameter_grid = {'max_depth': [1, 2, 3, 4, 5],
+                      'max_features': [1, 2, 3, 4]}
+
+    # It may not work correctly if the least populated class in y has less mem-
+    # bers than n_splits.
+    cross_validation = StratifiedKFold(n_splits=50)
+
+    grid_search = GridSearchCV(decision_tree_classifier,
+                               param_grid=parameter_grid,
+                               cv=cross_validation)
+
+    grid_search.fit(all_inputs, all_classes)
+    log.vprint(f"{bcolors.OKBLUE}GridSearch{bcolors.ENDC}")
+    log.vprint(f"  Best score: {grid_search.best_score_}")
+    log.vprint(f"  Best parameters: {grid_search.best_params_}", end='\n\n')
+
+    # Visualize the grid search to see how the parameters interact.
+    grid_visualization = []
+    grid_visualization.append(grid_search.cv_results_['mean_test_score'])
+    grid_visualization = np.array(grid_visualization)
+    grid_visualization.shape = (5, 4)
+    sb.heatmap(grid_visualization, cmap='Blues')
+    plt.xticks(np.arange(4) + 0.5, grid_search.param_grid['max_features'])
+    plt.yticks(np.arange(5) + 0.5, grid_search.param_grid['max_depth'][::-1])
+    plt.xlabel('max_features')
+    plt.ylabel('max_depth')
+    # plt.show()
+    plt.savefig(f"{workspace}/plots/{o}_model_grid_search.pdf")
+    plt.close("all")
+
+    ### Parameter tuning ###
+    decision_tree_classifier = DecisionTreeClassifier()
+
+    '''
+    Criterion <https://quantdare.com/decision-trees-gini-vs-entropy/>
+    It is used to evaluate the feature importance.
+        The default one is `gini` but you can also use `entropy`. Based on this,
+        the model will define the importance of each feature for the classification.
+
+    Splitter
+    It is used to decide which feature and which threshold is used.
+        Using `best`, the model if taking the feature with the highest importance.
+        Using `random`, the model if taking the feature randomly but with the same distribution.
+    '''
+    parameter_grid = {'criterion': ['gini', 'entropy'],
+                      'splitter': ['best', 'random'],
+                      'max_depth': [1, 2, 3, 4, 5],
+                      'max_features': [1, 2, 3, 4]}
+
+    cross_validation = StratifiedKFold(n_splits=10)
+
+    grid_search = GridSearchCV(decision_tree_classifier,
+                               param_grid=parameter_grid,
+                               cv=cross_validation)
+
+    grid_search.fit(all_inputs, all_classes)
+    log.vprint(f"{bcolors.OKBLUE}Parameter Tuning{bcolors.ENDC}")
+    log.vprint(f"  Best score: {grid_search.best_score_}")
+    log.vprint(f"  Best parameters: {grid_search.best_params_}", end='\n\n')
+
+    # Then, the best classifer is taken
+    decision_tree_classifier = grid_search.best_estimator_
+    log.vprint(decision_tree_classifier, end='\n\n')
+
+    with open(f"{workspace}/{o}_model_dtc.dot", 'w') as out_file:
+        out_file = tree.export_graphviz(
+            decision_tree_classifier, out_file=out_file)
+    log.vprint(
+        f"{bcolors.OKGREEN}Done! Check generated graph: {bcolors.ENDC}'./{workspace}/{o}_model_dtc.dot'.\n")
 
 
 dispatch = {

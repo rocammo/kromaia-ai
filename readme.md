@@ -21,3 +21,14 @@ python -m kromaia <environment> --action model
 ```
 python -m kromaia --help
 ```
+
+## Dependencies
+- jupyter
+- numpy
+- matplotlib
+- pandas
+- scipy
+- seaborn
+- scikit-learn
+- autopep8
+- six
