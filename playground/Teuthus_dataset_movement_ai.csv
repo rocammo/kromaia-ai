@@ -1,0 +1,2 @@
+Name,AIModuleMovementType,Acceleration,MinimumSpeed,MaximumSpeed,ReachDestinationAtFullLinearSpeed,AccelerationAngular,MaximumSpeedAngular,ReachDestinationAtFullAngularSpeed,Fitness
+Teuthus-baseline,6,300,30,1000,0,1,10,0,1

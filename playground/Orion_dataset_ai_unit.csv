@@ -1,0 +1,6 @@
+Name,UnitValue,AIFormationType,AIFormationSeparationMultiplier,AIGroupBehaviourType,AIGroupBehaviourDistance,AIGroupAttackBehaviourType,AIGroupAttackSpeed,AIBehaviourType,AIBehaviourDistance,AIAttackBehaviourType,AIAttackSpeed,Fitness
+Orion-baseline,-1,-1,0,-1,0,-1,0,4,300,0,100,1
+Orion-baseline,-1,-1,0,-1,0,-1,0,4,200,0,100,1
+Orion-baseline,-1,-1,0,-1,0,-1,0,9,100000,0,1000,1
+Orion-baseline,-1,-1,0,-1,0,-1,0,9,100000,0,1000,1
+Orion-baseline,-1,-1,0,-1,0,-1,0,9,100000,0,1000,1

@@ -1,0 +1,2 @@
+Name,UnitValue,AIFormationType,AIFormationSeparationMultiplier,AIGroupBehaviourType,AIGroupBehaviourDistance,AIGroupAttackBehaviourType,AIGroupAttackSpeed,AIBehaviourType,AIBehaviourDistance,AIAttackBehaviourType,AIAttackSpeed,Fitness
+Teuthus-baseline,-1,2,5,-1,0,-1,0,4,175,0,100,1

@@ -1,0 +1,4 @@
+Name,UnitValue,AIFormationType,AIFormationSeparationMultiplier,AIGroupBehaviourType,AIGroupBehaviourDistance,AIGroupAttackBehaviourType,AIGroupAttackSpeed,AIBehaviourType,AIBehaviourDistance,AIAttackBehaviourType,AIAttackSpeed,Fitness
+Vermis-baseline,-1,-1,0,-1,0,-1,0,1,0,200,190,1
+Vermis-baseline,-1,-1,0,-1,0,-1,0,1,0,200,190,1
+Vermis-baseline,-1,-1,0,-1,0,-1,0,4,200,0,190,1

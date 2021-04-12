@@ -1,0 +1,4 @@
+Name,UnitValue,AIFormationType,AIFormationSeparationMultiplier,AIGroupBehaviourType,AIGroupBehaviourDistance,AIGroupAttackBehaviourType,AIGroupAttackSpeed,AIBehaviourType,AIBehaviourDistance,AIAttackBehaviourType,AIAttackSpeed,Fitness
+Argos-baseline,-1,2,5,-1,0,-1,0,4,200,0,100,1
+Argos-baseline,-1,2,5,-1,0,-1,0,4,100,0,50,1
+Argos-baseline,-1,2,5,-1,0,-1,0,4,200,0,100,1

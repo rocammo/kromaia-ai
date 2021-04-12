@@ -1,0 +1,2 @@
+Name,AIModuleMovementType,Acceleration,MinimumSpeed,MaximumSpeed,ReachDestinationAtFullLinearSpeed,AccelerationAngular,MaximumSpeedAngular,ReachDestinationAtFullAngularSpeed,Fitness
+Orion-baseline,6,30,0,1000,0,3,3,0,1
