@@ -1,0 +1,53 @@
+<Weapon WeaponType="0">
+
+    <ObjectData ScaleX="0.3" ScaleY="0.3" ScaleZ="0.3"
+                PositionX="-0.47" PositionY="0" PositionZ="0"
+                OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+    <ComponentData HullIndexParent="3"
+                    LocalDirectionX="-1" LocalDirectionY="0" LocalDirectionZ="0" />
+
+    <MobileObjects Number="1" MobilityType="3">
+        <MobileObject ModelFileName="turret_II_0.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+    </MobileObjects>
+
+    <Cannons Number="1" FiringTurnMaximum="14" >
+        <WeaponCannon>
+            <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="4" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="1.25"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+    </Cannons>
+
+</Weapon>
+
+
+
+<Weapon WeaponType="3">
+
+    <ObjectData ScaleX="1" ScaleY="1" ScaleZ="1"
+                PositionX="0" PositionY="0" PositionZ="0"
+                OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+    <ComponentData HullIndexParent="8"
+                    LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+
+    <Cannons Number="3" FiringTurnMaximum="0" >
+        <WeaponCannon>
+            <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="-0.75"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="-1" />
+        </WeaponCannon>
+
+        <WeaponCannon>
+            <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0.3" FiringPositionY="0" FiringPositionZ="-0.75"
+                            FiringDirectionX="1" FiringDirectionY="0" FiringDirectionZ="-1" />
+        </WeaponCannon>
+
+        <WeaponCannon>
+            <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="-0.3" FiringPositionY="0" FiringPositionZ="-0.75"
+                            FiringDirectionX="-1" FiringDirectionY="0" FiringDirectionZ="-1" />
+        </WeaponCannon>
+    </Cannons>
+
+</Weapon>
