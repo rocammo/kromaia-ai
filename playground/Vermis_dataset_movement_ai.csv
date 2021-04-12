@@ -1,2 +1,2 @@
-Name,AIModuleMovementType,Acceleration,MinimumSpeed,MaximumSpeed,ReachDestinationAtFullLinearSpeed,AccelerationAngular,MaximumSpeedAngular,ReachDestinationAtFullAngularSpeed
-Vermis-baseline,4,300,50,100,0,5,5,0
+Name,AIModuleMovementType,Acceleration,MinimumSpeed,MaximumSpeed,ReachDestinationAtFullLinearSpeed,AccelerationAngular,MaximumSpeedAngular,ReachDestinationAtFullAngularSpeed,Fitness
+Vermis-baseline,4,300,50,100,0,5,5,0,1
