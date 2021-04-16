@@ -1,0 +1,9 @@
+Name,HullIndexParent,ScaleX,ScaleY,ScaleZ,PositionX,PositionY,PositionZ,OrientationW,OrientationX,OrientationY,OrientationZ,LocalDirectionX,LocalDirectionY,LocalDirectionZ,Fitness
+Vermis-baseline,3,0.3,0.3,0.3,-0.47,0.0,0.0,1.0,0.0,0.0,0.0,-1.0,0.0,0.0,1
+Vermis-baseline,3,0.3,0.3,0.3,0.47,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,1
+Vermis-baseline,5,0.3,0.3,0.3,-0.64,0.0,0.0,1.0,0.0,0.0,0.0,-1.0,0.0,0.0,1
+Vermis-baseline,5,0.3,0.3,0.3,0.64,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,1
+Vermis-baseline,7,0.3,0.3,0.3,-0.94,0.0,0.0,1.0,0.0,0.0,0.0,-1.0,0.0,0.0,1
+Vermis-baseline,7,0.3,0.3,0.3,0.94,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,1
+Vermis-baseline,8,1.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1
+Vermis-baseline,0,1.0,1.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1
