@@ -1,5 +1,6 @@
 import random
 import numpy as np
+import csv
 
 
 ''' Subjects a given value to a mutation process.
