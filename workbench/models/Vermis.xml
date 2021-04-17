@@ -1,0 +1,2366 @@
+<?xml version="1.0" ?>
+<COMPOUND>
+  <!--***************************************************************************************************************-->
+  <GENERAL LinearVelocityLossPerSecond="0" AngularVelocityLossPerSecond="0" InitialScaleX="50" InitialScaleY="50" InitialScaleZ="50"
+           DestructionDelay="-1" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+           EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+  <!--***************************************************************************************************************-->
+  <HULL Number="64">
+
+   <!-- Segment #0 ***************************************************************************************************************-->
+
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vermis0-1.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="COMPOUND" ObjectMass="1.0" ObjectMaterial="5">
+        <CollisionComponents Number="11">
+          <!--Eyes ********************************************************************************************************-->
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="SPHEROID"
+                                    ComponentScaleX="0.055919" ComponentScaleY="0.055919" ComponentScaleZ="0.055919"
+                                    ComponentLocalPositionX="-0.001373" ComponentLocalPositionY="0.372154" ComponentLocalPositionZ="0.646081"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="SPHEROID"
+                                    ComponentScaleX="0.055919" ComponentScaleY="0.055919" ComponentScaleZ="0.055919"
+                                    ComponentLocalPositionX="-0.320824" ComponentLocalPositionY="-0.185028" ComponentLocalPositionZ="0.646081"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="SPHEROID"
+                                    ComponentScaleX="0.055919" ComponentScaleY="0.055919" ComponentScaleZ="0.055919"
+                                    ComponentLocalPositionX="0.320824" ComponentLocalPositionY="-0.185028" ComponentLocalPositionZ="0.646081"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <!--Head upper parts ********************************************************************************************************-->
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis0_0.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.334123" ComponentLocalPositionY="0.334123" ComponentLocalPositionZ="0.323225"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis0_1.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.297257" ComponentLocalPositionY="0.340285" ComponentLocalPositionZ="0.353317"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis0_2.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.358137" ComponentLocalPositionY="0.358137" ComponentLocalPositionZ="-0.420714"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis0_3.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.333324" ComponentLocalPositionY="0.377508" ComponentLocalPositionZ="-0.412555"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <!--Head lower parts ********************************************************************************************************-->
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis0_4.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.320894" ComponentLocalPositionY="-0.360657" ComponentLocalPositionZ="0.30384"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis0_5.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.334101" ComponentLocalPositionY="-0.334123" ComponentLocalPositionZ="0.323225"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis0_6.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.3528" ComponentLocalPositionY="-0.3528" ComponentLocalPositionZ="-0.453872"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis0_7.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.358137" ComponentLocalPositionY="-0.358137" ComponentLocalPositionZ="-0.420714"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+        </CollisionComponents>
+      </PhysicalObjectData>
+      <AliveObjectData ObjectMaximumLife="1000" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000010000000010000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="1" />
+    </Hull>
+
+   <!-- Segment #1 ***************************************************************************************************************-->
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="vermis1-1.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="-1.850857"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="COMPOUND" ObjectMass="0.05" ObjectMaterial="5">
+        <CollisionComponents Number="8">
+          <!--Head upper parts ********************************************************************************************************-->
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis1_0.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.30054" ComponentLocalPositionY="0.322921" ComponentLocalPositionZ="0.432234"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis1_1.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.310003" ComponentLocalPositionY="0.330672" ComponentLocalPositionZ="0.393296"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis1_2.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.30054" ComponentLocalPositionY="0.322921" ComponentLocalPositionZ="-0.439986"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis1_3.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.329114" ComponentLocalPositionY="0.293565" ComponentLocalPositionZ="-0.439986"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <!--Head lower parts ********************************************************************************************************-->
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis1_4.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.321107" ComponentLocalPositionY="-0.290724" ComponentLocalPositionZ="0.432234"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis1_5.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.30054" ComponentLocalPositionY="-0.322921" ComponentLocalPositionZ="0.432234"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis1_6.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.310003" ComponentLocalPositionY="-0.330672" ComponentLocalPositionZ="-0.401048"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis1_7.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.30054" ComponentLocalPositionY="-0.322921" ComponentLocalPositionZ="-0.439986"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+        </CollisionComponents>
+      </PhysicalObjectData>
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+
+   <!-- Segment #2 ***************************************************************************************************************-->
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="vermis2-1.mesh" ScaleX="1.24" ScaleY="1.24" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="-3.81416"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="COMPOUND" ObjectMass="0.045" ObjectMaterial="5">
+        <CollisionComponents Number="8">
+          <!--Head upper parts ********************************************************************************************************-->
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis2_0.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.21848" ComponentLocalPositionY="0.234726" ComponentLocalPositionZ="0.453307"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis2_1.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.227336" ComponentLocalPositionY="0.221657" ComponentLocalPositionZ="0.469479"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis2_2.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.210161" ComponentLocalPositionY="0.222964" ComponentLocalPositionZ="-0.508919"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis2_3.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.239158" ComponentLocalPositionY="0.21339" ComponentLocalPositionZ="-0.452317"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <!--Head lower parts ********************************************************************************************************-->
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis2_4.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.233428" ComponentLocalPositionY="-0.211277" ComponentLocalPositionZ="0.453307"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis2_5.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.234657" ComponentLocalPositionY="-0.218411" ComponentLocalPositionZ="0.453307"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis2_6.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.227425" ComponentLocalPositionY="-0.221609" ComponentLocalPositionZ="-0.468489"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis2_7.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.234657" ComponentLocalPositionY="-0.218411" ComponentLocalPositionZ="-0.452317"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+        </CollisionComponents>
+      </PhysicalObjectData>
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+   <!-- Segment #3 ***************************************************************************************************************-->
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="vermis3-1.mesh" ScaleX="1.5" ScaleY="1.5" ScaleZ="0.93"
+                  PositionX="0" PositionY="0" PositionZ="-5.792092"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="COMPOUND" ObjectMass="0.04" ObjectMaterial="5">
+        <CollisionComponents Number="6">
+          <!--First row ********************************************************************************************************-->
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis3_0.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.008845" ComponentLocalPositionY="-0.008748" ComponentLocalPositionZ="0.712269"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <!--Second row ********************************************************************************************************-->
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis3_1.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.19084" ComponentLocalPositionY="-0.011647" ComponentLocalPositionZ="0.185247"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis3_2.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.180651" ComponentLocalPositionY="-0.008819" ComponentLocalPositionZ="0.22402"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <!--Third row ********************************************************************************************************-->
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis3_3.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.177098" ComponentLocalPositionY="-0.012807" ComponentLocalPositionZ="-0.245561"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis3_4.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.17805" ComponentLocalPositionY="0.034204" ComponentLocalPositionZ="-0.215404"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <!--Fourth row ********************************************************************************************************-->
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis3_5.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.008227" ComponentLocalPositionY="-0.009854" ComponentLocalPositionZ="-0.680676"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+        </CollisionComponents>
+      </PhysicalObjectData>
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+   <!-- Segment #4 ***************************************************************************************************************-->
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="vermis1-1.mesh" ScaleX="0.74" ScaleY="0.74" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="-7.736513"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="COMPOUND" ObjectMass="0.035" ObjectMaterial="5">
+        <CollisionComponents Number="8">
+          <!--Head upper parts ********************************************************************************************************-->
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis1_0.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.30054" ComponentLocalPositionY="0.322921" ComponentLocalPositionZ="0.432234"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis1_1.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.310003" ComponentLocalPositionY="0.330672" ComponentLocalPositionZ="0.393296"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis1_2.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.30054" ComponentLocalPositionY="0.322921" ComponentLocalPositionZ="-0.439986"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis1_3.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.329114" ComponentLocalPositionY="0.293565" ComponentLocalPositionZ="-0.439986"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <!--Head lower parts ********************************************************************************************************-->
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis1_4.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.321107" ComponentLocalPositionY="-0.290724" ComponentLocalPositionZ="0.432234"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis1_5.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.30054" ComponentLocalPositionY="-0.322921" ComponentLocalPositionZ="0.432234"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis1_6.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.310003" ComponentLocalPositionY="-0.330672" ComponentLocalPositionZ="-0.401048"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis1_7.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.30054" ComponentLocalPositionY="-0.322921" ComponentLocalPositionZ="-0.439986"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+        </CollisionComponents>
+      </PhysicalObjectData>
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+   <!-- Segment #5 ***************************************************************************************************************-->
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="vermis2-1.mesh" ScaleX="0.93" ScaleY="0.93" ScaleZ="0.93"
+                  PositionX="0" PositionY="0" PositionZ="-9.630841"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="COMPOUND" ObjectMass="0.03" ObjectMaterial="5">
+        <CollisionComponents Number="8">
+          <!--Head upper parts ********************************************************************************************************-->
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis2_0.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.21848" ComponentLocalPositionY="0.234726" ComponentLocalPositionZ="0.453307"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis2_1.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.227336" ComponentLocalPositionY="0.221657" ComponentLocalPositionZ="0.469479"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis2_2.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.210161" ComponentLocalPositionY="0.222964" ComponentLocalPositionZ="-0.508919"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis2_3.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.239158" ComponentLocalPositionY="0.21339" ComponentLocalPositionZ="-0.452317"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <!--Head lower parts ********************************************************************************************************-->
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis2_4.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.233428" ComponentLocalPositionY="-0.211277" ComponentLocalPositionZ="0.453307"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis2_5.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.234657" ComponentLocalPositionY="-0.218411" ComponentLocalPositionZ="0.453307"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis2_6.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.227425" ComponentLocalPositionY="-0.221609" ComponentLocalPositionZ="-0.468489"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis2_7.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.234657" ComponentLocalPositionY="-0.218411" ComponentLocalPositionZ="-0.452317"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+        </CollisionComponents>
+      </PhysicalObjectData>
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+   <!-- Segment #6 ***************************************************************************************************************-->
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="vermis3-1.mesh" ScaleX="1.14" ScaleY="1.14" ScaleZ="0.84"
+                  PositionX="0" PositionY="0" PositionZ="-11.460143"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="COMPOUND" ObjectMass="0.025" ObjectMaterial="5">
+        <CollisionComponents Number="6">
+          <!--First row ********************************************************************************************************-->
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis3_0.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.008845" ComponentLocalPositionY="-0.008748" ComponentLocalPositionZ="0.712269"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <!--Second row ********************************************************************************************************-->
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis3_1.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.19084" ComponentLocalPositionY="-0.011647" ComponentLocalPositionZ="0.185247"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis3_2.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.180651" ComponentLocalPositionY="-0.008819" ComponentLocalPositionZ="0.22402"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <!--Third row ********************************************************************************************************-->
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis3_3.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.177098" ComponentLocalPositionY="-0.012807" ComponentLocalPositionZ="-0.245561"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis3_4.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.17805" ComponentLocalPositionY="0.034204" ComponentLocalPositionZ="-0.215404"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <!--Fourth row ********************************************************************************************************-->
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis3_5.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.008227" ComponentLocalPositionY="-0.009854" ComponentLocalPositionZ="-0.680676"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+        </CollisionComponents>
+      </PhysicalObjectData>
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+   <!-- Segment #7 ***************************************************************************************************************-->
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="vermis1-1.mesh" ScaleX="0.53" ScaleY="0.53" ScaleZ="0.86"
+                  PositionX="0" PositionY="0" PositionZ="-13.193"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="COMPOUND" ObjectMass="0.02" ObjectMaterial="5">
+        <CollisionComponents Number="8">
+          <!--Head upper parts ********************************************************************************************************-->
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis1_0.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.30054" ComponentLocalPositionY="0.322921" ComponentLocalPositionZ="0.432234"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis1_1.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.310003" ComponentLocalPositionY="0.330672" ComponentLocalPositionZ="0.393296"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis1_2.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.30054" ComponentLocalPositionY="0.322921" ComponentLocalPositionZ="-0.439986"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis1_3.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.329114" ComponentLocalPositionY="0.293565" ComponentLocalPositionZ="-0.439986"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <!--Head lower parts ********************************************************************************************************-->
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis1_4.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.321107" ComponentLocalPositionY="-0.290724" ComponentLocalPositionZ="0.432234"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis1_5.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.30054" ComponentLocalPositionY="-0.322921" ComponentLocalPositionZ="0.432234"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis1_6.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.310003" ComponentLocalPositionY="-0.330672" ComponentLocalPositionZ="-0.401048"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis1_7.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.30054" ComponentLocalPositionY="-0.322921" ComponentLocalPositionZ="-0.439986"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+        </CollisionComponents>
+      </PhysicalObjectData>
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+   <!-- Segment #8 ***************************************************************************************************************-->
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="vermis2-1.mesh" ScaleX="0.6" ScaleY="0.6" ScaleZ="0.75"
+                  PositionX="0" PositionY="0" PositionZ="-14.799787"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="COMPOUND" ObjectMass="0.03" ObjectMaterial="5">
+        <CollisionComponents Number="8">
+          <!--Head upper parts ********************************************************************************************************-->
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis2_0.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.21848" ComponentLocalPositionY="0.234726" ComponentLocalPositionZ="0.453307"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis2_1.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.227336" ComponentLocalPositionY="0.221657" ComponentLocalPositionZ="0.469479"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis2_2.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.210161" ComponentLocalPositionY="0.222964" ComponentLocalPositionZ="-0.508919"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis2_3.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.239158" ComponentLocalPositionY="0.21339" ComponentLocalPositionZ="-0.452317"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <!--Head lower parts ********************************************************************************************************-->
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis2_4.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.233428" ComponentLocalPositionY="-0.211277" ComponentLocalPositionZ="0.453307"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis2_5.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.234657" ComponentLocalPositionY="-0.218411" ComponentLocalPositionZ="0.453307"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis2_6.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="-0.227425" ComponentLocalPositionY="-0.221609" ComponentLocalPositionZ="-0.468489"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="vermis2_7.obj"
+                                    ComponentScaleX="1" ComponentScaleY="1" ComponentScaleZ="1"
+                                    ComponentLocalPositionX="0.234657" ComponentLocalPositionY="-0.218411" ComponentLocalPositionZ="-0.452317"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+        </CollisionComponents>
+      </PhysicalObjectData>
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+
+   <!-- Front disc ***************************************************************************************************************-->
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="vermis7-1.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="0.8008"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="vermis7-1.obj" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+
+
+    
+    
+    
+      
+      
+      
+   <!-- Global capsule ***************************************************************************************************************-->
+
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vermis10-0.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="2.276"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="vermis10-0.obj" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="0" />
+    </Hull>
+    <Hull HullType="0">
+      <ObjectData ModelFileName="vermis10-1.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="0.696"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="vermis10-1.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+    <Hull HullType="0">
+      <ObjectData ModelFileName="vermis10-2.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="-5.366" PositionY="0" PositionZ="-1.617"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="vermis10-2.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+    <Hull HullType="0">
+      <ObjectData ModelFileName="vermis10-2.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="5.366" PositionY="0" PositionZ="-1.617"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="vermis10-2.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+    <Hull HullType="0">
+      <ObjectData ModelFileName="vermis10-4.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="-19.752"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="vermis10-4.obj" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+    <Hull HullType="0">
+      <ObjectData ModelFileName="vermis10-5.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="1.952" PositionZ="-9.5"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="vermis10-5.obj" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+    <Hull HullType="0">
+      <ObjectData ModelFileName="vermis10-6.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="-1.3" PositionY="1.3" PositionZ="-9.5"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="vermis10-6.obj" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+    <Hull HullType="0">
+      <ObjectData ModelFileName="vermis10-5.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="-1.952" PositionY="0" PositionZ="-9.5"
+                  OrientationW="0.7071" OrientationX="0" OrientationY="0" OrientationZ="0.7071" />
+      <PhysicalObjectData CollisionModelFileName="vermis10-5.obj" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+    <Hull HullType="0">
+      <ObjectData ModelFileName="vermis10-6.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="-1.3" PositionY="-1.3" PositionZ="-9.5"
+                  OrientationW="0.7071" OrientationX="0" OrientationY="0" OrientationZ="0.7071" />
+      <PhysicalObjectData CollisionModelFileName="vermis10-6.obj" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+    <Hull HullType="0">
+      <ObjectData ModelFileName="vermis10-5.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="-1.952" PositionZ="-9.5"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="vermis10-5.obj" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+    <Hull HullType="0">
+      <ObjectData ModelFileName="vermis10-6.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="1.3" PositionY="-1.3" PositionZ="-9.5"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="vermis10-6.obj" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+    <Hull HullType="0">
+      <ObjectData ModelFileName="vermis10-5.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="1.952" PositionY="0" PositionZ="-9.5"
+                  OrientationW="0.7071" OrientationX="0" OrientationY="0" OrientationZ="-0.7071" />
+      <PhysicalObjectData CollisionModelFileName="vermis10-5.obj" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+    <Hull HullType="0">
+      <ObjectData ModelFileName="vermis10-6.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="1.3" PositionY="1.3" PositionZ="-9.5"
+                  OrientationW="0" OrientationX="1" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="vermis10-6.obj" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+      
+    
+    
+      
+
+
+      
+      
+      
+
+      
+    
+    
+      
+
+
+      
+
+
+
+
+
+
+   <!-- Armor For Segment #1 ***************************************************************************************************************-->
+    <!-- Hull "23" -->
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vermis9-0.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0.412" PositionZ="-0.775"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="vermis9-0.obj" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="1" />
+    </Hull>
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vermis9-0.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="-0.412" PositionZ="-0.775"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="vermis9-0.obj" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="1" />
+    </Hull>
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vermis9-0.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0.412" PositionZ="-2.725"
+                  OrientationW="0" OrientationX="0" OrientationY="1" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="vermis9-0.obj" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="1" />
+    </Hull>
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vermis9-0.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="-0.412" PositionZ="-2.725"
+                  OrientationW="0" OrientationX="1" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="vermis9-0.obj" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="1" />
+    </Hull>
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vermis9-4.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="1.291" PositionZ="-1.430"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="vermis9-4.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="1" />
+    </Hull>
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vermis9-5.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="-0.903" PositionY="0.873" PositionZ="-1.878"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="vermis9-5.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="1" />
+    </Hull>
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vermis9-6.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="-0.976" PositionY="0" PositionZ="-1.750"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="vermis9-6.obj" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="1" />
+    </Hull>
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vermis9-7.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="-0.903" PositionY="-0.873" PositionZ="-1.878"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="vermis9-7.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="1" />
+    </Hull>
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vermis9-4.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="-1.291" PositionZ="-1.430"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="vermis9-4.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="1" />
+    </Hull>
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vermis9-5.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0.903" PositionY="-0.873" PositionZ="-1.878"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="vermis9-5.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="1" />
+    </Hull>
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vermis9-6.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0.976" PositionY="0" PositionZ="-1.750"
+                  OrientationW="0" OrientationX="0" OrientationY="1" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="vermis9-6.obj" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="1" />
+    </Hull>
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vermis9-7.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0.903" PositionY="0.873" PositionZ="-1.878"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="vermis9-7.bcs" ObjectMass="0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="1" />
+    </Hull>
+
+   <!-- Scales for Segment #1 ***************************************************************************************************************-->
+   <!-- Hull "35" -->
+
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vermis5-1.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0.6" PositionZ="-1.650857"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="vermis5-1.bcs" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="10" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000010000000010000000010000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="0" />
+    </Hull>
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vermis5-1.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="-0.6" PositionZ="-1.650857"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="vermis5-1.bcs" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="10" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000010000000010000000010000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="0" />
+    </Hull>
+    
+    
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vermis5-1.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="-0.6" PositionY="0" PositionZ="-1.650857"
+                  OrientationW="0.7071" OrientationX="0" OrientationY="0" OrientationZ="0.7071" />
+      <PhysicalObjectData CollisionModelFileName="vermis5-1.bcs" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="10" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000010000000010000000010000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="0" />
+    </Hull>
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vermis5-1.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0.6" PositionY="0" PositionZ="-1.650857"
+                  OrientationW="0.7071" OrientationX="0" OrientationY="0" OrientationZ="-0.7071" />
+      <PhysicalObjectData CollisionModelFileName="vermis5-1.bcs" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="10" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000010000000010000000010000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="0" />
+    </Hull>
+
+   <!-- Scales for Segment #2 ***************************************************************************************************************-->
+
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vermis5-1.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0.57" PositionZ="-3.81416"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="vermis5-1.bcs" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="10" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000010000000010000000010000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="0" />
+    </Hull>
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vermis5-1.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="-0.57" PositionZ="-3.81416"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="vermis5-1.bcs" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="10" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000010000000010000000010000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="0" />
+    </Hull>
+   <!-- Scales for Segment #4 ***************************************************************************************************************-->
+
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vermis5-1.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0.46" PositionZ="-7.736513"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="vermis5-1.bcs" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="10" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000010000000010000000010000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="0" />
+    </Hull>
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vermis5-1.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="-0.46" PositionZ="-7.736513"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="vermis5-1.bcs" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="10" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000010000000010000000010000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="0" />
+    </Hull>
+   <!-- Scales for Segment #6 ***************************************************************************************************************-->
+
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vermis5-1.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0.38" PositionZ="-11.460143"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="vermis5-1.bcs" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="10" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000010000000010000000010000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="0" />
+    </Hull>
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vermis5-1.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="-0.38" PositionZ="-11.460143"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="vermis5-1.bcs" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="10" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000010000000010000000010000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="0" />
+    </Hull>
+   <!-- Scales for Segment #8 ***************************************************************************************************************-->
+
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vermis5-1.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0.27" PositionZ="-14.799787"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="vermis5-1.bcs" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="10" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000010000000010000000010000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="0" />
+    </Hull>
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vermis5-1.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="-0.27" PositionZ="-14.799787"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="vermis5-1.bcs" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="10" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000010000000010000000010000" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="0" />
+    </Hull>
+
+    <!-- Weak points for Segment #1 ***************************************************************************************************************-->
+    <!-- Hull "47" -->
+    
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vitalcore.mesh" ScaleX="0.2" ScaleY="0.2" ScaleZ="0.2"
+                  PositionX="0" PositionY="0.5" PositionZ="-2.2"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000010000000010010" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="2" />
+    </Hull>
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vitalcore.mesh" ScaleX="0.2" ScaleY="0.2" ScaleZ="0.2"
+                  PositionX="0" PositionY="-0.5" PositionZ="-2.2"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000010000000010010" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="2" />
+    </Hull>
+    
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vitalcore.mesh" ScaleX="0.2" ScaleY="0.2" ScaleZ="0.2"
+                  PositionX="-0.5" PositionY="0" PositionZ="-2.2"
+                  OrientationW="0.7071" OrientationX="0" OrientationY="0" OrientationZ="-0.7071" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000010000000010010" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="2" />
+    </Hull>
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vitalcore.mesh" ScaleX="0.2" ScaleY="0.2" ScaleZ="0.2"
+                  PositionX="0.5" PositionY="0" PositionZ="-2.2"
+                  OrientationW="0.7071" OrientationX="0" OrientationY="0" OrientationZ="0.7071" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000010000000010010" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="2" />
+    </Hull>    
+    
+   <!-- Weak points for Segment #2 ***************************************************************************************************************-->
+
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vitalcore.mesh" ScaleX="0.2" ScaleY="0.2" ScaleZ="0.2"
+                  PositionX="0" PositionY="0.45" PositionZ="-4.1"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000010000000010010" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="2" />
+    </Hull>
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vitalcore.mesh" ScaleX="0.2" ScaleY="0.2" ScaleZ="0.2"
+                  PositionX="0" PositionY="-0.45" PositionZ="-4.1"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000010000000010010" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="2" />
+    </Hull>
+   <!-- Weak points for Segment #4 ***************************************************************************************************************-->
+
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vitalcore.mesh" ScaleX="0.2" ScaleY="0.2" ScaleZ="0.2"
+                  PositionX="0" PositionY="0.4" PositionZ="-8.0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000010000000010010" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="2" />
+    </Hull>
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vitalcore.mesh" ScaleX="0.2" ScaleY="0.2" ScaleZ="0.2"
+                  PositionX="0" PositionY="-0.4" PositionZ="-8.0"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000010000000010010" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="2" />
+    </Hull>
+   <!-- Weak points for Segment #6 ***************************************************************************************************************-->
+
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vitalcore.mesh" ScaleX="0.2" ScaleY="0.2" ScaleZ="0.2"
+                  PositionX="0" PositionY="0.31" PositionZ="-11.860143"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000010000000010010" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="2" />
+    </Hull>
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vitalcore.mesh" ScaleX="0.2" ScaleY="0.2" ScaleZ="0.2"
+                  PositionX="0" PositionY="-0.31" PositionZ="-11.860143"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000010000000010010" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="2" />
+    </Hull>
+   <!-- Weak points for Segment #8 ***************************************************************************************************************-->
+
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vitalcore.mesh" ScaleX="0.2" ScaleY="0.2" ScaleZ="0.2"
+                  PositionX="0" PositionY="0.19" PositionZ="-15.1"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000010000000010010" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="2" />
+    </Hull>
+    <Hull HullType="1">
+      <ObjectData ModelFileName="vitalcore.mesh" ScaleX="0.2" ScaleY="0.2" ScaleZ="0.2"
+                  PositionX="0" PositionY="-0.19" PositionZ="-15.1"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000010000000010010" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="2" />
+    </Hull>
+   
+    <!-- Turrets for Global capsule ***************************************************************************************************************-->
+    <!-- Hull "59" -->
+    <Hull HullType="1">
+      <ObjectData ModelFileName="dummy0.mesh" ScaleX="0.7" ScaleY="0.7" ScaleZ="0.7"
+                  PositionX="0" PositionY="0" PositionZ="3.1"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="50" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000010000000010010" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="0" />
+    </Hull>
+
+
+   <!-- Shotguns for Global capsule ***************************************************************************************************************-->
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="shotgun_II_0.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="-5.45" PositionY="0" PositionZ="1.46"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="shotgun_II.obj" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="50" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000010000000010010" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+    <Hull HullType="0">
+      <ObjectData ModelFileName="shotgun_II_0.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="5.45" PositionY="0" PositionZ="1.46"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="shotgun_II.obj" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="50" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000010000000010010" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+   <!-- Fixed semispheres for Global capsule ***************************************************************************************************************-->
+
+    <Hull HullType="1">
+      <ObjectData ModelFileName="dummy0.mesh" ScaleX="0.4" ScaleY="0.4" ScaleZ="0.4"
+                  PositionX="-1.89" PositionY="0" PositionZ="1.8"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="50" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000010000000010010" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="0" />
+    </Hull>
+
+    <Hull HullType="1">
+      <ObjectData ModelFileName="dummy0.mesh" ScaleX="0.4" ScaleY="0.4" ScaleZ="0.4"
+                  PositionX="1.89" PositionY="0" PositionZ="1.8"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMass="-0.01" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="50" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000010000000010010" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <HullVitalData VitalCoreModelFileName="" VitalHullLayer="0" />
+    </Hull>
+    
+    
+    
+    
+      
+
+
+
+     <!--***************************************************************************************************************-->
+     <LINKS Number="38"> <!--<LINKS Number="63">-->
+
+      <!-- Body links ***************************************************************************************************************-->        
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="0" HullIndexSecond="1" 
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0" PositionFirstY="0" PositionFirstZ="-0.802"
+                      PositionSecondX="0" PositionSecondY="0" PositionSecondZ="-0.982513"
+                      RopeType="1" RopeElements="1" RopeMass="0" />
+      </Link>
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="1" HullIndexSecond="2" 
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0" PositionFirstY="0" PositionFirstZ="-2.726954"
+                      PositionSecondX="0" PositionSecondY="0" PositionSecondZ="-2.908535"
+                      RopeType="1" RopeElements="1" RopeMass="0" />
+      </Link>
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="2" HullIndexSecond="3" 
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0" PositionFirstY="0" PositionFirstZ="-4.719784"
+                      PositionSecondX="0" PositionSecondY="0" PositionSecondZ="-4.894632"
+                      RopeType="1" RopeElements="1" RopeMass="0" />
+      </Link>
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="3" HullIndexSecond="4" 
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0" PositionFirstY="0" PositionFirstZ="-6.68955"
+                      PositionSecondX="0" PositionSecondY="0" PositionSecondZ="-6.868169"
+                      RopeType="1" RopeElements="1" RopeMass="0" />
+      </Link>
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="4" HullIndexSecond="5" 
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0" PositionFirstY="0" PositionFirstZ="-8.612609"
+                      PositionSecondX="0" PositionSecondY="0" PositionSecondZ="-8.788611"
+                      RopeType="1" RopeElements="1" RopeMass="0" />
+      </Link>
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="5" HullIndexSecond="6" 
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0" PositionFirstY="0" PositionFirstZ="-10.473073"
+                      PositionSecondX="0" PositionSecondY="0" PositionSecondZ="-10.649534"
+                      RopeType="1" RopeElements="1" RopeMass="0" />
+      </Link>
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="6" HullIndexSecond="7" 
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0" PositionFirstY="0" PositionFirstZ="-12.27075"
+                      PositionSecondX="0" PositionSecondY="0" PositionSecondZ="-12.445945"
+                      RopeType="1" RopeElements="1" RopeMass="0" />
+      </Link>
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="7" HullIndexSecond="8" 
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0" PositionFirstY="0" PositionFirstZ="-13.946164"
+                      PositionSecondX="0" PositionSecondY="0" PositionSecondZ="-14.120568"
+                      RopeType="1" RopeElements="1" RopeMass="0" />
+      </Link>
+      <Link LinkType="3">
+        <LinkData HullIndexFirst="0" HullIndexSecond="9" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkMovableData LinkMovementType="0" LinkMovementFunctionType="1" LinkMovementControlState="0"
+                         MovementDistancePositive="-1" MovementDistanceNegative="-1" MovementSpeed="180" InitialOffsetPercentage="0"
+                         MovementAxisX="0" MovementAxisY="0" MovementAxisZ="1" />
+      </Link>
+    
+    
+      <!-- Global capsule links ***************************************************************************************************************-->        
+      <!--<Link LinkType="0">
+        <LinkData HullIndexFirst="0" HullIndexSecond="10" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="10" HullIndexSecond="11" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="10" HullIndexSecond="12" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="10" HullIndexSecond="13" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="10" HullIndexSecond="14" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="10" HullIndexSecond="15" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>    
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="10" HullIndexSecond="17" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="10" HullIndexSecond="19" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="10" HullIndexSecond="21" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="10" HullIndexSecond="16" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="10" HullIndexSecond="18" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="10" HullIndexSecond="20" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="10" HullIndexSecond="22" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>-->    
+
+      <!-- Torax Armor links ***************************************************************************************************************-->        
+      <!--<Link LinkType="0">
+        <LinkData HullIndexFirst="1" HullIndexSecond="23" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="1" HullIndexSecond="24" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="1" HullIndexSecond="25" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="1" HullIndexSecond="26" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="1" HullIndexSecond="27" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link> 
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="1" HullIndexSecond="28" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="1" HullIndexSecond="29" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="1" HullIndexSecond="30" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="1" HullIndexSecond="31" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="1" HullIndexSecond="32" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="1" HullIndexSecond="33" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="1" HullIndexSecond="34" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>--> 
+      
+      <!-- Scales links ***************************************************************************************************************-->        
+      <Link LinkType="3">
+        <LinkData HullIndexFirst="1" HullIndexSecond="35" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkMovableData LinkMovementType="0" LinkMovementFunctionType="1" LinkMovementControlState="0"
+                         MovementDistancePositive="15" MovementDistanceNegative="0" MovementSpeed="15" InitialOffsetPercentage="2"
+                         MovementAxisX="1" MovementAxisY="0" MovementAxisZ="0" />
+      </Link>
+      <Link LinkType="3">
+        <LinkData HullIndexFirst="1" HullIndexSecond="36" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkMovableData LinkMovementType="0" LinkMovementFunctionType="1" LinkMovementControlState="0"
+                         MovementDistancePositive="15" MovementDistanceNegative="0" MovementSpeed="15" InitialOffsetPercentage="2"
+                         MovementAxisX="1" MovementAxisY="0" MovementAxisZ="0" />
+      </Link>
+      <Link LinkType="3">
+        <LinkData HullIndexFirst="1" HullIndexSecond="37" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkMovableData LinkMovementType="0" LinkMovementFunctionType="1" LinkMovementControlState="0"
+                         MovementDistancePositive="15" MovementDistanceNegative="0" MovementSpeed="15" InitialOffsetPercentage="2"
+                         MovementAxisX="1" MovementAxisY="0" MovementAxisZ="0" />
+      </Link>
+      <Link LinkType="3">
+        <LinkData HullIndexFirst="1" HullIndexSecond="38" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkMovableData LinkMovementType="0" LinkMovementFunctionType="1" LinkMovementControlState="0"
+                         MovementDistancePositive="15" MovementDistanceNegative="0" MovementSpeed="15" InitialOffsetPercentage="2"
+                         MovementAxisX="1" MovementAxisY="0" MovementAxisZ="0" />
+      </Link>
+      <Link LinkType="3">
+        <LinkData HullIndexFirst="2" HullIndexSecond="39" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkMovableData LinkMovementType="0" LinkMovementFunctionType="1" LinkMovementControlState="0"
+                         MovementDistancePositive="30" MovementDistanceNegative="0" MovementSpeed="15" InitialOffsetPercentage="1.6"
+                         MovementAxisX="1" MovementAxisY="0" MovementAxisZ="0" />
+      </Link>
+      <Link LinkType="3">
+        <LinkData HullIndexFirst="2" HullIndexSecond="40" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkMovableData LinkMovementType="0" LinkMovementFunctionType="1" LinkMovementControlState="0"
+                         MovementDistancePositive="30" MovementDistanceNegative="0" MovementSpeed="15" InitialOffsetPercentage="1.6"
+                         MovementAxisX="1" MovementAxisY="0" MovementAxisZ="0" />
+      </Link>
+      <Link LinkType="3">
+        <LinkData HullIndexFirst="4" HullIndexSecond="41" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkMovableData LinkMovementType="0" LinkMovementFunctionType="1" LinkMovementControlState="0"
+                         MovementDistancePositive="30" MovementDistanceNegative="0" MovementSpeed="15" InitialOffsetPercentage="1.2"
+                         MovementAxisX="1" MovementAxisY="0" MovementAxisZ="0" />
+      </Link>
+      <Link LinkType="3">
+        <LinkData HullIndexFirst="4" HullIndexSecond="42" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkMovableData LinkMovementType="0" LinkMovementFunctionType="1" LinkMovementControlState="0"
+                         MovementDistancePositive="30" MovementDistanceNegative="0" MovementSpeed="15" InitialOffsetPercentage="1.2"
+                         MovementAxisX="1" MovementAxisY="0" MovementAxisZ="0" />
+      </Link>
+      <Link LinkType="3">
+        <LinkData HullIndexFirst="6" HullIndexSecond="43" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkMovableData LinkMovementType="0" LinkMovementFunctionType="1" LinkMovementControlState="0"
+                         MovementDistancePositive="30" MovementDistanceNegative="0" MovementSpeed="15" InitialOffsetPercentage="0.8"
+                         MovementAxisX="1" MovementAxisY="0" MovementAxisZ="0" />
+      </Link>
+      <Link LinkType="3">
+        <LinkData HullIndexFirst="6" HullIndexSecond="44" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkMovableData LinkMovementType="0" LinkMovementFunctionType="1" LinkMovementControlState="0"
+                         MovementDistancePositive="30" MovementDistanceNegative="0" MovementSpeed="15" InitialOffsetPercentage="0.8"
+                         MovementAxisX="1" MovementAxisY="0" MovementAxisZ="0" />
+      </Link>
+      <Link LinkType="3">
+        <LinkData HullIndexFirst="8" HullIndexSecond="45" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkMovableData LinkMovementType="0" LinkMovementFunctionType="1" LinkMovementControlState="0"
+                         MovementDistancePositive="30" MovementDistanceNegative="0" MovementSpeed="15" InitialOffsetPercentage="0.4"
+                         MovementAxisX="1" MovementAxisY="0" MovementAxisZ="0" />
+      </Link>
+      <Link LinkType="3">
+        <LinkData HullIndexFirst="8" HullIndexSecond="46" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkMovableData LinkMovementType="0" LinkMovementFunctionType="1" LinkMovementControlState="0"
+                         MovementDistancePositive="30" MovementDistanceNegative="0" MovementSpeed="15" InitialOffsetPercentage="0.4"
+                         MovementAxisX="1" MovementAxisY="0" MovementAxisZ="0" />
+      </Link>  
+    
+      
+      <!-- Weak points links ***************************************************************************************************************-->        
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="1" HullIndexSecond="47" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="1" HullIndexSecond="48" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="1" HullIndexSecond="49" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="1" HullIndexSecond="50" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="2" HullIndexSecond="51" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="2" HullIndexSecond="52" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="4" HullIndexSecond="53" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="4" HullIndexSecond="54" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="6" HullIndexSecond="55" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="6" HullIndexSecond="56" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="8" HullIndexSecond="57" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="8" HullIndexSecond="58" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+
+      <!-- Global capsule turret links ***************************************************************************************************************-->        
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="10" HullIndexSecond="59" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>    
+
+      <!-- Global capsule shotguns links ***************************************************************************************************************-->        
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="12" HullIndexSecond="60" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>  
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="12" HullIndexSecond="61" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>      
+
+      <!-- Global capsule semispheres links ***************************************************************************************************************-->        
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="10" HullIndexSecond="62" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>  
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="10" HullIndexSecond="63" 
+                  Destructible="1" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000101" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>     
+    </LINKS>
+    <!--***************************************************************************************************************-->
+  </HULL>
+  <!--***************************************************************************************************************-->
+  <WEAPONRYWEAPONSAI Number="8">
+    <!-- Body turrets ***************************************************************************************************************-->
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="0.3" ScaleY="0.3" ScaleZ="0.3"
+                  PositionX="-0.47" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="3"
+                     LocalDirectionX="-1" LocalDirectionY="0" LocalDirectionZ="0" />
+      <MobileObjects Number="1" MobilityType="3">
+        <MobileObject ModelFileName="turret_II_0.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="2" WeaponBehaviour="2" ReloadTime="0.2" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="100" AccelerationAngular="50" MaximumSpeedAngular="50"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.1"
+                                ProjectileInitialScaleX="0.1" ProjectileInitialScaleY="0.1" ProjectileInitialScaleZ="0.1"
+                                ProjectileFinalScaleX="0.3" ProjectileFinalScaleY="0.3" ProjectileFinalScaleZ="0.3"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="150"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="15" ProjectilePower="100" />
+      <Cannons Number="1" FiringTurnMaximum="14" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="4" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="1.25"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="0.3" ScaleY="0.3" ScaleZ="0.3"
+                  PositionX="0.47" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="3"
+                     LocalDirectionX="1" LocalDirectionY="0" LocalDirectionZ="0" />
+      <MobileObjects Number="1" MobilityType="3">
+        <MobileObject ModelFileName="turret_II_0.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="2" WeaponBehaviour="2" ReloadTime="0.2" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="100" AccelerationAngular="50" MaximumSpeedAngular="50"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.1"
+                                ProjectileInitialScaleX="0.1" ProjectileInitialScaleY="0.1" ProjectileInitialScaleZ="0.1"
+                                ProjectileFinalScaleX="0.3" ProjectileFinalScaleY="0.3" ProjectileFinalScaleZ="0.3"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="150"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="15" ProjectilePower="100" />
+      <Cannons Number="1" FiringTurnMaximum="14" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="4" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="1.25"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+    
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="0.3" ScaleY="0.3" ScaleZ="0.3"
+                  PositionX="-0.64" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="5"
+                     LocalDirectionX="-1" LocalDirectionY="0" LocalDirectionZ="0" />
+      <MobileObjects Number="1" MobilityType="3">
+        <MobileObject ModelFileName="turret_II_0.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="2" WeaponBehaviour="2" ReloadTime="0.2" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="100" AccelerationAngular="50" MaximumSpeedAngular="50"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.1"
+                                ProjectileInitialScaleX="0.1" ProjectileInitialScaleY="0.1" ProjectileInitialScaleZ="0.1"
+                                ProjectileFinalScaleX="0.3" ProjectileFinalScaleY="0.3" ProjectileFinalScaleZ="0.3"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="150"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="15" ProjectilePower="100" />
+      <Cannons Number="1" FiringTurnMaximum="14" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="5" FiringTurnEnd="9" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="1.25"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>  
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="0.3" ScaleY="0.3" ScaleZ="0.3"
+                  PositionX="0.64" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="5"
+                     LocalDirectionX="1" LocalDirectionY="0" LocalDirectionZ="0" />
+      <MobileObjects Number="1" MobilityType="3">
+        <MobileObject ModelFileName="turret_II_0.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="2" WeaponBehaviour="2" ReloadTime="0.2" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="100" AccelerationAngular="50" MaximumSpeedAngular="50"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.1"
+                                ProjectileInitialScaleX="0.1" ProjectileInitialScaleY="0.1" ProjectileInitialScaleZ="0.1"
+                                ProjectileFinalScaleX="0.3" ProjectileFinalScaleY="0.3" ProjectileFinalScaleZ="0.3"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="150"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="15" ProjectilePower="100" />
+      <Cannons Number="1" FiringTurnMaximum="14" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="5" FiringTurnEnd="9" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="1.25"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>  
+      
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="0.3" ScaleY="0.3" ScaleZ="0.3"
+                  PositionX="-0.94" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="7"
+                     LocalDirectionX="-1" LocalDirectionY="0" LocalDirectionZ="0" />
+      <MobileObjects Number="1" MobilityType="3">
+        <MobileObject ModelFileName="turret_II_0.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="2" WeaponBehaviour="2" ReloadTime="0.2" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="100" AccelerationAngular="50" MaximumSpeedAngular="50"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.1"
+                                ProjectileInitialScaleX="0.1" ProjectileInitialScaleY="0.1" ProjectileInitialScaleZ="0.1"
+                                ProjectileFinalScaleX="0.3" ProjectileFinalScaleY="0.3" ProjectileFinalScaleZ="0.3"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="150"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="15" ProjectilePower="100" />
+      <Cannons Number="1" FiringTurnMaximum="14" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="10" FiringTurnEnd="14" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="1.25"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>  
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="0.3" ScaleY="0.3" ScaleZ="0.3"
+                  PositionX="0.94" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="7"
+                     LocalDirectionX="1" LocalDirectionY="0" LocalDirectionZ="0" />
+      <MobileObjects Number="1" MobilityType="3">
+        <MobileObject ModelFileName="turret_II_0.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="2" WeaponBehaviour="2" ReloadTime="0.2" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="100" AccelerationAngular="50" MaximumSpeedAngular="50"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.1"
+                                ProjectileInitialScaleX="0.1" ProjectileInitialScaleY="0.1" ProjectileInitialScaleZ="0.1"
+                                ProjectileFinalScaleX="0.3" ProjectileFinalScaleY="0.3" ProjectileFinalScaleZ="0.3"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="150"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="15" ProjectilePower="100" />
+      <Cannons Number="1" FiringTurnMaximum="14" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="10" FiringTurnEnd="14" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="1.25"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>    
+
+
+    <!-- Torax armor shotguns ***************************************************************************************************************-->    
+    <!--<Weapon WeaponType="0">
+      <ObjectData ModelFileName="shotgun_I_0.mesh" ScaleX="0.5" ScaleY="0.5" ScaleZ="0.5"
+                  PositionX="0" PositionY="1.012" PositionZ="0.395"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="shotgun_I.obj" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="23"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="1" MobilityType="0">
+        <MobileObject ModelFileName="shotgun_I_1.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="2" WeaponBehaviour="2" ReloadTime="0.2" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="0" AccelerationAngular="0" MaximumSpeedAngular="0"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.1"
+                                ProjectileInitialScaleX="0.1" ProjectileInitialScaleY="0.1" ProjectileInitialScaleZ="0.1"
+                                ProjectileFinalScaleX="0.3" ProjectileFinalScaleY="0.3" ProjectileFinalScaleZ="0.3"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="150"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="15" ProjectilePower="100" />
+      <Cannons Number="1" FiringTurnMaximum="0" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="15" FiringTurnEnd="15" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="1.25"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>          
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="shotgun_I_0.mesh" ScaleX="0.5" ScaleY="0.5" ScaleZ="0.5"
+                  PositionX="0" PositionY="-2.691" PositionZ="1.05"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="shotgun_I.obj" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="27"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="1" MobilityType="0">
+        <MobileObject ModelFileName="shotgun_I_1.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="2" WeaponBehaviour="2" ReloadTime="0.2" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="0" AccelerationAngular="0" MaximumSpeedAngular="0"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.1"
+                                ProjectileInitialScaleX="0.1" ProjectileInitialScaleY="0.1" ProjectileInitialScaleZ="0.1"
+                                ProjectileFinalScaleX="0.3" ProjectileFinalScaleY="0.3" ProjectileFinalScaleZ="0.3"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="150"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="15" ProjectilePower="100" />
+      <Cannons Number="1" FiringTurnMaximum="0" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="15" FiringTurnEnd="15" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="1.25"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>        
+  
+    --><!-- Global capsule turret ***************************************************************************************************************--><!--  
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="59"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="1" MobilityType="3">
+        <MobileObject ModelFileName="turret_VI_0.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="3" WeaponBehaviour="2" ReloadTime="0.2" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="0" AccelerationAngular="0" MaximumSpeedAngular="0"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.1"
+                                ProjectileInitialScaleX="0.1" ProjectileInitialScaleY="0.1" ProjectileInitialScaleZ="0.1"
+                                ProjectileFinalScaleX="0.3" ProjectileFinalScaleY="0.3" ProjectileFinalScaleZ="0.3"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="150"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="15" ProjectilePower="100" />
+      <Cannons Number="1" FiringTurnMaximum="0" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="15" FiringTurnEnd="15" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="1.25"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>    
+    
+  
+    --><!-- Global capsule shotguns ***************************************************************************************************************--><!-- 
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="60"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="1" MobilityType="0">
+        <MobileObject ModelFileName="shotgun_II_1.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="3" WeaponBehaviour="2" ReloadTime="0.2" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="0" AccelerationAngular="0" MaximumSpeedAngular="0"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.1"
+                                ProjectileInitialScaleX="0.1" ProjectileInitialScaleY="0.1" ProjectileInitialScaleZ="0.1"
+                                ProjectileFinalScaleX="0.3" ProjectileFinalScaleY="0.3" ProjectileFinalScaleZ="0.3"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="150"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="15" ProjectilePower="100" />
+      <Cannons Number="1" FiringTurnMaximum="0" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="15" FiringTurnEnd="15" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="1.25"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>        
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="61"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="1" MobilityType="0">
+        <MobileObject ModelFileName="shotgun_II_1.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="3" WeaponBehaviour="2" ReloadTime="0.2" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="0" AccelerationAngular="0" MaximumSpeedAngular="0"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.1"
+                                ProjectileInitialScaleX="0.1" ProjectileInitialScaleY="0.1" ProjectileInitialScaleZ="0.1"
+                                ProjectileFinalScaleX="0.3" ProjectileFinalScaleY="0.3" ProjectileFinalScaleZ="0.3"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="150"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="15" ProjectilePower="100" />
+      <Cannons Number="1" FiringTurnMaximum="0" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="15" FiringTurnEnd="15" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="1.25"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>            
+  
+
+    
+    --><!-- Global capsule semispheres ***************************************************************************************************************--><!--     
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="62"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="1" MobilityType="3">
+        <MobileObject ModelFileName="turret_V_0.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="3" WeaponBehaviour="2" ReloadTime="0.2" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="0" AccelerationAngular="0" MaximumSpeedAngular="0"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.1"
+                                ProjectileInitialScaleX="0.1" ProjectileInitialScaleY="0.1" ProjectileInitialScaleZ="0.1"
+                                ProjectileFinalScaleX="0.3" ProjectileFinalScaleY="0.3" ProjectileFinalScaleZ="0.3"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="150"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="15" ProjectilePower="100" />
+      <Cannons Number="1" FiringTurnMaximum="0" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="15" FiringTurnEnd="15" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="1.25"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>     
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="63"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="1" MobilityType="3">
+        <MobileObject ModelFileName="turret_V_0.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="3" WeaponBehaviour="2" ReloadTime="0.2" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="0" AccelerationAngular="0" MaximumSpeedAngular="0"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.1"
+                                ProjectileInitialScaleX="0.1" ProjectileInitialScaleY="0.1" ProjectileInitialScaleZ="0.1"
+                                ProjectileFinalScaleX="0.3" ProjectileFinalScaleY="0.3" ProjectileFinalScaleZ="0.3"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="150"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="15" ProjectilePower="100" />
+      <Cannons Number="1" FiringTurnMaximum="0" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="15" FiringTurnEnd="15" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="1.25"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>-->      
+    
+    <!--Spikes-->
+    <Weapon WeaponType="3">
+      <ObjectData ModelFileName="" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="8"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <WeaponData WeaponPriority="2" WeaponBehaviour="2" ReloadTime="10" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="0" AccelerationAngular="0" MaximumSpeedAngular="0"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.25"
+                                ProjectileInitialScaleX="0.1" ProjectileInitialScaleY="0.1" ProjectileInitialScaleZ="2"
+                                ProjectileFinalScaleX="0.1" ProjectileFinalScaleY="0.1" ProjectileFinalScaleZ="2"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="200"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="0" />
+      <WeaponProjectileData ProjectileType="0" ProjectilePower="100" />
+      <WeaponProjectileLoadedData ProjectileLoadedType="18" ProjectileLoadTime="2" ProjectileUnloadTime="0.5" ProjectileMaximumTimeLoaded="-1.0"
+                                  MaximumRollingRadiansPerSecond="0"
+                                  ProjectileLoadInitialScaleX="0.1" ProjectileLoadInitialScaleY="0.1" ProjectileLoadInitialScaleZ="0.1"
+                                  ProjectileLoadFinalScaleX="0.1" ProjectileLoadFinalScaleY="0.1" ProjectileLoadFinalScaleZ="2" />
+      <Cannons Number="3" FiringTurnMaximum="0" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="-0.75"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="-1" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0.3" FiringPositionY="0" FiringPositionZ="-0.75"
+                            FiringDirectionX="1" FiringDirectionY="0" FiringDirectionZ="-1" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="-0.3" FiringPositionY="0" FiringPositionZ="-0.75"
+                            FiringDirectionX="-1" FiringDirectionY="0" FiringDirectionZ="-1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+    
+    <!--Mouth weapon-->
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="1"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <WeaponData WeaponPriority="2" WeaponBehaviour="2" ReloadTime="3" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="180" AccelerationAngular="5" MaximumSpeedAngular="5"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="1" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="1"
+                                ProjectileInitialScaleX="0.01" ProjectileInitialScaleY="0.01" ProjectileInitialScaleZ="0.01"
+                                ProjectileFinalScaleX="2" ProjectileFinalScaleY="2" ProjectileFinalScaleZ="2"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="20"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="2" />
+      <WeaponProjectileData ProjectileType="102" ProjectilePower="200" />
+      <Cannons Number="5" FiringTurnMaximum="0" >
+        <!--(0.0, 0.0, 1.0)-->
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="2"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+        
+        <!--4 x (0.10, 0.10, 1.0)-->
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0.0070360" FiringPositionY="0.0070360" FiringPositionZ="0.0995037"
+                            FiringDirectionX="0.070360" FiringDirectionY="0.070360" FiringDirectionZ="0.995037" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="-0.0070360" FiringPositionY="0.0070360" FiringPositionZ="0.0995037"
+                            FiringDirectionX="-0.070360" FiringDirectionY="0.070360" FiringDirectionZ="0.995037" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0.0070360" FiringPositionY="-0.0070360" FiringPositionZ="0.0995037"
+                            FiringDirectionX="0.070360" FiringDirectionY="-0.070360" FiringDirectionZ="0.995037" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="-0.0070360" FiringPositionY="-0.0070360" FiringPositionZ="0.0995037"
+                            FiringDirectionX="-0.070360" FiringDirectionY="-0.070360" FiringDirectionZ="0.995037" />
+        </WeaponCannon>        
+      </Cannons>
+    </Weapon>
+    
+  
+  
+  
+
+
+
+
+  </WEAPONRYWEAPONSAI>
+  <!--***************************************************************************************************************-->
+  <MOVEMENTAI AIModuleMovementType="4">
+    <AIModuleMovementDirectData Acceleration="300" MinimumSpeed="50" MaximumSpeed="100" ReachDestinationAtFullLinearSpeed="0" />
+    <AIModuleMovementOrientedData AccelerationAngular="5" MaximumSpeedAngular="5" ReachDestinationAtFullAngularSpeed="0" />
+  </MOVEMENTAI>
+  <!--***************************************************************************************************************-->
+  <AIUNIT Number="3" UnitValue="-1">
+    <BehaviourUnitAIData AIFormationType="-1" AIFormationSeparationMultiplier="0"
+                         AIGroupBehaviourType="-1" AIGroupBehaviourDistance="0" AIGroupAttackBehaviourType ="-1" AIGroupAttackSpeed ="0"
+                         AIBehaviourType="1" AIBehaviourDistance="0" AIAttackBehaviourType ="200" AIAttackSpeed ="190"/>
+    <BehaviourUnitAIData AIFormationType="-1" AIFormationSeparationMultiplier="0"
+                         AIGroupBehaviourType="-1" AIGroupBehaviourDistance="0" AIGroupAttackBehaviourType ="-1" AIGroupAttackSpeed ="0"
+                         AIBehaviourType="1" AIBehaviourDistance="0" AIAttackBehaviourType ="200" AIAttackSpeed ="190"/>
+    <BehaviourUnitAIData AIFormationType="-1" AIFormationSeparationMultiplier="0"
+                         AIGroupBehaviourType="-1" AIGroupBehaviourDistance="0" AIGroupAttackBehaviourType ="-1" AIGroupAttackSpeed ="0"
+                         AIBehaviourType="4" AIBehaviourDistance="200" AIAttackBehaviourType ="0" AIAttackSpeed ="190"/>
+    <!--<BehaviourUnitAIData AIFormationType="-1" AIFormationSeparationMultiplier="0"
+                         AIGroupBehaviourType="-1" AIGroupBehaviourDistance="0" AIGroupAttackBehaviourType ="-1" AIGroupAttackSpeed ="0"
+                         AIBehaviourType="9" AIBehaviourDistance="0" AIAttackBehaviourType ="0" AIAttackSpeed ="0"/>-->
+  </AIUNIT>
+  <!--***************************************************************************************************************-->
+</COMPOUND>
