@@ -1,0 +1,5 @@
+Name,AIModuleMovementType,Acceleration,MinimumSpeed,MaximumSpeed,ReachDestinationAtFullLinearSpeed,AccelerationAngular,MaximumSpeedAngular,ReachDestinationAtFullAngularSpeed,Fitness
+Argos-baseline,6,30,0,1000,0,1,0.5,1,1
+Orion-baseline,6,30,0,1000,0,3,3,0,1
+Teuthus-baseline,6,300,30,1000,0,1,10,0,1
+Vermis-baseline,4,300,50,100,0,5,5,0,1

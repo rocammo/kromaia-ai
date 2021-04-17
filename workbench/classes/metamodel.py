@@ -81,14 +81,14 @@ class Weapon(object):
         self.local_direction   = local_direction
 
         # WeaponData
-        self.weapon_priority = int(weapon_priority)
-        self.weapon_behaviour = int(weapon_behaviour)
-        self.reload_time = float(reload_time)
-        self.has_lock = int(has_lock)
-        self.affector_type = int(affector_type)
+        self.weapon_priority       = int(weapon_priority)
+        self.weapon_behaviour      = int(weapon_behaviour)
+        self.reload_time           = float(reload_time)
+        self.has_lock              = int(has_lock)
+        self.affector_type         = int(affector_type)
         self.affector_scale_factor = float(affector_scale_factor)
         self.affector_power_factor = float(affector_power_factor)
-        self.affector_position = affector_position
+        self.affector_position     = affector_position
 
 
 class Link(object):
@@ -128,15 +128,54 @@ class MobileObject(object):
 
 
 class WeaponWithMobileObjects(object):
-    def __init__(self, scale: Vector3, position: Vector3, orientation: Quaternion,
-                 hull_index_parent: int, local_direction: Vector3,
-                 mobile_objects: list[MobileObject]):
-        self.scale             = scale
-        self.position          = position
-        self.orientation       = orientation
+    def __init__(self, weapon_type  : int,
+                 scale              : Vector3, position              : Vector3, orientation              : Quaternion,
+                 object_mass        : float,   object_material       : int,
+                 object_maximum_life: float,   object_armor          : float,
+                 destruction_delay  : float,   effect_multiplier_kill: float,   effect_multiplier_destroy: float,
+                 effects_mask_kill  : str,     effects_mask_destroy  : str,
+                 hull_index_parent  : int,     local_direction       : Vector3,
+                 weapon_priority    : int,     weapon_behaviour      : int,
+                 reload_time        : float,   has_lock              : int,
+                 affector_type      : int,     affector_scale_factor : float,   affector_power_factor    : float,
+                 affector_position  : Vector3,
+                 mobile_objects     : list[MobileObject]):
+        self.weapon_type = weapon_type
+
+        # ObjectData
+        self.scale       = scale
+        self.position    = position
+        self.orientation = orientation
+
+        # PhysicalObjectData
+        self.object_mass     = float(object_mass)
+        self.object_material = int(object_material)
+
+        # AliveObjectData
+        self.object_maximum_life       = float(object_maximum_life)
+        self.object_armor              = float(object_armor)
+        self.destruction_delay         = float(destruction_delay)
+        self.effect_multiplier_kill    = float(effect_multiplier_kill)
+        self.effect_multiplier_destroy = float(effect_multiplier_destroy)
+        self.effects_mask_kill         = effects_mask_kill
+        self.effects_mask_destroy      = effects_mask_destroy
+
+        # ComponentData
         self.hull_index_parent = int(hull_index_parent)
         self.local_direction   = local_direction
-        self.mobile_objects    = mobile_objects
+
+        # WeaponData
+        self.weapon_priority       = int(weapon_priority)
+        self.weapon_behaviour      = int(weapon_behaviour)
+        self.reload_time           = float(reload_time)
+        self.has_lock              = int(has_lock)
+        self.affector_type         = int(affector_type)
+        self.affector_scale_factor = float(affector_scale_factor)
+        self.affector_power_factor = float(affector_power_factor)
+        self.affector_position     = affector_position
+
+        # MobileObjects
+        self.mobile_objects = mobile_objects
 
 
 class Cannon(object):
@@ -154,12 +193,51 @@ class Cannon(object):
 
 
 class WeaponWithCannons(object):
-    def __init__(self, scale: Vector3, position: Vector3, orientation: Quaternion,
-                 hull_index_parent: int, local_direction: Vector3,
-                 cannons: list[Cannon]):
-        self.scale             = scale
-        self.position          = position
-        self.orientation       = orientation
+    def __init__(self, weapon_type  : int,
+                 scale              : Vector3, position              : Vector3, orientation              : Quaternion,
+                 object_mass        : float,   object_material       : int,
+                 object_maximum_life: float,   object_armor          : float,
+                 destruction_delay  : float,   effect_multiplier_kill: float,   effect_multiplier_destroy: float,
+                 effects_mask_kill  : str,     effects_mask_destroy  : str,
+                 hull_index_parent  : int,     local_direction       : Vector3,
+                 weapon_priority    : int,     weapon_behaviour      : int,
+                 reload_time        : float,   has_lock              : int,
+                 affector_type      : int,     affector_scale_factor : float,   affector_power_factor    : float,
+                 affector_position  : Vector3,
+                 cannons            : list[Cannon]):
+        self.weapon_type = weapon_type
+
+        # ObjectData
+        self.scale       = scale
+        self.position    = position
+        self.orientation = orientation
+
+        # PhysicalObjectData
+        self.object_mass     = float(object_mass)
+        self.object_material = int(object_material)
+
+        # AliveObjectData
+        self.object_maximum_life       = float(object_maximum_life)
+        self.object_armor              = float(object_armor)
+        self.destruction_delay         = float(destruction_delay)
+        self.effect_multiplier_kill    = float(effect_multiplier_kill)
+        self.effect_multiplier_destroy = float(effect_multiplier_destroy)
+        self.effects_mask_kill         = effects_mask_kill
+        self.effects_mask_destroy      = effects_mask_destroy
+
+        # ComponentData
         self.hull_index_parent = int(hull_index_parent)
         self.local_direction   = local_direction
-        self.cannons           = cannons
+
+        # WeaponData
+        self.weapon_priority       = int(weapon_priority)
+        self.weapon_behaviour      = int(weapon_behaviour)
+        self.reload_time           = float(reload_time)
+        self.has_lock              = int(has_lock)
+        self.affector_type         = int(affector_type)
+        self.affector_scale_factor = float(affector_scale_factor)
+        self.affector_power_factor = float(affector_power_factor)
+        self.affector_position     = affector_position
+
+        # Cannons
+        self.cannons = cannons

@@ -1,0 +1,13 @@
+Name,UnitValue,AIFormationType,AIFormationSeparationMultiplier,AIGroupBehaviourType,AIGroupBehaviourDistance,AIGroupAttackBehaviourType,AIGroupAttackSpeed,AIBehaviourType,AIBehaviourDistance,AIAttackBehaviourType,AIAttackSpeed,Fitness
+Argos-baseline,-1,2,5,-1,0,-1,0,4,200,0,100,1
+Argos-baseline,-1,2,5,-1,0,-1,0,4,100,0,50,1
+Argos-baseline,-1,2,5,-1,0,-1,0,4,200,0,100,1
+Orion-baseline,-1,-1,0,-1,0,-1,0,4,300,0,100,1
+Orion-baseline,-1,-1,0,-1,0,-1,0,4,200,0,100,1
+Orion-baseline,-1,-1,0,-1,0,-1,0,9,100000,0,1000,
+Orion-baseline,-1,-1,0,-1,0,-1,0,9,100000,0,1000,
+Orion-baseline,-1,-1,0,-1,0,-1,0,9,100000,0,1000,
+Teuthus-baseline,-1,2,5,-1,0,-1,0,4,175,0,100,
+Vermis-baseline,-1,-1,0,-1,0,-1,0,1,0,200,190,
+Vermis-baseline,-1,-1,0,-1,0,-1,0,1,0,200,190,
+Vermis-baseline,-1,-1,0,-1,0,-1,0,4,200,0,190,
