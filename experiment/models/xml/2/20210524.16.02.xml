@@ -91,31 +91,31 @@
     <LINKS Number="4">
 
       <Link LinkType="3">
-		<LinkData HullIndexFirst="4.N" HullIndexSecond="5.N" 
+		<LinkData HullIndexFirst="4" HullIndexSecond="5" 
                   Destructible="0" DestructionDelay="0.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                   EffectsMaskKill="" EffectsMaskDestroy="" />
         <LinkMovableData LinkMovementType="0" LinkMovementFunctionType="0" LinkMovementControlState="0"
                          MovementDistancePositive="0.0" MovementDistanceNegative="0.0" MovementSpeed="0.0" InitialOffsetPercentage="0.0"
-                         MovementAxisX="invalid" MovementAxisY="" MovementAxisZ="" />
+                         MovementAxisX="-1" MovementAxisY="" MovementAxisZ="" />
       </Link>
 
       <Link LinkType="0">
-		<LinkData HullIndexFirst="1.N" HullIndexSecond="2.N" 
+		<LinkData HullIndexFirst="1" HullIndexSecond="2" 
                   Destructible="0" DestructionDelay="0.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                   EffectsMaskKill="" EffectsMaskDestroy="" />
       </Link>
 
       <Link LinkType="1">
-		<LinkData HullIndexFirst="2.N" HullIndexSecond="3.N" 
+		<LinkData HullIndexFirst="2" HullIndexSecond="3" 
                   Destructible="0" DestructionDelay="0.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                   EffectsMaskKill="" EffectsMaskDestroy="" />
-      	<LinkRopeData PositionFirstX="invalid" PositionFirstY="" PositionFirstZ=""
-                      PositionSecondX="invalid" PositionSecondY="" PositionSecondZ=""
+      	<LinkRopeData PositionFirstX="-1" PositionFirstY="" PositionFirstZ=""
+                      PositionSecondX="-1" PositionSecondY="" PositionSecondZ=""
                       RopeType="0" RopeElements="0" RopeMass="0.0" />
       </Link>
 
       <Link LinkType="0">
-		<LinkData HullIndexFirst="1.N" HullIndexSecond="4.N" 
+		<LinkData HullIndexFirst="1" HullIndexSecond="4" 
                   Destructible="0" DestructionDelay="0.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                   EffectsMaskKill="" EffectsMaskDestroy="" />
       </Link>
@@ -135,7 +135,7 @@
 		<AliveObjectData ObjectMaximumLife="0.0" ObjectArmor="0.0"
                          DestructionDelay="0.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                          EffectsMaskKill="" EffectsMaskDestroy="" />
-        <ComponentData HullIndexParent="1.N"
+        <ComponentData HullIndexParent="1"
                        LocalDirectionX="0.0" LocalDirectionY="0.0" LocalDirectionZ="0.0" />
 		<WeaponData WeaponPriority="0" WeaponBehaviour="0" ReloadTime="0.0" HasLock="0"
                     AffectorType="0"
@@ -161,7 +161,7 @@
     <AIModuleMovementDirectWithOrientationData AccelerationAngular="0.0" MaximumSpeedAngular="0.0" ReachDestinationAtFullAngularSpeed="0" />
   </MOVEMENTAI>
 
-  <AIUNIT Number="invalid" UnitValue="invalid">
+  <AIUNIT Number="-1" UnitValue="-1">
   </AIUNIT>
 
 

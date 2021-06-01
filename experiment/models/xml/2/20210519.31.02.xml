@@ -65,19 +65,19 @@
     <LINKS Number="3">
 
       <Link LinkType="0">
-		<LinkData HullIndexFirst="Head" HullIndexSecond="Body1" 
+		<LinkData HullIndexFirst="1" HullIndexSecond="2" 
                   Destructible="0" DestructionDelay="0.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                   EffectsMaskKill="" EffectsMaskDestroy="" />
       </Link>
 
       <Link LinkType="0">
-		<LinkData HullIndexFirst="Body1" HullIndexSecond="Body2" 
+		<LinkData HullIndexFirst="2" HullIndexSecond="3" 
                   Destructible="0" DestructionDelay="0.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                   EffectsMaskKill="" EffectsMaskDestroy="" />
       </Link>
 
       <Link LinkType="0">
-		<LinkData HullIndexFirst="Body2" HullIndexSecond="Tail" 
+		<LinkData HullIndexFirst="3" HullIndexSecond="4" 
                   Destructible="0" DestructionDelay="0.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                   EffectsMaskKill="" EffectsMaskDestroy="" />
       </Link>
@@ -97,7 +97,7 @@
 		<AliveObjectData ObjectMaximumLife="0.0" ObjectArmor="0.0"
                          DestructionDelay="0.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                          EffectsMaskKill="" EffectsMaskDestroy="" />
-        <ComponentData HullIndexParent="invalid"
+        <ComponentData HullIndexParent="-1"
                        LocalDirectionX="0.0" LocalDirectionY="0.0" LocalDirectionZ="0.0" />
 		<WeaponData WeaponPriority="0" WeaponBehaviour="0" ReloadTime="0.0" HasLock="0"
                     AffectorType="0"
@@ -119,7 +119,7 @@
 		<AliveObjectData ObjectMaximumLife="0.0" ObjectArmor="0.0"
                          DestructionDelay="0.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                          EffectsMaskKill="" EffectsMaskDestroy="" />
-        <ComponentData HullIndexParent="Head"
+        <ComponentData HullIndexParent="1"
                        LocalDirectionX="0.0" LocalDirectionY="0.0" LocalDirectionZ="0.0" />
 		<WeaponData WeaponPriority="0" WeaponBehaviour="0" ReloadTime="3.0" HasLock="0"
                     AffectorType="0"
@@ -145,7 +145,7 @@
     <AIModuleMovementDirectWithOrientationData AccelerationAngular="0.0" MaximumSpeedAngular="0.0" ReachDestinationAtFullAngularSpeed="0" />
   </MOVEMENTAI>
 
-  <AIUNIT Number="invalid" UnitValue="invalid">
+  <AIUNIT Number="-1" UnitValue="-1">
   </AIUNIT>
 
 

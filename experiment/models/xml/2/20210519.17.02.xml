@@ -78,31 +78,31 @@
     <LINKS Number="5">
 
       <Link LinkType="0">
-		<LinkData HullIndexFirst="Armdch" HullIndexSecond="armIzq" 
+		<LinkData HullIndexFirst="3" HullIndexSecond="2" 
                   Destructible="0" DestructionDelay="4.0" EffectMultiplierKill="5.0" EffectMultiplierDestroy="5.0"
                   EffectsMaskKill="" EffectsMaskDestroy="" />
       </Link>
 
       <Link LinkType="0">
-		<LinkData HullIndexFirst="head1" HullIndexSecond="Armdch" 
+		<LinkData HullIndexFirst="1" HullIndexSecond="3" 
                   Destructible="0" DestructionDelay="5.0" EffectMultiplierKill="6.0" EffectMultiplierDestroy="4.0"
                   EffectsMaskKill="" EffectsMaskDestroy="" />
       </Link>
 
       <Link LinkType="0">
-		<LinkData HullIndexFirst="head1" HullIndexSecond="armIzq" 
+		<LinkData HullIndexFirst="1" HullIndexSecond="2" 
                   Destructible="0" DestructionDelay="5.0" EffectMultiplierKill="5.0" EffectMultiplierDestroy="6.0"
                   EffectsMaskKill="" EffectsMaskDestroy="" />
       </Link>
 
       <Link LinkType="0">
-		<LinkData HullIndexFirst="head1" HullIndexSecond="Back1" 
+		<LinkData HullIndexFirst="1" HullIndexSecond="4" 
                   Destructible="0" DestructionDelay="5.0" EffectMultiplierKill="4.0" EffectMultiplierDestroy="6.0"
                   EffectsMaskKill="" EffectsMaskDestroy="" />
       </Link>
 
       <Link LinkType="3">
-		<LinkData HullIndexFirst="invalid" HullIndexSecond="invalid" 
+		<LinkData HullIndexFirst="-1" HullIndexSecond="-1" 
                   Destructible="0" DestructionDelay="3.0" EffectMultiplierKill="2.0" EffectMultiplierDestroy="5.0"
                   EffectsMaskKill="" EffectsMaskDestroy="" />
         <LinkMovableData LinkMovementType="1" LinkMovementFunctionType="0" LinkMovementControlState="0"
@@ -125,7 +125,7 @@
 		<AliveObjectData ObjectMaximumLife="0.0" ObjectArmor="0.0"
                          DestructionDelay="6.0" EffectMultiplierKill="6.0" EffectMultiplierDestroy="4.0"
                          EffectsMaskKill="" EffectsMaskDestroy="" />
-        <ComponentData HullIndexParent="armIzq"
+        <ComponentData HullIndexParent="2"
                        LocalDirectionX="0.0" LocalDirectionY="0.0" LocalDirectionZ="0.0" />
 		<WeaponData WeaponPriority="0" WeaponBehaviour="0" ReloadTime="0.0" HasLock="0"
                     AffectorType="0"
@@ -147,7 +147,7 @@
 		<AliveObjectData ObjectMaximumLife="4.0" ObjectArmor="0.0"
                          DestructionDelay="0.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                          EffectsMaskKill="" EffectsMaskDestroy="" />
-        <ComponentData HullIndexParent="invalid"
+        <ComponentData HullIndexParent="-1"
                        LocalDirectionX="0.0" LocalDirectionY="0.0" LocalDirectionZ="0.0" />
 		<WeaponData WeaponPriority="1" WeaponBehaviour="0" ReloadTime="2.0" HasLock="0"
                     AffectorType="0"
@@ -173,7 +173,7 @@
     <AIModuleMovementDirectWithOrientationData AccelerationAngular="8.0" MaximumSpeedAngular="15.0" ReachDestinationAtFullAngularSpeed="0" />
   </MOVEMENTAI>
 
-  <AIUNIT Number="invalid" UnitValue="invalid">
+  <AIUNIT Number="-1" UnitValue="-1">
   </AIUNIT>
 
 

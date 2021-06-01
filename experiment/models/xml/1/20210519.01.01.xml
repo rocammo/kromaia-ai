@@ -39,7 +39,7 @@
     <LINKS Number="1">
 
       <Link LinkType="0">
-		<LinkData HullIndexFirst="1" HullIndexSecond="2" 
+		<LinkData HullIndexFirst="0" HullIndexSecond="1" 
                   Destructible="0" DestructionDelay="0.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                   EffectsMaskKill="" EffectsMaskDestroy="" />
       </Link>
@@ -59,7 +59,7 @@
 		<AliveObjectData ObjectMaximumLife="0.0" ObjectArmor="0.0"
                          DestructionDelay="2.5" EffectMultiplierKill="5.5" EffectMultiplierDestroy="2.0"
                          EffectsMaskKill="" EffectsMaskDestroy="" />
-        <ComponentData HullIndexParent="1"
+        <ComponentData HullIndexParent="0"
                        LocalDirectionX="0.0" LocalDirectionY="0.0" LocalDirectionZ="0.0" />
 		<WeaponData WeaponPriority="5" WeaponBehaviour="2" ReloadTime="0.0" HasLock="0"
                     AffectorType="0"
@@ -75,7 +75,7 @@
                                   ProjectileInitialLinearVelocityX="0.0" ProjectileInitialLinearVelocityY="0.0" ProjectileInitialLinearVelocityZ="0.0"
                                   ProjectileInitialAngularVelocityX="1.2" ProjectileInitialAngularVelocityY="1.0" ProjectileInitialAngularVelocityZ="0.0" />
         <WeaponProjectileData ProjectileType="0" ProjectilePower="4.0" />
-		<Cannons Number="0" FiringTurnMaximum="0.0" >
+		<Cannons Number="0" FiringTurnMaximum="0" >
 		</Cannons>
 	  </Weapon>
   </WEAPONRYWEAPONSAI>
@@ -85,7 +85,7 @@
     <AIModuleMovementDirectWithOrientationData AccelerationAngular="0.0" MaximumSpeedAngular="0.0" ReachDestinationAtFullAngularSpeed="0" />
   </MOVEMENTAI>
 
-  <AIUNIT Number="invalid" UnitValue="invalid">
+  <AIUNIT Number="-1" UnitValue="-1">
   </AIUNIT>
 
 

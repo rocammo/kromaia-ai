@@ -87,8 +87,8 @@
 		<LinkData HullIndexFirst="4" HullIndexSecond="1" 
                   Destructible="0" DestructionDelay="0.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                   EffectsMaskKill="" EffectsMaskDestroy="" />
-      	<LinkRopeData PositionFirstX="invalid" PositionFirstY="" PositionFirstZ=""
-                      PositionSecondX="invalid" PositionSecondY="" PositionSecondZ=""
+      	<LinkRopeData PositionFirstX="-1" PositionFirstY="" PositionFirstZ=""
+                      PositionSecondX="-1" PositionSecondY="" PositionSecondZ=""
                       RopeType="0" RopeElements="0" RopeMass="0.0" />
       </Link>
 
@@ -183,7 +183,7 @@
     <AIModuleMovementDirectWithOrientationData AccelerationAngular="1.0" MaximumSpeedAngular="2.0" ReachDestinationAtFullAngularSpeed="0" />
   </MOVEMENTAI>
 
-  <AIUNIT Number="invalid" UnitValue="invalid">
+  <AIUNIT Number="-1" UnitValue="-1">
   </AIUNIT>
 
 

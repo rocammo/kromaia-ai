@@ -39,7 +39,7 @@
     <LINKS Number="1">
 
       <Link LinkType="0">
-		<LinkData HullIndexFirst="1.N" HullIndexSecond="2.N" 
+		<LinkData HullIndexFirst="0" HullIndexSecond="1" 
                   Destructible="0" DestructionDelay="0.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                   EffectsMaskKill="" EffectsMaskDestroy="" />
       </Link>
@@ -59,7 +59,7 @@
 		<AliveObjectData ObjectMaximumLife="0.0" ObjectArmor="0.0"
                          DestructionDelay="0.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                          EffectsMaskKill="" EffectsMaskDestroy="" />
-        <ComponentData HullIndexParent="1.N"
+        <ComponentData HullIndexParent="0"
                        LocalDirectionX="0.0" LocalDirectionY="0.0" LocalDirectionZ="0.0" />
 		<WeaponData WeaponPriority="0" WeaponBehaviour="0" ReloadTime="0.0" HasLock="0"
                     AffectorType="0"
@@ -85,7 +85,7 @@
     <AIModuleMovementDirectWithOrientationData AccelerationAngular="0.0" MaximumSpeedAngular="0.0" ReachDestinationAtFullAngularSpeed="0" />
   </MOVEMENTAI>
 
-  <AIUNIT Number="invalid" UnitValue="invalid">
+  <AIUNIT Number="-1" UnitValue="-1">
   </AIUNIT>
 
 

@@ -59,7 +59,7 @@
 		<AliveObjectData ObjectMaximumLife="10.0" ObjectArmor="5.0"
                          DestructionDelay="0.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                          EffectsMaskKill="" EffectsMaskDestroy="" />
-        <ComponentData HullIndexParent="invalid"
+        <ComponentData HullIndexParent="-1"
                        LocalDirectionX="0.0" LocalDirectionY="0.0" LocalDirectionZ="0.0" />
 		<WeaponData WeaponPriority="0" WeaponBehaviour="0" ReloadTime="2.0" HasLock="0"
                     AffectorType="0"
@@ -79,7 +79,7 @@
     <AIModuleMovementDirectWithOrientationData AccelerationAngular="0.5" MaximumSpeedAngular="5.0" ReachDestinationAtFullAngularSpeed="0" />
   </MOVEMENTAI>
 
-  <AIUNIT Number="invalid" UnitValue="invalid">
+  <AIUNIT Number="-1" UnitValue="-1">
   </AIUNIT>
 
 

@@ -91,31 +91,31 @@
     <LINKS Number="5">
 
       <Link LinkType="0">
-		<LinkData HullIndexFirst="union body head" HullIndexSecond="head 1" 
+		<LinkData HullIndexFirst="4" HullIndexSecond="1" 
                   Destructible="0" DestructionDelay="0.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                   EffectsMaskKill="" EffectsMaskDestroy="" />
       </Link>
 
       <Link LinkType="0">
-		<LinkData HullIndexFirst="union body head" HullIndexSecond="head 2" 
+		<LinkData HullIndexFirst="4" HullIndexSecond="2" 
                   Destructible="0" DestructionDelay="0.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                   EffectsMaskKill="" EffectsMaskDestroy="" />
       </Link>
 
       <Link LinkType="0">
-		<LinkData HullIndexFirst="union body head" HullIndexSecond="head 3" 
+		<LinkData HullIndexFirst="4" HullIndexSecond="3" 
                   Destructible="0" DestructionDelay="0.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                   EffectsMaskKill="" EffectsMaskDestroy="" />
       </Link>
 
       <Link LinkType="0">
-		<LinkData HullIndexFirst="union body head" HullIndexSecond="body 2" 
+		<LinkData HullIndexFirst="4" HullIndexSecond="5" 
                   Destructible="0" DestructionDelay="0.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                   EffectsMaskKill="" EffectsMaskDestroy="" />
       </Link>
 
       <Link LinkType="0">
-		<LinkData HullIndexFirst="body 2" HullIndexSecond="body 3" 
+		<LinkData HullIndexFirst="5" HullIndexSecond="6" 
                   Destructible="0" DestructionDelay="0.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                   EffectsMaskKill="" EffectsMaskDestroy="" />
       </Link>
@@ -135,7 +135,7 @@
 		<AliveObjectData ObjectMaximumLife="50.0" ObjectArmor="0.0"
                          DestructionDelay="2.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                          EffectsMaskKill="" EffectsMaskDestroy="" />
-        <ComponentData HullIndexParent="head 1"
+        <ComponentData HullIndexParent="1"
                        LocalDirectionX="0.0" LocalDirectionY="0.0" LocalDirectionZ="0.0" />
 		<WeaponData WeaponPriority="0" WeaponBehaviour="0" ReloadTime="4.0" HasLock="0"
                     AffectorType="0"
@@ -163,7 +163,7 @@
 		<AliveObjectData ObjectMaximumLife="50.0" ObjectArmor="0.0"
                          DestructionDelay="2.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                          EffectsMaskKill="" EffectsMaskDestroy="" />
-        <ComponentData HullIndexParent="head 2"
+        <ComponentData HullIndexParent="2"
                        LocalDirectionX="0.0" LocalDirectionY="0.0" LocalDirectionZ="0.0" />
 		<WeaponData WeaponPriority="0" WeaponBehaviour="0" ReloadTime="4.0" HasLock="0"
                     AffectorType="0"
@@ -191,7 +191,7 @@
 		<AliveObjectData ObjectMaximumLife="50.0" ObjectArmor="0.0"
                          DestructionDelay="2.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                          EffectsMaskKill="" EffectsMaskDestroy="" />
-        <ComponentData HullIndexParent="head 3"
+        <ComponentData HullIndexParent="3"
                        LocalDirectionX="0.0" LocalDirectionY="0.0" LocalDirectionZ="0.0" />
 		<WeaponData WeaponPriority="0" WeaponBehaviour="0" ReloadTime="4.0" HasLock="0"
                     AffectorType="0"
@@ -219,7 +219,7 @@
 		<AliveObjectData ObjectMaximumLife="50.0" ObjectArmor="0.0"
                          DestructionDelay="0.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                          EffectsMaskKill="" EffectsMaskDestroy="" />
-        <ComponentData HullIndexParent="body 3"
+        <ComponentData HullIndexParent="6"
                        LocalDirectionX="0.0" LocalDirectionY="0.0" LocalDirectionZ="0.0" />
 		<WeaponData WeaponPriority="0" WeaponBehaviour="0" ReloadTime="0.0" HasLock="0"
                     AffectorType="0"
@@ -239,7 +239,7 @@
     <AIModuleMovementDirectWithOrientationData AccelerationAngular="0.25" MaximumSpeedAngular="2.0" ReachDestinationAtFullAngularSpeed="0" />
   </MOVEMENTAI>
 
-  <AIUNIT Number="invalid" UnitValue="invalid">
+  <AIUNIT Number="-1" UnitValue="-1">
   </AIUNIT>
 
 

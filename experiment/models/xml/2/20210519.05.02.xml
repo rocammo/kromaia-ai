@@ -65,34 +65,34 @@
     <LINKS Number="5">
 
       <Link LinkType="1">
-		<LinkData HullIndexFirst="Sacerdote" HullIndexSecond="invalid" 
+		<LinkData HullIndexFirst="3" HullIndexSecond="-1" 
                   Destructible="0" DestructionDelay="6.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                   EffectsMaskKill="Caos" EffectsMaskDestroy="Paz" />
-      	<LinkRopeData PositionFirstX="invalid" PositionFirstY="" PositionFirstZ=""
-                      PositionSecondX="invalid" PositionSecondY="" PositionSecondZ=""
+      	<LinkRopeData PositionFirstX="-1" PositionFirstY="" PositionFirstZ=""
+                      PositionSecondX="-1" PositionSecondY="" PositionSecondZ=""
                       RopeType="4" RopeElements="0" RopeMass="0.0" />
       </Link>
 
       <Link LinkType="0">
-		<LinkData HullIndexFirst="2" HullIndexSecond="3" 
+		<LinkData HullIndexFirst="1" HullIndexSecond="2" 
                   Destructible="1" DestructionDelay="0.3" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.1"
                   EffectsMaskKill="Medium" EffectsMaskDestroy="High" />
       </Link>
 
       <Link LinkType="0">
-		<LinkData HullIndexFirst="2" HullIndexSecond="1" 
+		<LinkData HullIndexFirst="1" HullIndexSecond="0" 
                   Destructible="0" DestructionDelay="0.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                   EffectsMaskKill="Medium" EffectsMaskDestroy="Medium" />
       </Link>
 
       <Link LinkType="2">
-		<LinkData HullIndexFirst="1" HullIndexSecond="1" 
+		<LinkData HullIndexFirst="0" HullIndexSecond="0" 
                   Destructible="1" DestructionDelay="0.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                   EffectsMaskKill="THC" EffectsMaskDestroy="" />
       </Link>
 
       <Link LinkType="0">
-		<LinkData HullIndexFirst="Sacerdote" HullIndexSecond="1" 
+		<LinkData HullIndexFirst="3" HullIndexSecond="0" 
                   Destructible="0" DestructionDelay="2.0" EffectMultiplierKill="0.3" EffectMultiplierDestroy="10.0"
                   EffectsMaskKill="" EffectsMaskDestroy="Full" />
       </Link>
@@ -112,7 +112,7 @@
 		<AliveObjectData ObjectMaximumLife="0.0" ObjectArmor="0.0"
                          DestructionDelay="0.0" EffectMultiplierKill="10.0" EffectMultiplierDestroy="15.0"
                          EffectsMaskKill="" EffectsMaskDestroy="" />
-        <ComponentData HullIndexParent="Sacerdote"
+        <ComponentData HullIndexParent="3"
                        LocalDirectionX="0.0" LocalDirectionY="0.0" LocalDirectionZ="0.0" />
 		<WeaponData WeaponPriority="0" WeaponBehaviour="0" ReloadTime="0.0" HasLock="0"
                     AffectorType="1"
@@ -145,7 +145,7 @@
 		<AliveObjectData ObjectMaximumLife="1.0" ObjectArmor="0.0"
                          DestructionDelay="0.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="1.0"
                          EffectsMaskKill="Ice" EffectsMaskDestroy="Ice" />
-        <ComponentData HullIndexParent="3"
+        <ComponentData HullIndexParent="2"
                        LocalDirectionX="0.0" LocalDirectionY="0.0" LocalDirectionZ="0.0" />
 		<WeaponData WeaponPriority="0" WeaponBehaviour="0" ReloadTime="0.0" HasLock="0"
                     AffectorType="0"
@@ -167,7 +167,7 @@
 		<AliveObjectData ObjectMaximumLife="0.0" ObjectArmor="0.0"
                          DestructionDelay="0.1" EffectMultiplierKill="0.2" EffectMultiplierDestroy="0.0"
                          EffectsMaskKill="" EffectsMaskDestroy="" />
-        <ComponentData HullIndexParent="2"
+        <ComponentData HullIndexParent="1"
                        LocalDirectionX="0.0" LocalDirectionY="0.0" LocalDirectionZ="0.0" />
 		<WeaponData WeaponPriority="1" WeaponBehaviour="0" ReloadTime="0.0" HasLock="0"
                     AffectorType="5"
@@ -195,7 +195,7 @@
 		<AliveObjectData ObjectMaximumLife="30.0" ObjectArmor="0.0"
                          DestructionDelay="1.0" EffectMultiplierKill="0.0" EffectMultiplierDestroy="0.0"
                          EffectsMaskKill="" EffectsMaskDestroy="" />
-        <ComponentData HullIndexParent="1"
+        <ComponentData HullIndexParent="0"
                        LocalDirectionX="0.0" LocalDirectionY="0.0" LocalDirectionZ="0.0" />
 		<WeaponData WeaponPriority="0" WeaponBehaviour="0" ReloadTime="0.1" HasLock="0"
                     AffectorType="0"
@@ -221,7 +221,7 @@
     <AIModuleMovementDirectWithOrientationData AccelerationAngular="0.8" MaximumSpeedAngular="0.8" ReachDestinationAtFullAngularSpeed="0" />
   </MOVEMENTAI>
 
-  <AIUNIT Number="invalid" UnitValue="invalid">
+  <AIUNIT Number="-1" UnitValue="-1">
   </AIUNIT>
 
 
