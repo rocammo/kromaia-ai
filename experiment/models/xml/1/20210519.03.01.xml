@@ -81,8 +81,8 @@
   </WEAPONRYWEAPONSAI>
 
   <MOVEMENTAI AIModuleMovementType="-1">
-    <AIModuleMovementDirectData Acceleration="-1" MinimumSpeed="-1" MaximumSpeed="-1" ReachDestinationAtFullLinearSpeed="" />
-    <AIModuleMovementDirectWithOrientationData AccelerationAngular="-1" MaximumSpeedAngular="-1" ReachDestinationAtFullAngularSpeed="" />
+    <AIModuleMovementDirectData Acceleration="-1" MinimumSpeed="-1" MaximumSpeed="-1" ReachDestinationAtFullLinearSpeed="-1" />
+    <AIModuleMovementDirectWithOrientationData AccelerationAngular="-1" MaximumSpeedAngular="-1" ReachDestinationAtFullAngularSpeed="-1" />
   </MOVEMENTAI>
 
   <AIUNIT Number="-1" UnitValue="-1">
