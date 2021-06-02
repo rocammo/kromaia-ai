@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<COMPOUND>
+  <!--***************************************************************************************************************-->
+  <GENERAL LinearVelocityLossPerSecond="0" AngularVelocityLossPerSecond="0" InitialScaleX="6" InitialScaleY="6" InitialScaleZ="6"
+           DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+           EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+  <!--***************************************************************************************************************-->
+  <HULL Number="1">
+    <Hull HullType="0">
+      <ObjectData ModelFileName="daimon_VII_0.mesh" ScaleX="1" ScaleY="1" ScaleZ="1" 
+                  PositionX="0" PositionY="0" PositionZ="0" 
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMaterial="5" ObjectMass="100" />
+      <AliveObjectData ObjectMaximumLife="50" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+  </HULL>
+  <!--***************************************************************************************************************-->
+  <WEAPONRYWEAPONSAI Number="1">
+    <Weapon WeaponType="3">
+      <ObjectData ModelFileName="" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <WeaponData WeaponPriority="2" WeaponBehaviour="2" ReloadTime="10" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="0" AccelerationAngular="0" MaximumSpeedAngular="0"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.25"
+                                ProjectileInitialScaleX="3" ProjectileInitialScaleY="0.1" ProjectileInitialScaleZ="3"
+                                ProjectileFinalScaleX="3" ProjectileFinalScaleY="0.1" ProjectileFinalScaleZ="3"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="200"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="0" />
+      <WeaponProjectileData ProjectileType="0" ProjectilePower="100" />
+      <WeaponProjectileLoadedData ProjectileLoadedType="19" ProjectileLoadTime="2" ProjectileUnloadTime="0.5" ProjectileMaximumTimeLoaded="-1.0"
+                                  MaximumRollingRadiansPerSecond="0"
+                                  ProjectileLoadInitialScaleX="0.1" ProjectileLoadInitialScaleY="0.1" ProjectileLoadInitialScaleZ="0.1"
+                                  ProjectileLoadFinalScaleX="3" ProjectileLoadFinalScaleY="0.1" ProjectileLoadFinalScaleZ="3" />
+      <Cannons Number="1" FiringTurnMaximum="0" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="0"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+  </WEAPONRYWEAPONSAI>
+  <!--***************************************************************************************************************-->
+  <MOVEMENTAI AIModuleMovementType="6">
+    <AIModuleMovementDirectData Acceleration="50" MinimumSpeed="0" MaximumSpeed="1000" ReachDestinationAtFullLinearSpeed="0" />
+    <AIModuleMovementDirectWithOrientationData AccelerationAngular="5" MaximumSpeedAngular="10" ReachDestinationAtFullAngularSpeed="0" />
+  </MOVEMENTAI>
+  <!--***************************************************************************************************************-->
+  <AIUNIT Number="1" UnitValue="100">
+    <BehaviourUnitAIData AIFormationType="8" AIFormationSeparationMultiplier="4"
+                         AIGroupBehaviourType="7" AIGroupBehaviourDistance="0" AIGroupAttackBehaviourType ="1" AIGroupAttackSpeed ="20"
+                         AIBehaviourType="7" AIBehaviourDistance="0" AIAttackBehaviourType ="0" AIAttackSpeed ="20"/>
+  </AIUNIT>
+  <!--***************************************************************************************************************-->
+</COMPOUND>

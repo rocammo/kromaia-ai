@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<COMPOUND>
+  <!--***************************************************************************************************************-->
+  <GENERAL LinearVelocityLossPerSecond="0" AngularVelocityLossPerSecond="0" InitialScaleX="1" InitialScaleY="1" InitialScaleZ="1"
+           DestructionDelay="1" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+           EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+  <!--***************************************************************************************************************-->
+  <HULL Number="1">
+    <Hull HullType="0">
+      <ObjectData ModelFileName="backbonerhead.mesh" ScaleX="1" ScaleY="1" ScaleZ="1" 
+                  PositionX="0" PositionY="0" PositionZ="0" 
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="BOX" ObjectMaterial="5" ObjectMass="0.1" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+  </HULL>
+  <!--***************************************************************************************************************-->
+  <MOVEMENTAI AIModuleMovementType="0">
+    <AIModuleMovementDirectData Acceleration="25" MinimumSpeed="0" MaximumSpeed="1000" ReachDestinationAtFullLinearSpeed="0" />
+  </MOVEMENTAI>
+  <!--***************************************************************************************************************-->
+  <AIUNIT Number="1" UnitValue="1">
+    <BehaviourUnitAIData AIFormationType="5" AIFormationSeparationMultiplier="1"
+                         AIGroupBehaviourType="7" AIGroupBehaviourDistance="50" AIGroupAttackBehaviourType ="0" AIGroupAttackSpeed ="100"
+                         AIBehaviourType="7" AIBehaviourDistance="50" AIAttackBehaviourType ="0" AIAttackSpeed ="100"/>
+  </AIUNIT>
+  <!--***************************************************************************************************************-->
+</COMPOUND>

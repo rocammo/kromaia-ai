@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<COMPOUND>
+  <!--***************************************************************************************************************-->
+  <GENERAL LinearVelocityLossPerSecond="0" AngularVelocityLossPerSecond="0" InitialScaleX="5" InitialScaleY="5" InitialScaleZ="5"
+           DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+           EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+  <!--***************************************************************************************************************-->
+  <HULL Number="1">
+    <Hull HullType="0">
+      <ObjectData ModelFileName="daimon_IX_0.mesh" ScaleX="1" ScaleY="1" ScaleZ="1" 
+                  PositionX="0" PositionY="0" PositionZ="0" 
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMaterial="5" ObjectMass="10" />
+      <AliveObjectData ObjectMaximumLife="55" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <MobileObjects Number="6" MobilityType="8">
+        <MobileObject ModelFileName="daimon_IX_1.mesh" LocalPositionX="-0.2" LocalPositionY="0.4" LocalPositionZ="0" />
+        <MobileObject ModelFileName="daimon_IX_1.mesh" LocalPositionX="0.2" LocalPositionY="0.4" LocalPositionZ="0" />
+        <MobileObject ModelFileName="daimon_IX_2.mesh" LocalPositionX="-0.32" LocalPositionY="-0.1" LocalPositionZ="0.55" />
+        <MobileObject ModelFileName="daimon_IX_2.mesh" LocalPositionX="-0.16" LocalPositionY="-0.1" LocalPositionZ="0.6" />
+        <MobileObject ModelFileName="daimon_IX_2.mesh" LocalPositionX="0.16" LocalPositionY="-0.1" LocalPositionZ="0.6" />
+        <MobileObject ModelFileName="daimon_IX_2.mesh" LocalPositionX="0.32" LocalPositionY="-0.1" LocalPositionZ="0.55" />
+      </MobileObjects>
+    </Hull>
+  </HULL>
+  <!--***************************************************************************************************************-->
+  <WEAPONRYWEAPONSAI Number="1">
+    <Weapon WeaponType="5">
+      <ObjectData ModelFileName="weaponcommonsphere.mesh" ScaleX="10.0" ScaleY="10.0" ScaleZ="10.0"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <WeaponData WeaponPriority="0" WeaponBehaviour="2" ReloadTime="2" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="0" AccelerationAngular="0" MaximumSpeedAngular="0"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponProximityData FireDistance="50" FireAngle="-1" FireDamage="10000" LockTime="1.5" Width="1" WeaponDamageType="0" />
+      <Cannons Number="1" FiringTurnMaximum="0" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="0"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+  </WEAPONRYWEAPONSAI>
+  <!--***************************************************************************************************************-->
+  <MOVEMENTAI AIModuleMovementType="6">
+    <AIModuleMovementDirectData Acceleration="400" MinimumSpeed="0" MaximumSpeed="1000" ReachDestinationAtFullLinearSpeed="0" />
+    <AIModuleMovementDirectWithOrientationData AccelerationAngular="1" MaximumSpeedAngular="10" ReachDestinationAtFullAngularSpeed="0" />
+  </MOVEMENTAI>
+  <!--***************************************************************************************************************-->
+  <AIUNIT Number="1" UnitValue="5">
+    <BehaviourUnitAIData AIFormationType="-1" AIFormationSeparationMultiplier="0"
+                         AIGroupBehaviourType="-1" AIGroupBehaviourDistance="0" AIGroupAttackBehaviourType ="-1" AIGroupAttackSpeed ="0"
+                         AIBehaviourType="6" AIBehaviourDistance="300" AIAttackBehaviourType ="0" AIAttackSpeed ="400"/>
+  </AIUNIT>
+  <!--***************************************************************************************************************-->
+</COMPOUND>

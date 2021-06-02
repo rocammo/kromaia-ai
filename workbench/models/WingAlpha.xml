@@ -1,0 +1,442 @@
+<?xml version="1.0" ?>
+<COMPOUND>
+  <!--***************************************************************************************************************-->
+  <GENERAL LinearVelocityLossPerSecond="0" AngularVelocityLossPerSecond="0" InitialScaleX="120" InitialScaleY="120" InitialScaleZ="120"
+           DestructionDelay="1" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+           EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000"  />
+  <!--***************************************************************************************************************-->
+  <HULL Number="3">
+
+   <!-- Segment #0 ***************************************************************************************************************-->
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="wing_II_0.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="wing_II_0.bcs" ObjectMass="10" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+   <!-- Segment #1 ***************************************************************************************************************-->
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="wing_II_1.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="-0.531" PositionY="-0.00001" PositionZ="-0.150"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="wing_II_1.bcs" ObjectMass="1" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+   <!-- Segment #2 ***************************************************************************************************************-->
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="wing_II_1.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0.531" PositionY="-0.00001" PositionZ="-0.150"
+                  OrientationW="0" OrientationX="0" OrientationY="0" OrientationZ="1" />
+      <PhysicalObjectData CollisionModelFileName="wing_II_1.bcs" ObjectMass="1" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="-1" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+
+    <!--***************************************************************************************************************-->
+    <LINKS Number="2">
+
+      <!-- Body links ***************************************************************************************************************-->        
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="0" HullIndexSecond="1"
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+      <Link LinkType="0">
+        <LinkData HullIndexFirst="0" HullIndexSecond="2" 
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      </Link>
+    </LINKS>
+    <!--***************************************************************************************************************-->
+  </HULL>
+  <!--***************************************************************************************************************-->
+  <WEAPONRYWEAPONSAI Number="10">
+
+    <!-- Left turrets ***************************************************************************************************************-->
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="0.1" ScaleY="0.1" ScaleZ="0.1"
+                  PositionX="-0.156" PositionY="0" PositionZ="0.167"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="turret_IV_0.obj" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="1" MobilityType="3">
+        <MobileObject ModelFileName="turret_IV_0.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="0" WeaponBehaviour="2" ReloadTime="0.2" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="75" AccelerationAngular="5" MaximumSpeedAngular="10"
+                             FiringOffsetLocalMultiplier="0.02" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.2"
+                                ProjectileInitialScaleX="0.01" ProjectileInitialScaleY="0.01" ProjectileInitialScaleZ="0.01"
+                                ProjectileFinalScaleX="0.05" ProjectileFinalScaleY="0.05" ProjectileFinalScaleZ="0.05"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="100"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="15" ProjectilePower="100" />
+      <Cannons Number="1" FiringTurnMaximum="20" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="4" FiringTurnEnd="4" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="0.22"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="0.1" ScaleY="0.1" ScaleZ="0.1"
+                  PositionX="-0.344" PositionY="0" PositionZ="0.045"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="turret_IV_0.obj" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="1" MobilityType="3">
+        <MobileObject ModelFileName="turret_IV_0.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="0" WeaponBehaviour="2" ReloadTime="0.2" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="75" AccelerationAngular="5" MaximumSpeedAngular="10"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.2"
+                                ProjectileInitialScaleX="0.01" ProjectileInitialScaleY="0.01" ProjectileInitialScaleZ="0.01"
+                                ProjectileFinalScaleX="0.05" ProjectileFinalScaleY="0.05" ProjectileFinalScaleZ="0.05"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="100"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="15" ProjectilePower="100" />
+      <Cannons Number="1" FiringTurnMaximum="20" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="3" FiringTurnEnd="3" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="0.22"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="0.1" ScaleY="0.1" ScaleZ="0.1"
+                  PositionX="-0.531" PositionY="0" PositionZ="-0.077"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="turret_IV_0.obj" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="1" MobilityType="3">
+        <MobileObject ModelFileName="turret_IV_0.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="0" WeaponBehaviour="2" ReloadTime="0.2" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="75" AccelerationAngular="5" MaximumSpeedAngular="10"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.2"
+                                ProjectileInitialScaleX="0.01" ProjectileInitialScaleY="0.01" ProjectileInitialScaleZ="0.01"
+                                ProjectileFinalScaleX="0.05" ProjectileFinalScaleY="0.05" ProjectileFinalScaleZ="0.05"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="100"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="15" ProjectilePower="100" />
+      <Cannons Number="1" FiringTurnMaximum="20" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="2" FiringTurnEnd="2" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="0.22"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="0.1" ScaleY="0.1" ScaleZ="0.1"
+                  PositionX="-0.718" PositionY="0" PositionZ="-0.198"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="turret_IV_0.obj" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="1" MobilityType="3">
+        <MobileObject ModelFileName="turret_IV_0.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="0" WeaponBehaviour="2" ReloadTime="0.2" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="75" AccelerationAngular="5" MaximumSpeedAngular="10"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.2"
+                                ProjectileInitialScaleX="0.01" ProjectileInitialScaleY="0.01" ProjectileInitialScaleZ="0.01"
+                                ProjectileFinalScaleX="0.05" ProjectileFinalScaleY="0.05" ProjectileFinalScaleZ="0.05"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="100"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="15" ProjectilePower="100" />
+      <Cannons Number="1" FiringTurnMaximum="20" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="1" FiringTurnEnd="1" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="0.22"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="0.1" ScaleY="0.1" ScaleZ="0.1"
+                  PositionX="-0.906" PositionY="0" PositionZ="-0.320"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="turret_IV_0.obj" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="1" MobilityType="3">
+        <MobileObject ModelFileName="turret_IV_0.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="0" WeaponBehaviour="2" ReloadTime="0.2" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="75" AccelerationAngular="5" MaximumSpeedAngular="10"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.2"
+                                ProjectileInitialScaleX="0.01" ProjectileInitialScaleY="0.01" ProjectileInitialScaleZ="0.01"
+                                ProjectileFinalScaleX="0.05" ProjectileFinalScaleY="0.05" ProjectileFinalScaleZ="0.05"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="100"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="15" ProjectilePower="100" />
+      <Cannons Number="1" FiringTurnMaximum="20" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="0.22"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+
+    <!-- Right turrets ***************************************************************************************************************-->
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="0.1" ScaleY="0.1" ScaleZ="0.1"
+                  PositionX="0.156" PositionY="0" PositionZ="0.167"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="turret_IV_0.obj" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="1" MobilityType="3">
+        <MobileObject ModelFileName="turret_IV_0.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="0" WeaponBehaviour="2" ReloadTime="0.2" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="75" AccelerationAngular="5" MaximumSpeedAngular="10"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.2"
+                                ProjectileInitialScaleX="0.01" ProjectileInitialScaleY="0.01" ProjectileInitialScaleZ="0.01"
+                                ProjectileFinalScaleX="0.05" ProjectileFinalScaleY="0.05" ProjectileFinalScaleZ="0.05"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="100"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="15" ProjectilePower="100" />
+      <Cannons Number="1" FiringTurnMaximum="20" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="4" FiringTurnEnd="4" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="0.22"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="0.1" ScaleY="0.1" ScaleZ="0.1"
+                  PositionX="0.344" PositionY="0" PositionZ="0.045"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="turret_IV_0.obj" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="1" MobilityType="3">
+        <MobileObject ModelFileName="turret_IV_0.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="0" WeaponBehaviour="2" ReloadTime="0.2" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="75" AccelerationAngular="5" MaximumSpeedAngular="10"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.2"
+                                ProjectileInitialScaleX="0.01" ProjectileInitialScaleY="0.01" ProjectileInitialScaleZ="0.01"
+                                ProjectileFinalScaleX="0.05" ProjectileFinalScaleY="0.05" ProjectileFinalScaleZ="0.05"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="100"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="15" ProjectilePower="100" />
+      <Cannons Number="1" FiringTurnMaximum="20" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="3" FiringTurnEnd="3" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="0.22"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="0.1" ScaleY="0.1" ScaleZ="0.1"
+                  PositionX="0.531" PositionY="0" PositionZ="-0.077"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="turret_IV_0.obj" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="1" MobilityType="3">
+        <MobileObject ModelFileName="turret_IV_0.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="0" WeaponBehaviour="2" ReloadTime="0.2" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="75" AccelerationAngular="5" MaximumSpeedAngular="10"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.2"
+                                ProjectileInitialScaleX="0.01" ProjectileInitialScaleY="0.01" ProjectileInitialScaleZ="0.01"
+                                ProjectileFinalScaleX="0.05" ProjectileFinalScaleY="0.05" ProjectileFinalScaleZ="0.05"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="100"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="15" ProjectilePower="100" />
+      <Cannons Number="1" FiringTurnMaximum="20" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="2" FiringTurnEnd="2" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="0.22"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="0.1" ScaleY="0.1" ScaleZ="0.1"
+                  PositionX="0.718" PositionY="0" PositionZ="-0.198"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="turret_IV_0.obj" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="1" MobilityType="3">
+        <MobileObject ModelFileName="turret_IV_0.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="0" WeaponBehaviour="2" ReloadTime="0.2" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="75" AccelerationAngular="5" MaximumSpeedAngular="10"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.2"
+                                ProjectileInitialScaleX="0.01" ProjectileInitialScaleY="0.01" ProjectileInitialScaleZ="0.01"
+                                ProjectileFinalScaleX="0.05" ProjectileFinalScaleY="0.05" ProjectileFinalScaleZ="0.05"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="100"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="15" ProjectilePower="100" />
+      <Cannons Number="1" FiringTurnMaximum="20" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="1" FiringTurnEnd="1" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="0.22"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="0.1" ScaleY="0.1" ScaleZ="0.1"
+                  PositionX="0.906" PositionY="0" PositionZ="-0.320"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="turret_IV_0.obj" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="1" MobilityType="3">
+        <MobileObject ModelFileName="turret_IV_0.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="0" WeaponBehaviour="2" ReloadTime="0.2" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="75" AccelerationAngular="5" MaximumSpeedAngular="10"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.2"
+                                ProjectileInitialScaleX="0.01" ProjectileInitialScaleY="0.01" ProjectileInitialScaleZ="0.01"
+                                ProjectileFinalScaleX="0.05" ProjectileFinalScaleY="0.05" ProjectileFinalScaleZ="0.05"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="100"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="15" ProjectilePower="100" />
+      <Cannons Number="1" FiringTurnMaximum="20" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="0.22"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+  
+  
+  
+  </WEAPONRYWEAPONSAI>
+  <!--***************************************************************************************************************-->
+  <!--***************************************************************************************************************-->
+  <MOVEMENTAI AIModuleMovementType="1">
+    <AIModuleMovementDirectData Acceleration="50" MinimumSpeed="50" MaximumSpeed="1000" ReachDestinationAtFullLinearSpeed="0" />
+    <AIModuleMovementOrientedData AccelerationAngular="0.5" MaximumSpeedAngular="2" ReachDestinationAtFullAngularSpeed="0"/>
+  </MOVEMENTAI>
+  <!--***************************************************************************************************************-->
+  <AIUNIT Number="1" UnitValue="2000">
+    <BehaviourUnitAIData AIFormationType="1" AIFormationSeparationMultiplier="5"
+                         AIGroupBehaviourType="7" AIGroupBehaviourDistance="100" AIGroupAttackBehaviourType ="0" AIGroupAttackSpeed ="100"
+                         AIBehaviourType="7" AIBehaviourDistance="100" AIAttackBehaviourType ="0" AIAttackSpeed ="100"/>
+  </AIUNIT>
+  <!--***************************************************************************************************************-->
+</COMPOUND>

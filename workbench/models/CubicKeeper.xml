@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<COMPOUND>
+  <!--***************************************************************************************************************-->
+  <GENERAL LinearVelocityLossPerSecond="0" AngularVelocityLossPerSecond="0" InitialScaleX="1" InitialScaleY="1" InitialScaleZ="1"
+           DestructionDelay="1" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+           EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+  <!--***************************************************************************************************************-->
+  <HULL Number="1">
+    <Hull HullType="0">
+      <ObjectData ModelFileName="cubickeeper.mesh" ScaleX="1" ScaleY="1" ScaleZ="1" 
+                  PositionX="0" PositionY="0" PositionZ="0" 
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="CUBOID" ObjectMaterial="5" ObjectMass="0.1" />
+      <AliveObjectData ObjectMaximumLife="25" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+  </HULL>
+  <!--***************************************************************************************************************-->
+  <WEAPONRYAI AIModuleWeaponryType="0">
+    <AIModuleWeaponryProjectileData ProjectileType="101" ProjectileScale="1" ProjectileReloadSeconds="1"
+                                    BurstReloadSeconds="0" ProjectilesPerBurst="0" />
+  </WEAPONRYAI>
+  <!--***************************************************************************************************************-->
+  <MOVEMENTAI AIModuleMovementType="0">
+    <AIModuleMovementDirectData Acceleration="20" MinimumSpeed="0" MaximumSpeed="1000" ReachDestinationAtFullLinearSpeed="0" />
+  </MOVEMENTAI>
+  <!--***************************************************************************************************************-->
+  <HEALERS Number="1">
+    <Healer>
+      <ObjectData ModelFileName="" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HealerData VisualElements="0" />
+    </Healer>
+  </HEALERS>
+  <!--***************************************************************************************************************-->
+  <AIUNIT Number="1" UnitValue="10">
+    <BehaviourUnitAIData AIFormationType="1" AIFormationSeparationMultiplier="1"
+                         AIGroupBehaviourType="5" AIGroupBehaviourDistance="100" AIGroupAttackBehaviourType ="0" AIGroupAttackSpeed ="100"
+                         AIBehaviourType="5" AIBehaviourDistance="100" AIAttackBehaviourType ="0" AIAttackSpeed ="100"/>
+  </AIUNIT>
+  <!--***************************************************************************************************************-->
+</COMPOUND>

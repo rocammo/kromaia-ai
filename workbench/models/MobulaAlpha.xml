@@ -1,0 +1,895 @@
+<?xml version="1.0" ?>
+<COMPOUND>
+  <!--***************************************************************************************************************-->
+  <PROMPTER HullIndex="0"
+            LocalPositionX="0" LocalPositionY="1" LocalPositionZ="0"
+            FontName="Koine" MaterialSchemeName="Glow" CharacterHeight="0.5" IsUsedAsBillboard="1" IsCursorUsed="0" IsShadowUsed="1"/>
+  <!--***************************************************************************************************************-->
+  <GENERAL LinearVelocityLossPerSecond="0.6" AngularVelocityLossPerSecond="0.9999" InitialScaleX="1" InitialScaleY="1" InitialScaleZ="1"
+           DestructionDelay="0.3" EffectMultiplierKill="10" EffectMultiplierDestroy="20"
+           EffectsMaskKill="00000001110000000000000000011100" EffectsMaskDestroy="00000001110000000000000000011110" />
+  <!--***************************************************************************************************************-->
+  <HULL Number="1">
+    <Hull HullType="0">
+      <ObjectData ModelFileName="alpha.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="10" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="COMPOUND" ObjectMaterial="4" ObjectMass="100" >
+        <CollisionComponents Number="1">
+          <CollisionComponent>
+            <CollisionComponentData CollisionModelFileName="SPHEROID"
+                                    ComponentScaleX="0.5" ComponentScaleY="0.5" ComponentScaleZ="0.5"
+                                    ComponentLocalPositionX="0" ComponentLocalPositionY="0" ComponentLocalPositionZ="0"
+                                    ComponentLocalOrientationW="1" ComponentLocalOrientationX="0" ComponentLocalOrientationY="0" ComponentLocalOrientationZ="0" />
+          </CollisionComponent>
+        </CollisionComponents>
+      </PhysicalObjectData>
+      <AliveObjectData ObjectMaximumLife="1" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="4" EffectMultiplierDestroy="8"
+                       EffectsMaskKill="00000001110000000000000000011100" EffectsMaskDestroy="00000001110000000000000000011110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+  </HULL>
+  <!--***************************************************************************************************************-->
+  <REACTORS Number="1">
+    <Reactor>
+      <ObjectData ModelFileName="alphareactor.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="8" EffectMultiplierDestroy="16"
+                       EffectsMaskKill="00000001110000000000000000011100" EffectsMaskDestroy="00000001110000000000000000011110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <ReactorData ReactorEnergy="100000000" />
+    </Reactor>
+  </REACTORS>
+  <!--***************************************************************************************************************-->
+  <WEAPONRYWEAPONSHUMAN Number="5">
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="alphaweapon0.mesh" ScaleX="1.0" ScaleY="1.0" ScaleZ="1.0"
+                  PositionX="0" PositionY="0" PositionZ="1.6"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="2" MobilityType="3">
+        <MobileObject ModelFileName="alphaweapon2.mesh" LocalPositionX="0.845" LocalPositionY="-0.08" LocalPositionZ="0.361" />
+        <MobileObject ModelFileName="alphaweapon2.mesh" LocalPositionX="-0.845" LocalPositionY="-0.08" LocalPositionZ="0.361" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="0" WeaponBehaviour="2" ReloadTime="0.1" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="0" AccelerationAngular="0" MaximumSpeedAngular="0"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.01"
+                                ProjectileInitialScaleX="0.5" ProjectileInitialScaleY="0.5" ProjectileInitialScaleZ="0.1"
+                                ProjectileFinalScaleX="0.5" ProjectileFinalScaleY="0.5" ProjectileFinalScaleZ="2"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="400"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="1" ProjectilePower="200" />
+      <Cannons Number="1" FiringTurnMaximum="0" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="1.15"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="1.0" ScaleY="1.0" ScaleZ="1.0"
+                  PositionX="0" PositionY="0" PositionZ="1.6"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="1" MobilityType="0">
+        <MobileObject ModelFileName="alphaweapon1.mesh" LocalPositionX="0" LocalPositionY="0" LocalPositionZ="0" />
+      </MobileObjects>
+      <WeaponData WeaponPriority="1" WeaponBehaviour="2" ReloadTime="2" HasLock="0"
+                  AffectorType="6"
+                  AffectorScaleFactor="2" AffectorPowerFactor="5"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="0" AccelerationAngular="0" MaximumSpeedAngular="0"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.2"
+                                ProjectileInitialScaleX="0.01" ProjectileInitialScaleY="0.01" ProjectileInitialScaleZ="0.01"
+                                ProjectileFinalScaleX="0.5" ProjectileFinalScaleY="0.5" ProjectileFinalScaleZ="0.5"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="200"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="2" />
+      <WeaponProjectileData ProjectileType="15" ProjectilePower="300" />
+      <Cannons Number="15" FiringTurnMaximum="0" >
+        <!--(0.0, 0.0, 1.0)-->
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="2"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+
+        <!--3 x (0.0, 0.05, 1.0)-->
+        <!--<WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0.049938" FiringPositionZ="0.998752"
+                            FiringDirectionX="0" FiringDirectionY="0.049938" FiringDirectionZ="0.998752" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="-0.043247" FiringPositionY="-0.024969" FiringPositionZ="0.998752"
+                            FiringDirectionX="-0.043247" FiringDirectionY="-0.024969" FiringDirectionZ="0.998752" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0.043247" FiringPositionY="-0.024969" FiringPositionZ="0.998752"
+                            FiringDirectionX="0.043247" FiringDirectionY="-0.024969" FiringDirectionZ="0.998752" />
+        </WeaponCannon>-->
+
+        <!--6 x (0.0, 0.1, 1.0)-->
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0.099504" FiringPositionZ="0.995037"
+                            FiringDirectionX="0" FiringDirectionY="0.099504" FiringDirectionZ="0.995037" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="-0.086173" FiringPositionY="0.049752" FiringPositionZ="0.995037"
+                            FiringDirectionX="-0.086173" FiringDirectionY="0.049752" FiringDirectionZ="0.995037" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="-0.086173" FiringPositionY="-0.049752" FiringPositionZ="0.995037"
+                            FiringDirectionX="-0.086173" FiringDirectionY="-0.049752" FiringDirectionZ="0.995037" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="-0.099504" FiringPositionZ="0.995037"
+                            FiringDirectionX="0" FiringDirectionY="-0.099504" FiringDirectionZ="0.995037" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0.086173" FiringPositionY="-0.049752" FiringPositionZ="0.995037"
+                            FiringDirectionX="0.086173" FiringDirectionY="-0.049752" FiringDirectionZ="0.995037" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0.086173" FiringPositionY="0.049752" FiringPositionZ="0.995037"
+                            FiringDirectionX="0.086173" FiringDirectionY="0.049752" FiringDirectionZ="0.995037" />
+        </WeaponCannon>
+        
+        <!--4 x (0.0, 0.05, 1.0)-->
+        <!--<WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0.049938" FiringPositionY="0" FiringPositionZ="0.998752"
+                            FiringDirectionX="0.049938" FiringDirectionY="0" FiringDirectionZ="0.998752" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="-0.049938" FiringPositionY="0" FiringPositionZ="0.998752"
+                            FiringDirectionX="-0.049938" FiringDirectionY="0" FiringDirectionZ="0.998752" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0.049938" FiringPositionZ="0.998752"
+                            FiringDirectionX="0" FiringDirectionY="0.049938" FiringDirectionZ="0.998752" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="-0.049938" FiringPositionZ="0.998752"
+                            FiringDirectionX="0" FiringDirectionY="-0.049938" FiringDirectionZ="0.998752" />
+        </WeaponCannon>-->
+        
+        <!--(0.0, 0.10, 1.0)--><!--
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0.099504" FiringPositionY="0" FiringPositionZ="1.995037"
+                            FiringDirectionX="0.099504" FiringDirectionY="0" FiringDirectionZ="0.995037" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="-0.099504" FiringPositionY="0" FiringPositionZ="1.995037"
+                            FiringDirectionX="-0.099504" FiringDirectionY="0" FiringDirectionZ="0.995037" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0.099504" FiringPositionZ="1.995037"
+                            FiringDirectionX="0" FiringDirectionY="0.099504" FiringDirectionZ="0.995037" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="-0.099504" FiringPositionZ="1.995037"
+                            FiringDirectionX="0" FiringDirectionY="-0.099504" FiringDirectionZ="0.995037" />
+        </WeaponCannon>
+
+        --><!--(0.10, 0.10, 1.0)--><!--
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0.070360" FiringPositionY="0.070360" FiringPositionZ="0.995037"
+                            FiringDirectionX="0.070360" FiringDirectionY="0.070360" FiringDirectionZ="0.995037" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="-0.070360" FiringPositionY="0.070360" FiringPositionZ="0.995037"
+                            FiringDirectionX="-0.070360" FiringDirectionY="0.070360" FiringDirectionZ="0.995037" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0.070360" FiringPositionY="-0.070360" FiringPositionZ="0.995037"
+                            FiringDirectionX="0.070360" FiringDirectionY="-0.070360" FiringDirectionZ="0.995037" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="-0.070360" FiringPositionY="-0.070360" FiringPositionZ="0.995037"
+                            FiringDirectionX="-0.070360" FiringDirectionY="-0.070360" FiringDirectionZ="0.995037" />
+        </WeaponCannon>
+
+        --><!--(0.0, 0.15, 1.0)--><!--
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0.148340" FiringPositionY="0.0" FiringPositionZ="0.988936"
+                            FiringDirectionX="0.148340" FiringDirectionY="0.0" FiringDirectionZ="0.988936" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="-0.148340" FiringPositionY="0.0" FiringPositionZ="0.988936"
+                            FiringDirectionX="-0.148340" FiringDirectionY="0.0" FiringDirectionZ="0.988936" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0.0" FiringPositionY="0.148340" FiringPositionZ="0.988936"
+                            FiringDirectionX="0.0" FiringDirectionY="0.148340" FiringDirectionZ="0.988936" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0.0" FiringPositionY="-0.148340" FiringPositionZ="0.988936"
+                            FiringDirectionX="0.0" FiringDirectionY="-0.148340" FiringDirectionZ="0.988936" />
+        </WeaponCannon>
+
+
+
+
+
+
+
+        -->
+        <!--8 x (0.0, 0.2, 1.0)-->
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0.196116" FiringPositionZ="0.980581"
+                            FiringDirectionX="0" FiringDirectionY="0.196116" FiringDirectionZ="0.980581" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="-0.138675" FiringPositionY="0.138675" FiringPositionZ="0.980581"
+                            FiringDirectionX="-0.138675" FiringDirectionY="0.138675" FiringDirectionZ="0.980581" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="-0.196116" FiringPositionY="0" FiringPositionZ="0.980581"
+                            FiringDirectionX="-0.196116" FiringDirectionY="0" FiringDirectionZ="0.980581" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="-0.138675" FiringPositionY="-0.138675" FiringPositionZ="0.980581"
+                            FiringDirectionX="-0.138675" FiringDirectionY="-0.138675" FiringDirectionZ="0.980581" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="-0.196116" FiringPositionZ="0.980581"
+                            FiringDirectionX="0" FiringDirectionY="-0.196116" FiringDirectionZ="0.980581" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0.138675" FiringPositionY="-0.138675" FiringPositionZ="0.980581"
+                            FiringDirectionX="0.138675" FiringDirectionY="-0.138675" FiringDirectionZ="0.980581" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0.196116" FiringPositionY="0" FiringPositionZ="0.980581"
+                            FiringDirectionX="0.196116" FiringDirectionY="0" FiringDirectionZ="0.980581" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0.138675" FiringPositionY="0.138675" FiringPositionZ="0.980581"
+                            FiringDirectionX="0.138675" FiringDirectionY="0.138675" FiringDirectionZ="0.980581" />
+        </WeaponCannon>
+      </Cannons>
+      
+      
+      
+      
+        
+        
+        <!--(0.0, 0.3, 1.0)--><!--
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0.287348" FiringPositionY="0" FiringPositionZ="0.957826"
+                            FiringDirectionX="0.287348" FiringDirectionY="0" FiringDirectionZ="0.957826" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="-0.287348" FiringPositionY="0" FiringPositionZ="0.957826"
+                            FiringDirectionX="-0.287348" FiringDirectionY="0" FiringDirectionZ="0.957826" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0.287348" FiringPositionZ="0.957826"
+                            FiringDirectionX="0" FiringDirectionY="0.287348" FiringDirectionZ="0.957826" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="-0.287348" FiringPositionZ="0.957826"
+                            FiringDirectionX="0" FiringDirectionY="-0.287348" FiringDirectionZ="0.957826" />
+        </WeaponCannon>
+
+        --><!--(0.3, 0.3, 1.0)--><!--
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0.203186" FiringPositionY="0.203186" FiringPositionZ="0.957826"
+                            FiringDirectionX="0.203186" FiringDirectionY="0.203186" FiringDirectionZ="0.957826" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="-0.203186" FiringPositionY="0.203186" FiringPositionZ="0.957826"
+                            FiringDirectionX="-0.203186" FiringDirectionY="0.203186" FiringDirectionZ="0.957826" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0.203186" FiringPositionY="-0.203186" FiringPositionZ="0.957826"
+                            FiringDirectionX="0.203186" FiringDirectionY="-0.203186" FiringDirectionZ="0.957826" />
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="-0.203186" FiringPositionY="-0.203186" FiringPositionZ="0.957826"
+                            FiringDirectionX="-0.203186" FiringDirectionY="-0.203186" FiringDirectionZ="0.957826" />
+        </WeaponCannon>
+      </Cannons>-->
+    </Weapon>
+
+    <Weapon WeaponType="9">
+      <ObjectData ModelFileName="" ScaleX="1.0" ScaleY="1.0" ScaleZ="1.0"
+                  PositionX="0.5" PositionY="0" PositionZ="1.6"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="0"
+                      LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="0" MobilityType="3">
+      </MobileObjects>
+      <WeaponData WeaponPriority="2" WeaponBehaviour="2" ReloadTime="1" HasLock="0"
+                  AffectorType="5"
+                  AffectorScaleFactor="1" AffectorPowerFactor="6"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="0" AccelerationAngular="0" MaximumSpeedAngular="0"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.01"
+                                ProjectileInitialScaleX="0.5" ProjectileInitialScaleY="0.5" ProjectileInitialScaleZ="0.1"
+                                ProjectileFinalScaleX="0.5" ProjectileFinalScaleY="0.5" ProjectileFinalScaleZ="2"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="800"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="23" ProjectilePower="1" />
+      <WeaponProjectileHookData HookPositionX="0.1" HookPositionY="0.0" HookPositionZ="0.1" />
+      <Cannons Number="1" FiringTurnMaximum="0" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="0"
+                            FiringDirectionX="0.2" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+    <Weapon WeaponType="9">
+      <ObjectData ModelFileName="" ScaleX="1.0" ScaleY="1.0" ScaleZ="1.0"
+                  PositionX="0" PositionY="0" PositionZ="1.6"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="0" MobilityType="3">
+      </MobileObjects>
+      <WeaponData WeaponPriority="3" WeaponBehaviour="2" ReloadTime="1" HasLock="0"
+                  AffectorType="5"
+                  AffectorScaleFactor="1" AffectorPowerFactor="6"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="0" AccelerationAngular="0" MaximumSpeedAngular="0"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.01"
+                                ProjectileInitialScaleX="0.5" ProjectileInitialScaleY="0.5" ProjectileInitialScaleZ="0.1"
+                                ProjectileFinalScaleX="0.5" ProjectileFinalScaleY="0.5" ProjectileFinalScaleZ="2"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="800"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="23" ProjectilePower="1" />
+      <WeaponProjectileHookData HookPositionX="0.0" HookPositionY="0.0" HookPositionZ="0.1" />
+      <Cannons Number="1" FiringTurnMaximum="0" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="0"
+                            FiringDirectionX="0.0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+    <Weapon WeaponType="9">
+      <ObjectData ModelFileName="" ScaleX="1.0" ScaleY="1.0" ScaleZ="1.0"
+                  PositionX="-0.5" PositionY="0" PositionZ="1.6"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MobileObjects Number="0" MobilityType="3">
+      </MobileObjects>
+      <WeaponData WeaponPriority="4" WeaponBehaviour="2" ReloadTime="1" HasLock="0"
+                  AffectorType="5"
+                  AffectorScaleFactor="1" AffectorPowerFactor="6"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="0" AccelerationAngular="0" MaximumSpeedAngular="0"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0.01" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.01"
+                                ProjectileInitialScaleX="0.5" ProjectileInitialScaleY="0.5" ProjectileInitialScaleZ="0.1"
+                                ProjectileFinalScaleX="0.5" ProjectileFinalScaleY="0.5" ProjectileFinalScaleZ="2"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="800"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="10" />
+      <WeaponProjectileData ProjectileType="23" ProjectilePower="1" />
+      <WeaponProjectileHookData HookPositionX="-0.1" HookPositionY="0.0" HookPositionZ="0.1" />
+      <Cannons Number="1" FiringTurnMaximum="0" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="0"
+                            FiringDirectionX="-0.2" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+    
+      
+
+
+      
+      
+      
+
+      
+    
+    <!--<Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="1.0" ScaleY="1.0" ScaleZ="1.0"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000101000000000000000010110" EffectsMaskDestroy="00000000101000000000000000010110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <WeaponData WeaponPriority="1" WeaponBehaviour="2" ReloadTime="1" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="0" AccelerationAngular="0" MaximumSpeedAngular="0"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0.1"
+                                ProjectileInitialScaleX="0.1" ProjectileInitialScaleY="0.1" ProjectileInitialScaleZ="0.1"
+                                ProjectileFinalScaleX="1" ProjectileFinalScaleY="1" ProjectileFinalScaleZ="1"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="300"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="20" />
+      <WeaponProjectileData ProjectileType="1" ProjectilePower="100" />
+      <Cannons Number="2" FiringTurnMaximum="0" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="2"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+          
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0.5" FiringPositionZ="2"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="-0.5" FiringPositionZ="2"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0.5" FiringPositionY="0" FiringPositionZ="2"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+
+        </WeaponCannon>
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="-0.5" FiringPositionY="0" FiringPositionZ="2"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="hermes.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="hermes.obj" ObjectMaterial="4" ObjectMass="0.001" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000101000000000000000010110" EffectsMaskDestroy="00000000101000000000000000010110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MarkersSets Number="1">
+        <MarkersSet>
+          <Markers Number="4">
+            <MarkerData ModelFileName="hermesl0.mesh" />
+            <MarkerData ModelFileName="hermesl1.mesh" />
+            <MarkerData ModelFileName="hermesl2.mesh" />
+            <MarkerData ModelFileName="hermesl3.mesh" />
+          </Markers>
+        </MarkersSet>
+      </MarkersSets>
+      <WeaponData WeaponPriority="0" WeaponBehaviour="1" ReloadTime="1.0" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="0" AccelerationAngular="0" MaximumSpeedAngular="0"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="4" Dispersion="0" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0"
+                                ProjectileInitialScaleX="1" ProjectileInitialScaleY="1" ProjectileInitialScaleZ="1"
+                                ProjectileFinalScaleX="1" ProjectileFinalScaleY="1" ProjectileFinalScaleZ="1"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="60"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="20" />
+      <WeaponProjectileData ProjectileType="5" ProjectilePower="100" />
+      <Cannons Number="1" FiringTurnMaximum="0" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="2" FiringPositionY="0" FiringPositionZ="2"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+    <Weapon WeaponType="0">
+      <ObjectData ModelFileName="" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000101000000000000000010110" EffectsMaskDestroy="00000000101000000000000000010110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <MarkersSets Number="1">
+        <MarkersSet>
+          <Markers Number="4">
+            <MarkerData ModelFileName="hermesr0.mesh" />
+            <MarkerData ModelFileName="hermesr1.mesh" />
+            <MarkerData ModelFileName="hermesr2.mesh" />
+            <MarkerData ModelFileName="hermesr3.mesh" />
+          </Markers>
+        </MarkersSet>
+      </MarkersSets>
+      <WeaponData WeaponPriority="1" WeaponBehaviour="4" ReloadTime="1.0" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="0" AccelerationAngular="0" MaximumSpeedAngular="0"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="4" Dispersion="0" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0"
+                                ProjectileInitialScaleX="1" ProjectileInitialScaleY="1" ProjectileInitialScaleZ="1"
+                                ProjectileFinalScaleX="1" ProjectileFinalScaleY="1" ProjectileFinalScaleZ="1"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="60"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="20" />
+      <WeaponProjectileData ProjectileType="5" ProjectilePower="100" />
+      <Cannons Number="1" FiringTurnMaximum="0" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="-2" FiringPositionY="0" FiringPositionZ="2"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>-->
+
+    <!--<Weapon WeaponType="3">
+      <ObjectData ModelFileName="" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000101000000000000000010110" EffectsMaskDestroy="00000000101000000000000000010110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <WeaponData WeaponPriority="1" WeaponBehaviour="2" ReloadTime="10" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="0" AccelerationAngular="0" MaximumSpeedAngular="0"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponAffectorData AffectorPower="1000" AffectorType="0" />
+      <Cannons Number="1" FiringTurnMaximum="0" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="0"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>-->
+  </WEAPONRYWEAPONSHUMAN>
+  <!--***************************************************************************************************************-->
+  <MOVEMENTPROPELLERS Number="16">
+    <Boost ModuleBoost="7" ModuleBoostTime="0.6" ModuleBoostReloadTime="4" />;
+    <Propeller>
+      <ObjectData ModelFileName="propeller.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="-0.3" PositionY="0" PositionZ="-1"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="2" EffectMultiplierDestroy="4"
+                       EffectsMaskKill="00000001110000000000000000011100" EffectsMaskDestroy="00000001110000000000000000011110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="-1" />
+      <PropellerData PropellerPowerCoefficient="5000" BoostMultiplier="1" RibbonTrailMultiplier="1" />
+    </Propeller>
+    <Propeller>
+      <ObjectData ModelFileName="propeller.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0.3" PositionY="0" PositionZ="-1"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="8" EffectMultiplierDestroy="16"
+                       EffectsMaskKill="00000001110000000000000000011100" EffectsMaskDestroy="00000001110000000000000000011110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="-1" />
+      <PropellerData PropellerPowerCoefficient="5000" BoostMultiplier="1" RibbonTrailMultiplier="1" />
+    </Propeller>
+    <Propeller>
+      <ObjectData ModelFileName="propeller.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="-0.3" PositionY="0" PositionZ="1"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="7" EffectMultiplierDestroy="14"
+                       EffectsMaskKill="00000001110000000000000000011100" EffectsMaskDestroy="00000001110000000000000000011110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <PropellerData PropellerPowerCoefficient="5000" BoostMultiplier="1" RibbonTrailMultiplier="1" />
+    </Propeller>
+    <Propeller>
+      <ObjectData ModelFileName="propeller.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0.3" PositionY="0" PositionZ="1"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="3" EffectMultiplierDestroy="6"
+                       EffectsMaskKill="00000001110000000000000000011100" EffectsMaskDestroy="00000001110000000000000000011110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <PropellerData PropellerPowerCoefficient="5000" BoostMultiplier="1" RibbonTrailMultiplier="1" />
+    </Propeller>
+    <Propeller>
+      <ObjectData ModelFileName="propeller.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0.5" PositionY="0" PositionZ="-0.5"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="9" EffectMultiplierDestroy="18"
+                       EffectsMaskKill="00000001110000000000000000011100" EffectsMaskDestroy="00000001110000000000000000011110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="1" LocalDirectionY="0" LocalDirectionZ="0" />
+      <PropellerData PropellerPowerCoefficient="5000" BoostMultiplier="1" RibbonTrailMultiplier="1" />
+    </Propeller>
+    <Propeller>
+      <ObjectData ModelFileName="propeller.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0.5" PositionY="0" PositionZ="0.5"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="4" EffectMultiplierDestroy="8"
+                       EffectsMaskKill="00000001110000000000000000011100" EffectsMaskDestroy="00000001110000000000000000011110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="1" LocalDirectionY="0" LocalDirectionZ="0" />
+      <PropellerData PropellerPowerCoefficient="5000" BoostMultiplier="1" RibbonTrailMultiplier="1" />
+    </Propeller>
+    <Propeller>
+      <ObjectData ModelFileName="propeller.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="-0.5" PositionY="0" PositionZ="-0.5"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="3" EffectMultiplierDestroy="6"
+                       EffectsMaskKill="00000001110000000000000000011100" EffectsMaskDestroy="00000001110000000000000000011110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="-1" LocalDirectionY="0" LocalDirectionZ="0" />
+      <PropellerData PropellerPowerCoefficient="5000" BoostMultiplier="1" RibbonTrailMultiplier="1" />
+    </Propeller>
+    <Propeller>
+      <ObjectData ModelFileName="propeller.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="-0.5" PositionY="0" PositionZ="0.5"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0"
+                       DestructionDelay="0" EffectMultiplierKill="7" EffectMultiplierDestroy="14"
+                       EffectsMaskKill="00000001110000000000000000011100" EffectsMaskDestroy="00000001110000000000000000011110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="-1" LocalDirectionY="0" LocalDirectionZ="0" />
+      <PropellerData PropellerPowerCoefficient="5000" BoostMultiplier="1" RibbonTrailMultiplier="1" />
+    </Propeller>
+    <Propeller>
+      <ObjectData ModelFileName="propeller.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0.48862" PositionY="-0.15" PositionZ="0.48862"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="-1" LocalDirectionZ="0" />
+      <PropellerData PropellerPowerCoefficient="2500" BoostMultiplier="1" RibbonTrailMultiplier="1" />
+    </Propeller>
+    <Propeller>
+      <ObjectData ModelFileName="propeller.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0.48862" PositionY="-0.15" PositionZ="-0.48862"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="-1" LocalDirectionZ="0" />
+      <PropellerData PropellerPowerCoefficient="2500" BoostMultiplier="1" RibbonTrailMultiplier="1" />
+    </Propeller>
+    <Propeller>
+      <ObjectData ModelFileName="propeller.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="-0.48862" PositionY="-0.15" PositionZ="0.48862"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="-1" LocalDirectionZ="0" />
+      <PropellerData PropellerPowerCoefficient="2500" BoostMultiplier="1" RibbonTrailMultiplier="1" />
+    </Propeller>
+    <Propeller>
+      <ObjectData ModelFileName="propeller.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="-0.48862" PositionY="-0.15" PositionZ="-0.48862"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="-1" LocalDirectionZ="0" />
+      <PropellerData PropellerPowerCoefficient="2500" BoostMultiplier="1" RibbonTrailMultiplier="1" />
+    </Propeller>
+    <Propeller>
+      <ObjectData ModelFileName="propeller.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0.48862" PositionY="0.15" PositionZ="0.48862"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="1" LocalDirectionZ="0" />
+      <PropellerData PropellerPowerCoefficient="2500" BoostMultiplier="1" RibbonTrailMultiplier="1" />
+    </Propeller>
+    <Propeller>
+      <ObjectData ModelFileName="propeller.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0.48862" PositionY="0.15" PositionZ="-0.48862"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="1" LocalDirectionZ="0" />
+      <PropellerData PropellerPowerCoefficient="2500" BoostMultiplier="1" RibbonTrailMultiplier="1" />
+    </Propeller>
+    <Propeller>
+      <ObjectData ModelFileName="propeller.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="-0.48862" PositionY="0.15" PositionZ="0.48862"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="1" LocalDirectionZ="0" />
+      <PropellerData PropellerPowerCoefficient="2500" BoostMultiplier="1" RibbonTrailMultiplier="1" />
+    </Propeller>
+    <Propeller>
+      <ObjectData ModelFileName="propeller.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="-0.48862" PositionY="0.15" PositionZ="-0.48862"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="1" LocalDirectionZ="0" />
+      <PropellerData PropellerPowerCoefficient="2500" BoostMultiplier="1" RibbonTrailMultiplier="1" />
+    </Propeller>
+  </MOVEMENTPROPELLERS>
+  <!--***************************************************************************************************************-->
+  <HEALERS Number="1">
+    <Healer>
+      <ObjectData ModelFileName="" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+      <HealerData VisualElements="3" />
+    </Healer>
+  </HEALERS>
+  <!--***************************************************************************************************************-->
+  <INPUTS Number="13">
+    <PropellerInput Movement0="0" Movement1="0"   Movement2="0"   Movement3="0"   Movement4="0"   Movement5="0" Movement6="0" Movement7="0" Movement8="0" Movement9="0" Movement10="0" Movement11="1" Movement12="0" />
+    <PropellerInput Movement0="0" Movement1="0"   Movement2="0"   Movement3="0"   Movement4="0"   Movement5="0" Movement6="0" Movement7="0" Movement8="0" Movement9="0" Movement10="0" Movement11="1" Movement12="0" />
+    <PropellerInput Movement0="0" Movement1="0"   Movement2="0"   Movement3="0"   Movement4="0"   Movement5="0" Movement6="0" Movement7="0" Movement8="0" Movement9="0" Movement10="0" Movement11="0" Movement12="1" />
+    <PropellerInput Movement0="0" Movement1="0"   Movement2="0"   Movement3="0"   Movement4="0"   Movement5="0" Movement6="0" Movement7="0" Movement8="0" Movement9="0" Movement10="0" Movement11="0" Movement12="1" />
+    <PropellerInput Movement0="0" Movement1="0"   Movement2="0"   Movement3="0.1" Movement4="0"   Movement5="0" Movement6="0" Movement7="0" Movement8="0" Movement9="0" Movement10="1" Movement11="0" Movement12="0" />
+    <PropellerInput Movement0="0" Movement1="0"   Movement2="0"   Movement3="0"   Movement4="0.1" Movement5="0" Movement6="0" Movement7="0" Movement8="0" Movement9="0" Movement10="1" Movement11="0" Movement12="0" />
+    <PropellerInput Movement0="0" Movement1="0"   Movement2="0"   Movement3="0"   Movement4="0.1" Movement5="0" Movement6="0" Movement7="0" Movement8="0" Movement9="1" Movement10="0" Movement11="0" Movement12="0" />
+    <PropellerInput Movement0="0" Movement1="0"   Movement2="0"   Movement3="0.1" Movement4="0"   Movement5="0" Movement6="0" Movement7="0" Movement8="0" Movement9="1" Movement10="0" Movement11="0" Movement12="0" />
+    <PropellerInput Movement0="0" Movement1="0"   Movement2="0.1" Movement3="0"   Movement4="0"   Movement5="0" Movement6="1" Movement7="1" Movement8="0" Movement9="0" Movement10="0" Movement11="0" Movement12="0" />
+    <PropellerInput Movement0="0" Movement1="0.1" Movement2="0"   Movement3="0"   Movement4="0"   Movement5="0" Movement6="0" Movement7="1" Movement8="0" Movement9="0" Movement10="0" Movement11="0" Movement12="0" />
+    <PropellerInput Movement0="0" Movement1="0"   Movement2="0.1" Movement3="0"   Movement4="0"   Movement5="1" Movement6="0" Movement7="1" Movement8="0" Movement9="0" Movement10="0" Movement11="0" Movement12="0" />
+    <PropellerInput Movement0="0" Movement1="0.1" Movement2="0"   Movement3="0"   Movement4="0"   Movement5="0" Movement6="0" Movement7="1" Movement8="0" Movement9="0" Movement10="0" Movement11="0" Movement12="0" />
+    <PropellerInput Movement0="0" Movement1="0.1" Movement2="0"   Movement3="0"   Movement4="0"   Movement5="1" Movement6="0" Movement7="0" Movement8="1" Movement9="0" Movement10="0" Movement11="0" Movement12="0" />
+    <PropellerInput Movement0="0" Movement1="0"   Movement2="0.1" Movement3="0"   Movement4="0"   Movement5="0" Movement6="0" Movement7="0" Movement8="1" Movement9="0" Movement10="0" Movement11="0" Movement12="0" />
+    <PropellerInput Movement0="0" Movement1="0.1" Movement2="0"   Movement3="0"   Movement4="0"   Movement5="0" Movement6="1" Movement7="0" Movement8="1" Movement9="0" Movement10="0" Movement11="0" Movement12="0" />
+    <PropellerInput Movement0="0" Movement1="0"   Movement2="0.1" Movement3="0"   Movement4="0"   Movement5="0" Movement6="0" Movement7="0" Movement8="1" Movement9="0" Movement10="0" Movement11="0" Movement12="0" />
+  </INPUTS>
+  <!--***************************************************************************************************************-->
+  <INPUTMAXIMUMS Number="13">
+    <PropellerInput Movement0="1" Movement1="0.1" Movement2="0.1" Movement3="0.1" Movement4="0.1" Movement5="0.1" Movement6="0.1" Movement7="1" Movement8="1" Movement9="1" Movement10="1" Movement11="1" Movement12="1" />
+    <PropellerInput Movement0="1" Movement1="0.1" Movement2="0.1" Movement3="0.1" Movement4="0.1" Movement5="0.1" Movement6="0.1" Movement7="1" Movement8="1" Movement9="1" Movement10="1" Movement11="1" Movement12="1" />
+    <PropellerInput Movement0="1" Movement1="0.1" Movement2="0.1" Movement3="0.1" Movement4="0.1" Movement5="0.1" Movement6="0.1" Movement7="1" Movement8="1" Movement9="1" Movement10="1" Movement11="1" Movement12="1" />
+    <PropellerInput Movement0="1" Movement1="0.1" Movement2="0.1" Movement3="0.1" Movement4="0.1" Movement5="0.1" Movement6="0.1" Movement7="1" Movement8="1" Movement9="1" Movement10="1" Movement11="1" Movement12="1" />
+    <PropellerInput Movement0="1" Movement1="0.1" Movement2="0.1" Movement3="0.1" Movement4="0.1" Movement5="0.1" Movement6="0.1" Movement7="1" Movement8="1" Movement9="1" Movement10="1" Movement11="1" Movement12="1" />
+    <PropellerInput Movement0="1" Movement1="0.1" Movement2="0.1" Movement3="0.1" Movement4="0.1" Movement5="0.1" Movement6="0.1" Movement7="1" Movement8="1" Movement9="1" Movement10="1" Movement11="1" Movement12="1" />
+    <PropellerInput Movement0="1" Movement1="0.1" Movement2="0.1" Movement3="0.1" Movement4="0.1" Movement5="0.1" Movement6="0.1" Movement7="1" Movement8="1" Movement9="1" Movement10="1" Movement11="1" Movement12="1" />
+    <PropellerInput Movement0="1" Movement1="0.1" Movement2="0.1" Movement3="0.1" Movement4="0.1" Movement5="0.1" Movement6="0.1" Movement7="1" Movement8="1" Movement9="1" Movement10="1" Movement11="1" Movement12="1" />
+    <PropellerInput Movement0="1" Movement1="0.1" Movement2="0.1" Movement3="0.1" Movement4="0.1" Movement5="0.1" Movement6="0.1" Movement7="1" Movement8="1" Movement9="1" Movement10="1" Movement11="1" Movement12="1" />
+    <PropellerInput Movement0="1" Movement1="0.1" Movement2="0.1" Movement3="0.1" Movement4="0.1" Movement5="0.1" Movement6="0.1" Movement7="1" Movement8="1" Movement9="1" Movement10="1" Movement11="1" Movement12="1" />
+    <PropellerInput Movement0="1" Movement1="0.1" Movement2="0.1" Movement3="0.1" Movement4="0.1" Movement5="0.1" Movement6="0.1" Movement7="1" Movement8="1" Movement9="1" Movement10="1" Movement11="1" Movement12="1" />
+    <PropellerInput Movement0="1" Movement1="0.1" Movement2="0.1" Movement3="0.1" Movement4="0.1" Movement5="0.1" Movement6="0.1" Movement7="1" Movement8="1" Movement9="1" Movement10="1" Movement11="1" Movement12="1" />
+    <PropellerInput Movement0="1" Movement1="0.1" Movement2="0.1" Movement3="0.1" Movement4="0.1" Movement5="0.1" Movement6="0.1" Movement7="1" Movement8="1" Movement9="1" Movement10="1" Movement11="1" Movement12="1" />
+    <PropellerInput Movement0="1" Movement1="0.1" Movement2="0.1" Movement3="0.1" Movement4="0.1" Movement5="0.1" Movement6="0.1" Movement7="1" Movement8="1" Movement9="1" Movement10="1" Movement11="1" Movement12="1" />
+    <PropellerInput Movement0="1" Movement1="0.1" Movement2="0.1" Movement3="0.1" Movement4="0.1" Movement5="0.1" Movement6="0.1" Movement7="1" Movement8="1" Movement9="1" Movement10="1" Movement11="1" Movement12="1" />
+    <PropellerInput Movement0="1" Movement1="0.1" Movement2="0.1" Movement3="0.1" Movement4="0.1" Movement5="0.1" Movement6="0.1" Movement7="1" Movement8="1" Movement9="1" Movement10="1" Movement11="1" Movement12="1" />
+  </INPUTMAXIMUMS>
+  <!--***************************************************************************************************************-->
+</COMPOUND>

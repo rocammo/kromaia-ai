@@ -1,0 +1,119 @@
+<?xml version="1.0" ?>
+<COMPOUND>
+  <!--***************************************************************************************************************-->
+  <GENERAL LinearVelocityLossPerSecond="0" AngularVelocityLossPerSecond="0" InitialScaleX="1" InitialScaleY="1" InitialScaleZ="1"
+           DestructionDelay="1" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+           EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+  <!--***************************************************************************************************************-->
+  <HULL Number="5">
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="larva0.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMass="10.0" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="1000" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="larva1.mesh" ScaleX="0.9" ScaleY="0.9" ScaleZ="0.9"
+                  PositionX="0" PositionY="0" PositionZ="-2.207311"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMass="0.1" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="1000" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="larva2.mesh" ScaleX="0.8" ScaleY="0.8" ScaleZ="0.8"
+                  PositionX="0" PositionY="0" PositionZ="-4.210758"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMass="0.1" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="1000" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="larva3.mesh" ScaleX="0.7" ScaleY="0.7" ScaleZ="0.7"
+                  PositionX="0" PositionY="0" PositionZ="-6.012255"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMass="0.1" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="1000" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+    <Hull HullType="0">
+      <ObjectData ModelFileName="larva4.mesh" ScaleX="0.7" ScaleY="0.7" ScaleZ="0.7"
+                  PositionX="0" PositionY="0" PositionZ="-7.712053"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMass="0.3" ObjectMaterial="5" />
+      <AliveObjectData ObjectMaximumLife="1000" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+    <!--***************************************************************************************************************-->
+    <LINKS Number="4">
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="0" HullIndexSecond="1" 
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0" PositionFirstY="0" PositionFirstZ="-1"
+                      PositionSecondX="0" PositionSecondY="0" PositionSecondZ="-1.307311"
+                      RopeType="1" RopeElements="0" RopeMass="0.1" />
+      </Link>
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="1" HullIndexSecond="2" 
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0" PositionFirstY="0" PositionFirstZ="-3.107311"
+                      PositionSecondX="0" PositionSecondY="0" PositionSecondZ="-3.410758"
+                      RopeType="1" RopeElements="0" RopeMass="0.1" />
+      </Link>
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="2" HullIndexSecond="3" 
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0" PositionFirstY="0" PositionFirstZ="-5.010758"
+                      PositionSecondX="0" PositionSecondY="0" PositionSecondZ="-5.312255"
+                      RopeType="1" RopeElements="0" RopeMass="0.1" />
+      </Link>
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="3" HullIndexSecond="4" 
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0" PositionFirstY="0" PositionFirstZ="-6.712255"
+                      PositionSecondX="0" PositionSecondY="0" PositionSecondZ="-7.012053"
+                      RopeType="1" RopeElements="0" RopeMass="0.1" />
+      </Link>
+    </LINKS>
+    <!--***************************************************************************************************************-->
+  </HULL>
+  <!--***************************************************************************************************************-->
+  <MOVEMENTAI AIModuleMovementType="3">
+    <AIModuleMovementDirectData Acceleration="25" MinimumSpeed="0" MaximumSpeed="1000" ReachDestinationAtFullLinearSpeed="0" />
+    <AIModuleMovementOrientedData AccelerationAngular="1" MaximumSpeedAngular="1000" ReachDestinationAtFullAngularSpeed="0" />
+  </MOVEMENTAI>
+  <!--***************************************************************************************************************-->
+  <AIUNIT Number="1" UnitValue="1">
+    <BehaviourUnitAIData AIFormationType="5" AIFormationSeparationMultiplier="1"
+                         AIGroupBehaviourType="7" AIGroupBehaviourDistance="50" AIGroupAttackBehaviourType ="0" AIGroupAttackSpeed ="100"
+                         AIBehaviourType="7" AIBehaviourDistance="50" AIAttackBehaviourType ="0" AIAttackSpeed ="100"/>
+  </AIUNIT>
+  <!--***************************************************************************************************************-->
+</COMPOUND>

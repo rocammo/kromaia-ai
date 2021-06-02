@@ -1,0 +1,134 @@
+<?xml version="1.0" ?>
+<COMPOUND>
+  <!--***************************************************************************************************************-->
+  <GENERAL LinearVelocityLossPerSecond="0" AngularVelocityLossPerSecond="0" InitialScaleX="3" InitialScaleY="3" InitialScaleZ="3"
+           DestructionDelay="1" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+           EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+  <!--***************************************************************************************************************-->
+  <HULL Number="1">
+    <Hull HullType="0">
+      <ObjectData ModelFileName="daimon_I_0.mesh" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="SPHEROID" ObjectMaterial="5" ObjectMass="10" />
+      <AliveObjectData ObjectMaximumLife="50" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="-1"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="0" />
+    </Hull>
+
+    <LINKS Number="4">
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="0" HullIndexSecond="-1" 
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0" PositionFirstY="0.946208" PositionFirstZ="-0.225768"
+                      PositionSecondX="0" PositionSecondY="0.946208" PositionSecondZ="-3"
+                      RopeType="0" RopeElements="12" RopeMass="0.0" />
+      </Link>
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="0" HullIndexSecond="-1" 
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0" PositionFirstY="-0.946208" PositionFirstZ="-0.225768"
+                      PositionSecondX="0" PositionSecondY="-0.946208" PositionSecondZ="-3"
+                      RopeType="0" RopeElements="12" RopeMass="0.0" />
+      </Link>
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="0" HullIndexSecond="-1" 
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="-0.946208" PositionFirstY="0" PositionFirstZ="-0.225768"
+                      PositionSecondX="-0.946208" PositionSecondY="0" PositionSecondZ="-3"
+                      RopeType="0" RopeElements="12" RopeMass="0.0" />
+      </Link>
+      <Link LinkType="1">
+        <LinkData HullIndexFirst="0" HullIndexSecond="-1" 
+                  Destructible="0" DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                  EffectsMaskKill="00000000000000000000000000000000" EffectsMaskDestroy="00000000000000000000000000000000" />
+        <LinkRopeData PositionFirstX="0.946208" PositionFirstY="0" PositionFirstZ="-0.225768"
+                      PositionSecondX="0.946208" PositionSecondY="0" PositionSecondZ="-3"
+                      RopeType="0" RopeElements="12" RopeMass="0.0" />
+      </Link>
+    </LINKS>
+  </HULL>
+  <!--***************************************************************************************************************-->
+  <WEAPONRYWEAPONSAI Number="1">
+    <Weapon WeaponType="5">
+      <ObjectData ModelFileName="" ScaleX="1.0" ScaleY="1.0" ScaleZ="1.0"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <WeaponData WeaponPriority="0" WeaponBehaviour="2" ReloadTime="2" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="0" AccelerationAngular="0" MaximumSpeedAngular="0"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponProximityData FireDistance="50" FireAngle="-1" FireDamage="10000" LockTime="3" Width="1" WeaponDamageType="0" />
+      <Cannons Number="1" FiringTurnMaximum="0" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="0"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+
+    <Weapon WeaponType="3">
+      <ObjectData ModelFileName="" ScaleX="1" ScaleY="1" ScaleZ="1"
+                  PositionX="0" PositionY="0" PositionZ="0"
+                  OrientationW="1" OrientationX="0" OrientationY="0" OrientationZ="0" />
+      <PhysicalObjectData CollisionModelFileName="" ObjectMaterial="0" ObjectMass="0" />
+      <AliveObjectData ObjectMaximumLife="100" ObjectArmor="0" 
+                       DestructionDelay="0" EffectMultiplierKill="1" EffectMultiplierDestroy="1"
+                       EffectsMaskKill="00000001010000000000000000010110" EffectsMaskDestroy="00000001010000000000000000010110" />
+      <ComponentData HullIndexParent="0"
+                     LocalDirectionX="0" LocalDirectionY="0" LocalDirectionZ="1" />
+      <WeaponData WeaponPriority="1" WeaponBehaviour="2" ReloadTime="1" HasLock="0"
+                  AffectorType="-1"
+                  AffectorScaleFactor="1" AffectorPowerFactor="1"
+                  AffectorPositionX="0" AffectorPositionY="0" AffectorPositionZ="0" />
+      <WeaponWithCannonsData MaximumTurretAngle="0" AccelerationAngular="0" MaximumSpeedAngular="0"
+                             FiringOffsetLocalMultiplier="0" FiringOffsetToAddX="0" FiringOffsetToAddY="0" FiringOffsetToAddZ="0"
+                             ReachDestinationAtFullAngularSpeed="0" AimApplyingForceToParentHull="0" />
+      <WeaponCompoundObjectData MaximumAmmo="-1" Dispersion="0" ProjectileTimeToLive="0"
+                                ProjectileScaleTime="0"
+                                ProjectileInitialScaleX="1" ProjectileInitialScaleY="1" ProjectileInitialScaleZ="1"
+                                ProjectileFinalScaleX="1" ProjectileFinalScaleY="1" ProjectileFinalScaleZ="1"
+                                ProjectileInitialLinearVelocityX="0" ProjectileInitialLinearVelocityY="0" ProjectileInitialLinearVelocityZ="0"
+                                ProjectileInitialAngularVelocityX="0" ProjectileInitialAngularVelocityY="0" ProjectileInitialAngularVelocityZ="0" />
+      <WeaponProjectileData ProjectileType="0" ProjectilePower="100" />
+      <WeaponProjectileLoadedData ProjectileLoadedType="12" ProjectileLoadTime="2.0" ProjectileUnloadTime="0.25" ProjectileMaximumTimeLoaded="0"
+                                  MaximumRollingRadiansPerSecond="0"
+                                  ProjectileLoadInitialScaleX="1" ProjectileLoadInitialScaleY="1" ProjectileLoadInitialScaleZ="1"
+                                  ProjectileLoadFinalScaleX="5" ProjectileLoadFinalScaleY="5" ProjectileLoadFinalScaleZ="5" />
+      <Cannons Number="1" FiringTurnMaximum="0" >
+        <WeaponCannon>
+          <WeaponCannonData FiringTurnStart="0" FiringTurnEnd="0" Roll="0"
+                            FiringPositionX="0" FiringPositionY="0" FiringPositionZ="3.0"
+                            FiringDirectionX="0" FiringDirectionY="0" FiringDirectionZ="1" />
+        </WeaponCannon>
+      </Cannons>
+    </Weapon>
+  </WEAPONRYWEAPONSAI>
+  <!--***************************************************************************************************************-->
+  <MOVEMENTAI AIModuleMovementType="1">
+    <AIModuleMovementDirectData Acceleration="300" MinimumSpeed="0" MaximumSpeed="1000" ReachDestinationAtFullLinearSpeed="0" />
+    <AIModuleMovementOrientedData AccelerationAngular="50" MaximumSpeedAngular="10" ReachDestinationAtFullAngularSpeed="0" />
+  </MOVEMENTAI>
+  <!--***************************************************************************************************************-->
+  <AIUNIT Number="1" UnitValue="250">
+    <BehaviourUnitAIData AIFormationType="1" AIFormationSeparationMultiplier="1.5"
+                         AIGroupBehaviourType="5" AIGroupBehaviourDistance="1000" AIGroupAttackBehaviourType ="0" AIGroupAttackSpeed ="200"
+                         AIBehaviourType="5" AIBehaviourDistance="1000" AIAttackBehaviourType ="0" AIAttackSpeed ="200"/>
+  </AIUNIT>
+  <!--***************************************************************************************************************-->
+</COMPOUND>
